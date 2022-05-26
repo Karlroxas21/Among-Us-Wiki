@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #181A18;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: white;
+    height: 60px;
+    display: flex;
+
+
+}
+
+body {
+
+    /* height: 100vh;
+    width: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+}
+
+.game1 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game1 {
+    font-size: 20px;
+}
+
+.game2 {
+    background-color: #BBBDBD;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game2 {
+    font-size: 20px;
+}
+
+.game3 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game3 {
+    font-size: 20px;
+}
+
+.game4 {
+    background-color: #BBBDBD;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game4 {
+    font-size: 20px;
+}
+
+.game-desc-cancelled {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cancelled {
+    color: #F47174;
+}
+
+.game-desc {
+    margin-top: 17px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-picture {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.learn-more {
+    background-color: #E0CD67;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    padding: 9px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background-color: #DFB01A;
+    color: white;
+}
+
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-history {
+    background-color: #F47174;
+    height: 500px;
+    width: 500px;
+}
+
+.elements {
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+}
+
+.features {
+    background-color: aquamarine;
+    height: 500px;
+    width: 500px;
+}
+
+.about-us {
+    background-color: azure;
+    height: 500px;
+    width: 500px;
+}
+
+.contact {
+    background-color: bisque;
+    height: 500px;
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
