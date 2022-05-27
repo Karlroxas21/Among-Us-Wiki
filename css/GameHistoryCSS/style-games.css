@@ -2,105 +2,66 @@
 
 * {
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    padding: 0px;
 }
 
 body {
     background-color: #181A18;
     display: flex;
-    justify-content: center;
-}
-
-.navbar {
-    background-color: white;
-    height: 60px;
-    display: flex;
-
-
-}
-
-body {
-
-    /* height: 100vh;
-    width: 100vh; */
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
-
-
 }
 
 .game1 {
-    color: white;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    color: #FBFAF5;
+    display: grid;
+    grid-template-areas: "picture text"
+        "picture button";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
 }
 
-.game1 {
-    font-size: 20px;
-}
-
-.game2 {
-    background-color: #BBBDBD;
-    color: black;
+.game-w-color {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.game2 {
-    font-size: 20px;
-}
-
-.game3 {
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.game3 {
-    font-size: 20px;
-}
-
-.game4 {
-    background-color: #BBBDBD;
-    color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.game4 {
-    font-size: 20px;
-}
-
-.game-desc-cancelled {
-    margin-top: 15px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.cancelled {
-    color: #F47174;
-}
-
-.game-desc {
-    margin-top: 17px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    color: #FBFAF5;
+    display: grid;
+    background-color: #D2D2CF;
+    grid-template-areas: "picture text"
+        "picture button";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
 }
 
 .game-picture {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
+    width: 200px;
+    height: 200px;
+    grid-area: picture;
+}
+
+.game-desc-cancelled {
+    grid-area: text;
+    margin-left: 20px;
+}
+
+.game-desc {
+    color: #181A18;
+    grid-area: text;
+    margin-left: 20px;
+}
+
+.cancelled {
+    color: red;
+}
+
+.button {
+    margin-left: 20px;
+    grid-area: button;
+    font-size: 1.3em;
 }
 
 .learn-more {
@@ -116,51 +77,148 @@ body {
 
 .learn-more:hover {
     background-color: #DFB01A;
-    color: white;
 }
-
 
 h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 3em;
 }
 
-.footer-div {
-    display: flex;
-    flex-direction: row;
-}
-
-.game-history {
-    background-color: #F47174;
-    height: 500px;
-    width: 500px;
-}
-
-.elements {
-    background-color: aliceblue;
-    height: 500px;
-    width: 500px;
-}
-
-.features {
-    background-color: aquamarine;
-    height: 500px;
-    width: 500px;
-}
-
-.about-us {
-    background-color: azure;
-    height: 500px;
-    width: 500px;
-}
-
-.contact {
-    background-color: bisque;
-    height: 500px;
-    width: 500px;
-}
-
-footer {
-    text-align: center;
+#footer-container {
+    background-color: #585858;
+    display: grid;
+    grid-template-columns: auto auto auto auto 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "gamehistory elements features aboutus contact";
     color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.large-text {
+    font-size: 1.5em;
+}
+
+#game-history {
+    grid-area: gamehistory;
+
+}
+
+#game-history a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#game-history a:hover {
+    color: #DFB01A;
+}
+
+#elements {
+    grid-area: elements;
+}
+
+#elements a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#elements a:hover {
+    color: #DFB01A;
+}
+
+
+#features {
+    grid-area: features;
+}
+
+#features a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#features a:hover {
+    color: #DFB01A;
+}
+
+#about-us {
+    grid-area: aboutus;
+
+}
+
+#about-us a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#about-us a:hover {
+    color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "circle circle"
+        "phone number"
+        "envelope email";
+}
+
+#circle {
+    grid-area: circle;
+    width: 100px;
+}
+
+#phone {
+    grid-area: phone;
+    width: 20px;
+}
+
+#envelope {
+    grid-area: envelope;
+    width: 20px;
+}
+
+#phone-num {
+    color: #D2D2CF;
+    margin-left: 10px;
+    grid-area: number;
+}
+
+#email {
+    margin-left: 10px;
+    grid-area: email;
+}
+
+#email a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#copyright {
+    color: #D2D2CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    background-color: #585858;
+}
+
+
+
+
+
+/* NAVBAR */
+header {
+    /* position: fixed; */
+    background-color: #DFB01A;
+    height: 100px;
 }
