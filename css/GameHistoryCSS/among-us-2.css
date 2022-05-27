@@ -132,10 +132,6 @@ footer{
     padding-left: 20px;
 }
 
-.large-text {
-    font-size: 1.5em;
-}
-
 #game-history {
     grid-area: gamehistory;
 
