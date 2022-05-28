@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AMONG US WIKI</title>   
+</head>
+
+<body>
+    <section>  
+        <header>
+            <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="Home/Music.mp3" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+
+</header>
+
+        <div class="heading">
+            <div class="textBox">
+                <h2>THERE IS AN</h2> 
+                <h2 style="color:red;">IMPOSTOR</h2>
+                <img src="Home/Among_Us.png"  class="pic" alt="Among Us text"><br>
+                <a href="#" onclick="toggle();">Watch the Trailer</a>
+            </div>    
+        </div>   
+
+<!--VIDEO PART-->
+<div class="trailer">
+    <video src="Home/Trailer.mp4" controls="true"></video>
+    <img src="Home/Close.png" class="close" onclick="toggle();">
+</div> 
+
+<script type="text/javascript">
+    function toggle(){
+        var trailer = document.querySelector(".trailer")
+        var video = document.querySelector("video")
+        trailer.classList.toggle("active");
+        video.pause();
+        video.currentTime = 0;
+    }
+</script>
+
+</section>
+
+<!--SCROLLING PART: THE CONTENT, NOTE: PABAGO NITONG PART NA TO KAHIT BAGUHIN MISMO YUNG GAWA KO-->
+    <div class="div1">
+        <h2>KEME KEME</h2>
+        <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
+            faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada 
+            bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer 
+            vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies
+             tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in 
+             nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at 
+             tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl 
+             condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique 
+             senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa 
+             massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur 
+             adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+             turpis egestas integer eget aliquet nibh praesent tristique magna sit.<br>
+
+             <br>amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis 
+            purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam mi
+            aecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas
+            pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis 
+            massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod 
+            nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi 
+            ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis 
+            mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor 
+            pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed 
+            nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque 
+            elit ullamcorper dignissim cras.
+    </div>
+
+    <div class="div2">
+        <h2>KEME KEME PART2</h2>
+        <div class="cards">
+            <div class="text-card">
+                <h4>Title</h4>
+                    <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
+                    faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+        </div>
+
+        <div class="text-card">
+            <h4>Title</h4>
+                <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
+                faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+    </div>
+
+    <div class="text-card">
+        <h4>Title</h4>
+            <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
+            faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+        </div>
+    </div>
+</div>
+
+<!--AUDIO JAVASCRIPT PART-->
+<script>
+    var OST = document.getElementById("OST");    
+    var icon = document.getElementById("icon"); 
+
+icon.onclick = function (){
+    if(OST.paused){
+        OST.play();  
+        icon.src = "Home/Music_On.png";
+    }else {
+        OST.pause();  
+        icon.src = "Home/Music_Off.png";
+    }
+}
+</script>
+
+<!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+     <script>
+        const menuToggle = document.querySelector('.toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
