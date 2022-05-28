@@ -14,7 +14,7 @@ MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
 }
 
 body {
-    background-image: url(Home/Among_Us_BG.png);
+    background-image: url(resources/Home/Among_Us_BG.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -276,7 +276,7 @@ header ul li ul li {
 .div1 {
     position: relative;
     padding: 130px;
-    background-image: url(Home/Among_Us_BG3.jpg);
+    background-image: url(resources/Home/Among_Us_BG3.jpg);
 }
 
 .div1 h2{
@@ -294,7 +294,7 @@ header ul li ul li {
 .div2 {
     position: relative;
     padding: 130px;
-    background-image: url(Home/Among_Us_BG2.jpg);
+    background-image: url(resources/Home/Among_Us_BG2.jpg);
 }
 
 .div2 h2{
@@ -347,7 +347,7 @@ header {
      left: 0;
      width: 100%;
      height: 100%;
-     background: url(Home/Stars_BG.jpg);
+     background: url(resources/Home/Stars_BG.jpg);
      display: flex;
      justify-content: center;
      align-items: center;
@@ -380,7 +380,7 @@ header ul li ul{
      right: 20px;
      width: 40px;
      height: 40px;
-     background: #fff url(Home/Menu.png);
+     background: #fff url(resources/Home/Menu.png);
      background-size: 30px;
      background-repeat: no-repeat;
      background-position: center;
@@ -390,7 +390,7 @@ header ul li ul{
  }
 
 .toggle.active {
-    background: #fff url(Home/Close.png);
+    background: #fff url(resources/Home/Close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;

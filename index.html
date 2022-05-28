@@ -14,11 +14,11 @@
 
 <!--AUDIO PART--> 
         <div class="music">
-            <img src="Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+            <img src="resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
         </div>
 
     <audio id="OST">
-        <source src="Home/Music.mp3" type="audio/mp3">
+        <source src="resources/Home/Music.mp3" type="audio/mp3">
     </audio>
 
         <div class="toggle"></div>       
@@ -67,15 +67,15 @@
             <div class="textBox">
                 <h2>THERE IS AN</h2> 
                 <h2 style="color:red;">IMPOSTOR</h2>
-                <img src="Home/Among_Us.png"  class="pic" alt="Among Us text"><br>
+                <img src="resources/Home/Among_Us.png"  class="pic" alt="Among Us text"><br>
                 <a href="#" onclick="toggle();">Watch the Trailer</a>
             </div>    
         </div>   
 
 <!--VIDEO PART-->
 <div class="trailer">
-    <video src="Home/Trailer.mp4" controls="true"></video>
-    <img src="Home/Close.png" class="close" onclick="toggle();">
+    <video src="resources/Home/Trailer.mp4" controls="true"></video>
+    <img src="resources/Home/Close.png" class="close" onclick="toggle();">
 </div> 
 
 <script type="text/javascript">
@@ -150,10 +150,10 @@
 icon.onclick = function (){
     if(OST.paused){
         OST.play();  
-        icon.src = "Home/Music_On.png";
+        icon.src = "resources/Home/Music_On.png";
     }else {
         OST.pause();  
-        icon.src = "Home/Music_Off.png";
+        icon.src = "resources/Home/Music_Off.png";
     }
 }
 </script>
