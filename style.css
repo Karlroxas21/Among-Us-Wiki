@@ -1,0 +1,407 @@
+/*ANOTHER WAY TO IMPORT GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/*THE * MEANS "ALL ELEMENTS" (A UNIVERSAL SELECTOR), SO WE ARE SETTING ALL ELEMENTS TO HAVE ZERO 
+MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+body {
+    background-image: url(Home/Among_Us_BG.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* WAG MUNA ALISIN, ITO YUNG UNANG NAVBAR
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: inline-block;    
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 8px 18px;  
+    user-select: none;
+}
+
+header ul li a.active, 
+header ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: yellow;
+    border-radius: 10px;
+}*/
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none; 
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active, 
+header ul li a:hover {
+    
+    color: yellow;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.heading {
+    position: relative;
+}
+
+.heading .textBox {
+    position: relative;
+}
+
+.heading .textBox h2 {
+    color: #fff;
+    font-size: 5em;
+    font-family: 'VT323', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 700;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 0.5s; 
+    opacity: 0;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.heading .pic {
+    width: 70%;
+    animation: fadeIn 3s forwards;
+    animation-delay: 1.5s; 
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+    }
+  100% {
+      opacity: 1;
+    }
+}
+
+.heading .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #0169b2;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    animation: slide_top 0.5s linear forwards;
+    animation-delay: 2.3s; 
+    opacity: 0;
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*VIDEO PART*/
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+/*AUDIO PART*/
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/*SCROLLING PART: THE CONTENT*/
+.div1 {
+    position: relative;
+    padding: 130px;
+    background-image: url(Home/Among_Us_BG3.jpg);
+}
+
+.div1 h2{
+    font-size: 3.5em;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.div1 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #fff;
+}
+
+.div2 {
+    position: relative;
+    padding: 130px;
+    background-image: url(Home/Among_Us_BG2.jpg);
+}
+
+.div2 h2{
+    font-size: 3.5em;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.div2 h4{
+    font-size: 3.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.div2 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards .text-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 20px;
+    padding: 20px;
+}
+
+/*RESPONSIVE PART NOTE: HINDI PA MAAYOS TO NAHIRAPAN AKO. HEADER, TEXTBOX AT VIDEO PALANG ANG RESPONSIVE
+PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN KO NG CODE HIHE*/
+@media (max-width: 991px) {
+
+section {
+    padding:150px 20px;
+}
+
+header {
+     padding: 40px 100px;
+ }
+
+.nav{
+     display: none;
+ }
+
+.nav.active {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url(Home/Stars_BG.jpg);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+header ul {
+    display: block;
+}
+
+header ul li {
+    display: block;
+    margin: 10px 0;
+    border-right: none;
+}
+
+header ul li a {
+    margin-left: 0;
+    font-size: 1em;
+}
+
+header ul li ul{
+    width: 100%;
+    z-index: 1;
+}
+
+.toggle {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     width: 40px;
+     height: 40px;
+     background: #fff url(Home/Menu.png);
+     background-size: 30px;
+     background-repeat: no-repeat;
+     background-position: center;
+     cursor: pointer;
+     z-index: 1000;
+     border-radius: 2px;
+ }
+
+.toggle.active {
+    background: #fff url(Home/Close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+.heading .textBox h2 {
+    font-size: 4.5em;
+}
+
+.trailer video {
+    max-width: 90%;
+}
+}
+
