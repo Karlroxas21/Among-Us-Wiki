@@ -197,11 +197,14 @@ footer div a {
 #circle {
     grid-area: circle;
     width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
 }
 
 #phone {
     grid-area: phone;
     width: 20px;
+    padding-bottom: 15px;
 }
 
 #envelope {
