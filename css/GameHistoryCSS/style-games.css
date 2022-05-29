@@ -228,6 +228,10 @@ footer div a {
     color: #D2D2CF;
 }
 
+#email a:hover {
+    color: #DAE7E9;
+}
+
 #copyright {
     color: #D2D2CF;
     display: flex;

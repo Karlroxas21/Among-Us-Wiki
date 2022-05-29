@@ -111,22 +111,23 @@ h1{
 
 /* START OF FOOTER */
 
-footer{
+footer {
     display: flex;
-        margin-top: 100px;
-        font-family: 'Roboto', sans-serif;
-        display: flex;
-        flex-direction: column;
-        margin-left: 20%;
-        margin-right: 20%;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
 }
+
 #footer-container {
     background-color: #585858;
     display: grid;
     grid-template-columns: auto auto auto auto 20%;
     grid-template-rows: auto auto;
     grid-template-areas: "gamehistory elements features aboutus contact"
-                        "copyright copyright copyright copyright copyright";
+        "copyright copyright copyright copyright copyright";
     color: white;
     padding-top: 50px;
     padding-left: 20px;
@@ -185,8 +186,13 @@ footer{
     display: inline-block;
     color: #D2D2CF;
 }
-#about-us .hover:hover{
+
+#about-us .hover:hover {
     color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
 }
 
 footer div a {
@@ -206,11 +212,15 @@ footer div a {
 #circle {
     grid-area: circle;
     width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
 }
 
 #phone {
     grid-area: phone;
     width: 20px;
+    padding-bottom: 15px;
+    
 }
 
 #envelope {
@@ -232,6 +242,10 @@ footer div a {
 #email a {
     text-decoration: none;
     color: #D2D2CF;
+}
+
+#email a:hover{
+    color: #DAE7E9 ;
 }
 
 #copyright {
