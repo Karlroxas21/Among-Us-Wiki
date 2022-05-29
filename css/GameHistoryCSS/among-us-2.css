@@ -73,14 +73,14 @@ body{
 #title-box{
     display: flex;
     flex-direction: row;
- 
 }
 
 #title-box h2{
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 3em;
+    font-size:3.5em;
     color: #D2D2CF;
+    font-family: 'Amatic SC', cursive;
 }
 
 #notice{
@@ -261,4 +261,230 @@ footer div a {
     padding-bottom: 100px;
     background-color: #585858;
     grid-area: copyright;
+}
+
+/* NAVBAR */
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active,
+header ul li a:hover {
+
+    color: yellow;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.heading {
+    position: relative;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*AUDIO PART*/
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVE PART NOTE: HINDI PA MAAYOS TO NAHIRAPAN AKO. HEADER, TEXTBOX AT VIDEO PALANG ANG RESPONSIVE
+PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN KO NG CODE HIHE*/
+@media (max-width: 991px) {
+
+    section {
+        padding: 150px 20px;
+    }
+
+    header {
+        padding: 40px 100px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(resources/Home/Stars_BG.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header ul {
+        display: block;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+        border-right: none;
+    }
+
+    header ul li a {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    header ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: #fff url(resources/Home/Menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 2px;
+    }
+
+    .toggle.active {
+        background: #fff url(resources/Home/Close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
