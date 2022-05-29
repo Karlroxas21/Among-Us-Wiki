@@ -198,7 +198,7 @@ footer div a {
     grid-area: phone;
     display: flex;
     flex-direction: row;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 #envelope-email {
@@ -249,8 +249,6 @@ footer div a {
     background-color: #585858;
     grid-area: copyright;
 }
-
-
 
 
 
@@ -430,7 +428,7 @@ PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(resources/Home/Stars_BG.jpg);
+        background: url(/resources/Home/Stars_BG.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -463,7 +461,7 @@ PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN
         right: 20px;
         width: 40px;
         height: 40px;
-        background: #fff url(resources/Home/Menu.png);
+        background: #fff url(/resources/Home/Menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -473,10 +471,11 @@ PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN
     }
 
     .toggle.active {
-        background: #fff url(resources/Home/Close.png);
+        background: #fff url(/resources/Home/Close.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
     }
 }
+
 
