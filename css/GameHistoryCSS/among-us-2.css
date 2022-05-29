@@ -205,8 +205,19 @@ footer div a {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto 1fr;
     grid-template-areas: "circle circle"
-        "phone number"
-        "envelope email";
+        "phone phone"
+        "mail mail";
+}
+#phone-num{
+    grid-area: phone;
+    display: flex;
+    flex-direction: row;
+}
+
+#envelope-email{
+    grid-area: mail;
+    display: flex;
+    flex-direction: row;
 }
 
 #circle {
@@ -217,26 +228,20 @@ footer div a {
 }
 
 #phone {
-    grid-area: phone;
     width: 20px;
-    padding-bottom: 15px;
-    
 }
 
 #envelope {
-    grid-area: envelope;
     width: 20px;
 }
 
-#phone-num {
-    color: #D2D2CF;
-    margin-left: 10px;
-    grid-area: number;
+#num {
+    margin-left: 20px;
+    color: #D2D2CF;    
 }
 
-#email {
-    margin-left: 10px;
-    grid-area: email;
+#email{
+    margin-left: 20px;
 }
 
 #email a {
