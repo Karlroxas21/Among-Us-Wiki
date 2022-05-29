@@ -8,9 +8,62 @@
     <link rel="stylesheet" href="/css/GameHistoryCSS/style-games.css">
 </head>
 <body>
-    <header>
-        
-    </header>
+        <section>  
+        <header>
+            <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="/resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="resources/Home/Music.mp3" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+
+</header>
+
+</section>
     
         <!-- AMONG US 2 -->
         <div class="game1">
@@ -83,6 +136,30 @@
                 </div>
             </div>
         </div>
+
+        <!--AUDIO JAVASCRIPT PART-->
+        <script>
+            var OST = document.getElementById("OST");    
+            var icon = document.getElementById("icon"); 
+            icon.onclick = function (){
+                if(OST.paused){
+                    OST.play();  
+                    icon.src = "resources/Home/Music_On.png";
+                }else {
+                    OST.pause();  
+                    icon.src = "resources/Home/Music_Off.png";
+                }
+            }
+        </script>
+        <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const nav = document.querySelector('.nav');
+            menuToggle.onclick = function(){
+                menuToggle.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+        </script>
 </body>
 <footer>
     <div id="footer-container">
