@@ -58,6 +58,10 @@ body {
 
 }
 
+#box-content ul{
+    margin-left: 10px;
+}
+
 #box-content ul li {
     list-style-type: decimal;
     font-size: 1em;
@@ -120,6 +124,27 @@ h2{
 
 #new-content{
     display: flex;
+}
+
+#margin-left-ul {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#ul-li-ul{
+    margin-left: 20px;
+}
+#ul-li-ul ul li{
+    padding-top: 10px;
+}
+
+#ul-li-ul ul li ul {
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#settings-ul{
+    margin-left: 20px;
 }
 
 /* TABLE */
