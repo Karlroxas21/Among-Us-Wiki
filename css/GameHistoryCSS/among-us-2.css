@@ -262,7 +262,6 @@ body{
 }
 
 #box-content{
-
     margin: 10px;
     height: auto;
 }
@@ -272,7 +271,6 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-
 }
 
 #box-content ul li{
@@ -318,7 +316,6 @@ body{
 
 #information p {
     font-size: 20px;
-    
 }
 
 hr{
@@ -331,7 +328,6 @@ h1{
 }
 
 /* TABLE */
-#table-information {}
 
 #table-container {
     height: 500px;
@@ -346,7 +342,6 @@ h1{
         "platform"
         "release"
         "mode";
-
 }
 
 #table-title {
@@ -438,7 +433,6 @@ footer {
 
 #game-history {
     grid-area: gamehistory;
-
 }
 
 #game-history a {
@@ -530,7 +524,6 @@ footer div a {
     width: 100px;
     margin-left: 40px;
     padding-bottom: 30px;
-
 }
 
 #phone {
@@ -572,4 +565,3 @@ footer div a {
 
 
 
-/* TODO: FIX NAVBAR */
