@@ -205,6 +205,15 @@ body {
     background-repeat: repeat;
 }
 
+/*body {
+    margin: 0px;
+    font-family: 'Amatic SC';
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../resources/elements-task/amongusbg.png");
+    background-size: cover;
+}*/
+
 .introtask {
     font-size: larger;
     font: 'Roboto';
