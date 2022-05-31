@@ -205,6 +205,12 @@ body {
     background-repeat: repeat;
 }
 
+.introtask {
+    font-size: larger;
+    font: 'Roboto';
+    color: white;
+}
+
 .div1 {
     background-color: #000;
     background: rgba(0, 0, 0, 0.5);
