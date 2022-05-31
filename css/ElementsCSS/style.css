@@ -1,7 +1,7 @@
 /*ANOTHER WAY TO IMPORT GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
 /*THE * MEANS "ALL ELEMENTS" (A UNIVERSAL SELECTOR), SO WE ARE SETTING ALL ELEMENTS TO HAVE ZERO 
 MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
 
@@ -32,7 +32,7 @@ html {
     width: 200px;
     position: sticky;
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     border: 2px solid white;
     margin: 80px;
 }
@@ -45,13 +45,13 @@ html {
 }
 
 .left-sticky ul li {
-    font-family: 'Amatic SC';
-    font-size: larger;
+    font-family: 'Roboto';
+    font-size: large;
     margin-bottom: 10px;
 }
 
 .left-sticky ul li a {
-    font-family: 'Amatic SC';
+    font-family: 'Roboto';
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;  
@@ -155,7 +155,6 @@ header ul li a {
 
 header ul li a.active, 
 header ul li a:hover {
-    
     color: yellow;
     border-radius: 10px;
 }
@@ -198,32 +197,27 @@ header ul li ul li {
     top: 0; /* Position the navbar at the top of the page */
 }
 
-body {
+/*body {
     height: 100vh;
     background-image: url("../../resources/elements-task/amongus.jpg");
     background-size: cover;
     background-repeat: repeat;
-}
-
-/*body {
-    margin: 0px;
-    font-family: 'Amatic SC';
-    display: flex;
-    flex-direction: column;
-    background-image: url("../../resources/elements-task/amongusbg.png");
-    background-size: cover;
 }*/
 
+body {
+    background-image: url("../../resources/elements-task/amongusbg.png");
+    background-size: cover;
+}
+
 .introtask {
-    font-size: larger;
-    font: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: white;
     margin-left: 40px;
 }
 
 .div1 {
     background-color: #000;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     right: 0;
     width: 70%;
@@ -244,8 +238,7 @@ h1 {
 }
 
 p {
-    font-size: larger;
-    font: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -279,7 +272,7 @@ th {
 }
 
 td {
-    font-size: larger;
+    font-family: 'Roboto';
     padding-left: 5px;
     color: white;
     background: rgba(0, 0, 0, 0.5);
