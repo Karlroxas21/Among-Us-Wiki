@@ -7,6 +7,11 @@
     padding: 0px;
 }
 
+html {
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
 header {
     border: 0;
     margin: 0;
