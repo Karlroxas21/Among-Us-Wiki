@@ -263,10 +263,11 @@ h2{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    gap: 40px;
 }
 
 #table-mode ul{
-    padding-left: 59px;
+
     list-style-type: none;
 }
 
