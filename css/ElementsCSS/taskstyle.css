@@ -45,13 +45,13 @@ html {
 }
 
 .left-sticky ul li {
-    font-family: 'Roboto';
-    font-size: large;
+    font-family: 'Amatic SC';
+    font-size: larger;
     margin-bottom: 10px;
 }
 
 .left-sticky ul li a {
-    font-family: 'Roboto';
+    font-family: 'Amatic SC';
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;  
