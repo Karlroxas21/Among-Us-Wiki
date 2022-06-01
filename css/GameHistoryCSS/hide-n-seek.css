@@ -271,9 +271,10 @@ body {
     margin-top: 50px;
     padding-right: 10px;
     height: auto;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #table-information {
     grid-area: tableinfo;
@@ -286,10 +287,11 @@ body {
 }
 
 #box-content p {
-    font-size: 1.7em;
+    font-size: 2em;
     justify-content: center;
     align-items: center;
     display: flex;
+    border-bottom: 1px solid #D2D2CF;
 }
 
 #box-content ul{
@@ -297,12 +299,18 @@ body {
 }
 
 #box-content ul li {
-    list-style-type: decimal;
-    font-size: 1em;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 3px;
 }
 
 #box-content ul li ul li {
-    list-style-type: disc;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+#box-content ul li ul li a {
+    font-size: .8em;
 }
 
 
@@ -327,6 +335,18 @@ body {
     font-size: 3.5em;
     color: #D2D2CF;
     font-family: 'Amatic SC', cursive;
+}
+
+#notice {
+    background-color: #C92519;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
 }
 
 #information {

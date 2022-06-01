@@ -302,14 +302,16 @@ body {
 #box-content ul li {
     font-size: 1.2em;
     list-style-type: none;
+    padding: 3px;
 }
 
 #box-content ul li ul li {
+    font-size: 1.2em;
     list-style-type: none;
 }
 
 #box-content ul li ul li ul li {
-    font-size: 1.1em;
+    font-size: 1.2em;
     list-style-type: none;
 }
 

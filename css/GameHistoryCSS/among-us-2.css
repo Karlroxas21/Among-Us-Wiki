@@ -247,6 +247,9 @@ body{
     grid-template-rows: auto;
     grid-template-areas: "navcontent information tableinfo";
 }
+
+
+
 #nav-content{
     grid-area: navcontent;
 }
@@ -263,10 +266,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 #information{
     /* background-color: aqua; */
     grid-area: information;
 }
+
+
 
 #table-information{
     grid-area: tableinfo;
@@ -288,13 +294,17 @@ body{
 #box-content ul li{
     list-style-type: decimal;
     font-size: 1.5em;
-    
+    padding: 3px;
 }
 
 #box-content ul li a{
     text-decoration: none;
     color: #D2D2CF;
    
+}
+
+#box-content ul li ul li a{
+    font-size: 10px;
 }
 
 #box-content ul li a:hover{
@@ -310,7 +320,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     font-size:3.5em;
-    color: #D2D2CF;
+    color: #DFB01A;
     font-family: 'Amatic SC', cursive;
 }
 
