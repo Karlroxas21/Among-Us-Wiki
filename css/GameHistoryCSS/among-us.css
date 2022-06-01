@@ -241,6 +241,7 @@ body {
 /* PARENT */
 #parent{
     background-color: rgba(0, 0, 0, .7);
+    padding-bottom: 100px;
 }
 
 #main-container {
