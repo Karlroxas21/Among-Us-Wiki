@@ -118,7 +118,7 @@ header ul li ul li {
 
 body {
     height: 100vh;
-    background-image: url("Maps/BG.jpg");
+    background-image: url("../../resources/Maps/BG.jpg");
     background-size: cover;
 }
 
