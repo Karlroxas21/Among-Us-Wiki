@@ -348,7 +348,9 @@ h1{
 }
 
 #table-title {
+    background-color: rgba(255, 255, 255, 0.2);
     grid-area: title;
+    padding: 10px;
 }
 
 #table-pic {
@@ -356,40 +358,48 @@ h1{
     grid-area: picture;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 #table-deets {
+    background-color: rgba(255, 255, 255, 0.2);
     grid-area: deets;
+    padding: 10px;
 }
 
 #table-developed {
     grid-area: developed;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 #table-published {
     grid-area: published;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 #table-platform {
     grid-area: platform;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 #table-release {
     grid-area: release;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 #table-mode {
     grid-area: mode;
     display: flex;
-    align-items: center;   
+    align-items: center;  
+    padding: 10px;
 }
 
 #table-title h2 {
