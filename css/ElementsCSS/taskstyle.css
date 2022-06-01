@@ -31,7 +31,6 @@ html {
     height: auto;
     width: 200px;
     position: sticky;
-    /*display: flex;*/
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid white;
     margin-left: 170px;
