@@ -5,8 +5,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    
 }
+
+html {
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
 /* NAVBAR */
 header {
     border: 0;
@@ -377,7 +382,6 @@ h1 {
 }
 
 /* TABLE */
-#table-information {}
 
 #table-container {
     margin-top: 40px;
