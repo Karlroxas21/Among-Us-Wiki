@@ -91,7 +91,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: 'Amatic SC', sans-serif;*/
 }
 
 a {
@@ -196,13 +195,6 @@ header ul li ul li {
     top: 0; /* Position the navbar at the top of the page */
 }
 
-/*body {
-    height: 100vh;
-    background-image: url("../../resources/elements-task/amongus.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-}*/
-
 body {
     background-image: url("../../resources/elements-task/amongusbg.png");
     background-size: cover;
@@ -242,16 +234,12 @@ p {
     color: white;
 }
 
-.div2 {
-    display: block;
-    text-align: left;
-}
-
-h2 {
-    font: 'Roboto';
+.div2, #task-heading, #guide-heading {
+    font-family: 'Roboto', sans-serif;
     color: white;
-    display: inline-block;
-    text-align: left;
+    display: inline-flex;
+    text-align: left; 
+    font-size: larger;
 }
 
 hr {
