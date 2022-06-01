@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maps.css">
+    <title>Maps</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="Maps/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="Maps/Music_On.png" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "Maps/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "Maps/Music_Off.png";
+            }
+        }
+    </script>
+
+<!--STICKY SIDE BAR ON SCROLL-->
+    <div class="main-left">
+        <div class="left-sticky">
+            <ul>
+                <li style="border-bottom: 1px solid #fff;">Contents</li>
+                <li><a href="#Maps">1. Maps</a></li>
+                <li><a href="#Overview">2. Overview</a></li>
+                <li style="text-indent: 20px;"><a href="#List">2.1. List of Maps</a></li>
+                <li style="text-indent: 20px;"><a href="#Skeld">2.2. The Skeld</a></li>
+                <li style="text-indent: 20px;"><a href="#Mira">2.3. Mira HQ</a></li>
+                <li style="text-indent: 20px;"><a href="#Polus">2.4. Polus</a></li>
+                <li style="text-indent: 20px;"><a href="#Airship">2.5. The Airship</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+<!--JS SCROLL UP TOGGLE-->
+    <div class="scrollUp" onclick="scrollUp();"></div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollUp');
+            scroll.classList.toggle("active" , window.scrollY > 500)
+        })
+
+        function scrollUp(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+    <div class="div1">
+        <h1 id="Maps">Maps</h1>
+        <hr>
+        <p> Maps are a core mechanic of Among Us that make up the environment that players move in and interact with. 
+            The map played on is chosen before a game starts, with each one containing unique features, locations, and 
+            tasks.</p>
+            
+        <h1 id="Overview">Overview</h1>
+        <hr>
+        <p> Each map is made up of many different locations and hallways connecting them. Most locations in Among Us 
+            contain different tasks and abilities, such as Doorlog. Each map is released separately from the others, 
+            each releasing new tasks, locations, abilities, and cosmetics.<br>
+
+            <br>The map played on is selected before the game starts. In online games, the map is chosen on a screen that 
+            appears before the host enters the lobby, along with the number of Impostors and maximum players. In local 
+            games, the map is selected via customize in the lobby. In Freeplay, the map is selected via a pop-up menu 
+            when the mode is selected.</p>
+        
+        <h1 id="List">List of Maps</h1>
+        <hr>
+        <!--Aayusin pa muna yung table emz-->
+        <div style="padding:5px; display: flex; justify-content: center;
+        align-items: center;">
+            <thead>
+                <table border=1 width=200 cellpadding=10>
+                    <tr>
+                      <th style="width:25%">Name</th>
+                      <th style="width:25%">Icon</th>
+                      <th style="width:25%">Release Date</th>
+                    </tr>
+                    <tr>
+                      <td><b>The Skeld</td>
+                      <td><img src="https://static.wikia.nocookie.net/among-us-wiki/images/1/1f/The_Skeld_logo.png/revision/latest/scale-to-width-down/145?cb=20201107194621" alt="The Skeld logo"></td>
+                      <td><b>June 15, 2018</td>
+                    </tr>
+                    <tr>
+                      <td><b>Mira HQ</td>
+                      <td><img src="https://static.wikia.nocookie.net/among-us-wiki/images/e/ec/MIRA_HQ_logo.png/revision/latest/scale-to-width-down/145?cb=20201107194316" alt="Mira HQ logo"></td>
+                      <td><b>August 8, 2019</td>
+                    </tr>
+                    <tr>
+                        <td><b>Polus</td>
+                        <td><img src="https://static.wikia.nocookie.net/among-us-wiki/images/5/5b/Polus_logo.png/revision/latest/scale-to-width-down/145?cb=20210617191707" alt="Polus logo"></td>
+                        <td><b>November 12, 2019</td>
+                      </tr>
+                      <tr>
+                        <td><b>The Airship</td>
+                        <td><img src="https://static.wikia.nocookie.net/among-us-wiki/images/e/ec/The_Airship_logo.png/revision/latest/scale-to-width-down/145?cb=20210619183032" alt="The Airship logo"></td>
+                        <td><b>March 31, 2021</td>
+                      </tr>
+                </table>
+            </thead>
+        </div>
+
+        <h1 id="Skeld">The Skeld</h1>
+        <hr>
+        <center><img src="Maps/The_Skeld.png" alt="The Skeld Map"></center>
+        <p><br>The Skeld was the first map added to Among Us, which came with the game's release on June 15, 2018. 
+            The map is the second smallest in the game, housing 14 different locations and 17 different tasks.<br>
+            
+            <br>The Skeld, often shortened to Skeld, is the first map in Among Us set on a spaceship in outer space. 
+            It is automatically selected upon opening the game for the first time. The map was the only one included in 
+            the first version of the game's launch in 2018, with MIRA HQ, Polus, The Airship, and Map 5 being added 
+            subsequently.</p>
+
+        <h1 id="Mira">Mira HQ</h1>
+        <hr>
+        <center><img src="Maps/Mira_HQ.png" alt="Mira HQ Map"></center>
+        <p><br>MIRA HQ was the second map added to Among Us, which was released on August 8, 2019. The map was originally
+            paid content, bought along with the MIRA HQ skin bundle, but is now available to all players for free. It is 
+            the smallest map in the game, housing 14 different locations and 19 different tasks.<br>
+        
+            <br>MIRA HQ is the second map in Among Us, set high up in the Earth's atmosphere. The facility is owned by, 
+            and is the headquarters for the company MIRA.</p>
+
+        <h1 id="Polus">Polus</h1>
+        <hr>
+        <center><img src="Maps/Polus2.jpg" alt="Polus Map"></center>
+        <p><br>Polus was the third map added to Among Us, which was released on November 12, 2019. The map was originally
+            paid content, bought along with the Polus skin bundle, but was later available to all players for free. It is 
+            the second largest map in the game. Polus houses 14 different locations and 24 different tasks.<br>
+        
+            <br>Polus, also known as the Polus Outpost or Planet Polus, is the third map in Among Us, which is set on the 
+            planet Polus as a planetary base.</p>
+
+        <h1 id="Airship">The Airship</h1>
+        <hr>
+        <center><img src="Maps/The_Airship.png" alt="The Airship Map"></center>
+        <p><br>The Airship is the fourth map added to Among Us, which was released on March 31, 2021. The map is currently 
+            the largest map in the game and is available for free to all players. It has two new objects (moving platforms 
+            and ladders) and houses 20 different locations and 23 different tasks.<br>
+
+            <br>The Airship, often shortened as Airship, is the fourth map in Among Us, based on the Toppat Clan's 
+            Airship in the Henry Stickmin game Infiltrating the Airship. The Airship is currently the largest map in 
+            Among Us,[1] includes more tasks, and has seventeen new locations. Added with the new map were multiple Henry 
+            Stickmin-related cosmetics and The Airship skin bundle.</p>
+    </div>
+</body>
+</html>
