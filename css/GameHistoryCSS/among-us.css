@@ -6,353 +6,22 @@
     padding: 0px;
     
 }
-body {
-    margin: 0px;
-    padding: 0px;
-    background-image: url(/resources/game-history/among_us_bg_2.jpg);
-    font-family: 'Roboto', sans-serif;
-    color: #D2D2CF;
-    display: flex;
-}
-/* PARENT */
-#parent{
-    background-color: rgba(0, 0, 0, .7);
-}
-#main-container {
-    margin-left: 18%;
-    margin-right: 18%;
-    display: grid;
-    grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: auto;
-    grid-template-areas: "navcontent information tableinfo";
-    margin-top: 80px;
-}
-
-/* CHILD. CONTENTS  */
-#nav-content {
-    grid-area: navcontent;
-}
-
-#nav-content div {
-    border: 1px solid #D2D2CF;
-    position: fixed;
-    margin-top: 50px;
-    padding-right: 10px;
-    height: auto;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-}
-#table-information {
-    grid-area: tableinfo;
-}
-
-#box-content {
-    margin: 10px;
-    height: auto;
-}
-
-#box-content p {
-    font-size: 1.7em;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-
-#box-content ul{
-    margin-left: 10px;
-}
-
-#box-content ul li {
-    list-style-type: decimal;
-    font-size: 1em;
-}
-
-#box-content ul li ul li {
-    list-style-type: disc;
-}
-
-#box-content ul li ul li ul li {
-    list-style-type: square;
-}
-
-#box-content ul li a {
-    text-decoration: none;
-    color: #D2D2CF;
-
-}
-
-#box-content ul li a:hover {
-    color: #DFB01A;
-}
-
-#title-box {
-    display: flex;
-    flex-direction: row;
-}
-
-#title-box h2 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 3.5em;
-    color: #D2D2CF;
-    font-family: 'Amatic SC', cursive;
-}
-
-/* Middle */
-#information {
-    /* background-color: aqua; */
-    grid-area: information;
-    padding: 20px;
-}
-
-#information p {
-    font-size: 20px;
-}
-
-hr {
-    margin-right: 10px;
-}
-
-h1 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.5em;
-}
-
-h2{
-    color: #DFB01A;
-    font-family: 'Amatic SC', cursive;
-}
-
-#new-content{
-    display: flex;
-}
-
-#margin-left-ul {
-    margin-left: 50px;
-    margin-top: 10px;
-}
-#ul-li-ul{
-    margin-left: 20px;
-}
-#ul-li-ul ul li{
-    padding-top: 10px;
-}
-
-#ul-li-ul ul li ul {
-    margin-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#settings-ul{
-    margin-left: 20px;
-}
-
-/* TABLE */
-#table-information{
-    
-}
-
-#table-container {
-    margin-top: 40px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "title"
-        "picture"
-        "deets"
-        "developed"
-        "published"
-        "platform"
-        "download"
-        "release"
-        "mode"
-        "age"
-        "engine";
-}
-#table-title{
-    background-color: rgba(255, 255, 255, 0.2);
-    grid-area: title;
-}
-
-#table-pic{
-    display: flex;
-    grid-area: picture;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-#table-deets{
-    grid-area: deets;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#table-developed{
-    grid-area: developed;
-    padding: 10px;
-}
-
-#table-published{
-    grid-area: published;
-    padding: 10px;
-}
-
-#table-platform{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    grid-area: platform;
-    padding: 10px;
-}
-#table-platform p {
-    padding-right: 20px;
-}
-
-#table-platform ul li{
-    list-style-type: none;
-}
-
-#table-download{
-    grid-area: download;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-#table-download ul{
-    list-style-type: none;
-}
-
-#table-download ul li a{
-    text-decoration: none;
-    color: #DAEAF9;
-}
-
-#table-download ul li a:hover{
-    color:aqua
-}
-
-
-#table-release{
-    grid-area: release;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-#table-release p{
-    padding-right: 20px;
-}
-
-#table-release ul{
-    list-style-type: none;
-}
-
-#table-mode{
-    grid-area: mode;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 40px;
-}
-
-#table-mode ul{
-
-    list-style-type: none;
-}
-
-#table-mode ul li a {
-    text-decoration: none;
-    color: #DAEAF9;
-}
-
-#table-mode ul li a:hover {
-    color: aqua
-}
-
-#table-age{
-    grid-area: age;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-#table-age ul{
-    padding-left: 25px;
-    list-style-type: none;
-}
-
-#table-engine {
-    grid-area: engine;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
-#table-engine p a{
-    padding-left: 21px;
-}
-
-#table-engine p a {
-    text-decoration: none;
-    color: #DAEAF9;
-}
-
-#table-engine p a:hover {
-    color: aqua
-}
-#table-title h2 {
-    display: flex;
-    justify-content: center;
-}
-
-#table-deets{
-    display: flex;
-    justify-content: center;
-}
-
-#table-container div{
-    border: 1px solid #D2D2CF;
-}
-
-.picture-fig{
-    float: right;
-  
-}
-
-figcaption{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
 /* NAVBAR */
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Amatic SC', sans-serif;
+}
+
 header {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Amatic SC', sans-serif;
-}
 
-nav{
-
-}
-header {
     background: black;
     position: fixed;
     top: 0;
@@ -363,7 +32,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    
 }
 
 header .logo {
@@ -409,8 +77,7 @@ header ul li a {
 
 header ul li a.active,
 header ul li a:hover {
-
-    color: yellow;
+    color: #DFB01A;
     border-radius: 10px;
 }
 
@@ -558,4 +225,522 @@ PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN
         background-repeat: no-repeat;
         background-position: center;
     }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/resources/game-history/among_us_bg_2.jpg);
+    font-family: 'Roboto', sans-serif;
+    color: #D2D2CF;
+
+
+}
+
+/* PARENT */
+#parent{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#main-container {
+    margin-left: 18%;
+    margin-right: 18%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "navcontent information tableinfo";
+    margin-top: 80px;
+}
+
+/* CHILD. CONTENTS  */
+#nav-content {
+    grid-area: navcontent;
+}
+
+#nav-content div {
+    border: 1px solid #D2D2CF;
+    position:fixed;
+    margin-top: 50px;
+    padding-right: 10px;
+    height: auto;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+#table-information {
+    grid-area: tableinfo;
+}
+
+/* TABLE OF CONTENTS */
+#box-content {
+    margin: 10px;
+    height: auto;
+}
+
+#box-content p {
+    font-size: 1.7em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#box-content ul{
+    margin-left: 10px;
+}
+
+#box-content ul li {
+    list-style-type: decimal;
+    font-size: 1em;
+}
+
+#box-content ul li ul li {
+    list-style-type: disc;
+}
+
+#box-content ul li ul li ul li {
+    list-style-type: square;
+}
+
+#box-content ul li a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#box-content ul li a:hover {
+    color: #DFB01A;
+}
+
+/* MIDDLE */
+#title-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#title-box h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 3.5em;
+    color: #D2D2CF;
+    font-family: 'Amatic SC', cursive;
+}
+
+#information {
+    /* background-color: aqua; */
+    grid-area: information;
+    padding: 20px;
+}
+
+#information p {
+    font-size: 20px;
+}
+
+hr {
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+}
+
+#main-container h2{
+    color: #DFB01A;
+    font-family: 'Amatic SC', cursive;
+}
+
+#new-content{
+    display: flex;
+}
+
+#margin-left-ul {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#ul-li-ul{
+    margin-left: 20px;
+}
+#ul-li-ul ul li{
+    padding-top: 10px;
+}
+
+#ul-li-ul ul li ul {
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#settings-ul{
+    margin-left: 20px;
+}
+
+/* TABLE */
+#table-information {}
+
+#table-container {
+    margin-top: 40px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "title"
+        "picture"
+        "deets"
+        "developed"
+        "published"
+        "platform"
+        "download"
+        "release"
+        "mode"
+        "age"
+        "engine";
+}
+
+#table-title {
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-area: title;
+}
+
+#table-pic {
+    display: flex;
+    grid-area: picture;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#table-deets {
+    grid-area: deets;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#table-developed {
+    grid-area: developed;
+    padding: 10px;
+}
+
+#table-published {
+    grid-area: published;
+    padding: 10px;
+}
+
+#table-platform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: platform;
+    padding: 10px;
+}
+
+#table-platform p {
+    padding-right: 20px;
+}
+
+#table-platform ul li {
+    list-style-type: none;
+}
+
+#table-download {
+    grid-area: download;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#table-download ul {
+    list-style-type: none;
+}
+
+#table-download ul li a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-download ul li a:hover {
+    color: aqua
+}
+
+
+#table-release {
+    grid-area: release;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#table-release p {
+    padding-right: 20px;
+}
+
+#table-release ul {
+    list-style-type: none;
+}
+
+#table-mode {
+    grid-area: mode;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+#table-mode ul {
+
+    list-style-type: none;
+}
+
+#table-mode ul li a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-mode ul li a:hover {
+    color: aqua
+}
+
+#table-age {
+    grid-area: age;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#table-age ul {
+    padding-left: 25px;
+    list-style-type: none;
+}
+
+#table-engine {
+    grid-area: engine;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#table-engine p a {
+    padding-left: 21px;
+}
+
+#table-engine p a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-engine p a:hover {
+    color: aqua
+}
+
+#table-title h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#table-deets {
+    display: flex;
+    justify-content: center;
+}
+
+#table-container div {
+    border: 1px solid #D2D2CF;
+}
+
+/* AWARDS */
+.won{
+    color: green;
+}
+
+.nominated{
+    color: red;
+}
+#table-awards{
+    border: 1px solid white;
+    border-spacing: 0px;
+}
+
+#table-awards th {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+.yellow{
+        color: #DFB01A;
+}
+td, th{
+    border: 1px solid rgba(251, 250, 245, .5);;
+    padding: 5px;
+}
+.color-row {
+    background-color: rgba(235, 236, 240, .2);
+}
+
+.picture-fig{
+    float: right;
+  
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color: #585858;
+}
+
+#footer-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto 20%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "gamehistory elements features aboutus contact"
+        "copyright copyright copyright copyright copyright";
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#game-history {
+    grid-area: gamehistory;
+}
+
+#game-history a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#game-history .hover:hover {
+    color: #DFB01A;
+}
+
+#elements {
+    grid-area: elements;
+}
+
+#elements a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#elements .hover:hover {
+    color: #DFB01A;
+}
+
+#features {
+    grid-area: features;
+}
+
+#features a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#features .hover:hover {
+    color: #DFB01A;
+}
+
+#about-us {
+    grid-area: aboutus;
+
+}
+
+#about-us a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#about-us .hover:hover {
+    color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "circle circle"
+        "phone phone"
+        "mail mail";
+}
+
+#phone-num {
+    grid-area: phone;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+#envelope-email {
+    grid-area: mail;
+    display: flex;
+    flex-direction: row;
+}
+
+#circle {
+    grid-area: circle;
+    width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+#phone {
+    width: 20px;
+}
+
+#envelope {
+    width: 20px;
+}
+
+#num {
+    margin-left: 20px;
+    color: #D2D2CF;
+}
+
+#email {
+    margin-left: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#email a:hover {
+    color: #DAE7E9;
+}
+
+#copyright {
+    color: #D2D2CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #585858;
+    grid-area: copyright;
 }
