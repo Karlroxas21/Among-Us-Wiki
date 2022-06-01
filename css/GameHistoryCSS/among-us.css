@@ -271,9 +271,11 @@ body {
     margin-top: 50px;
     padding-right: 10px;
     height: auto;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 #table-information {
     grid-area: tableinfo;
@@ -286,10 +288,11 @@ body {
 }
 
 #box-content p {
-    font-size: 1.7em;
+    font-size: 2em;
     justify-content: center;
     align-items: center;
     display: flex;
+    border-bottom: 1px solid #D2D2CF;
 }
 
 #box-content ul{
@@ -297,16 +300,17 @@ body {
 }
 
 #box-content ul li {
-    list-style-type: decimal;
-    font-size: 1em;
+    font-size: 1.2em;
+    list-style-type: none;
 }
 
 #box-content ul li ul li {
-    list-style-type: disc;
+    list-style-type: none;
 }
 
 #box-content ul li ul li ul li {
-    list-style-type: square;
+    font-size: 1.1em;
+    list-style-type: none;
 }
 
 #box-content ul li a {
