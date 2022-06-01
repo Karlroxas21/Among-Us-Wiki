@@ -123,15 +123,17 @@ body {
 }
 
 .div1 {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     right: 0;
-    width: 70%;
+    width: 60%;
     height: auto;
     border: 2px solid white;
     padding: 20px;
     text-align: justify;
-    margin: 80px;
+    margin-top: 80px;
+    margin-right: 150px;
 }
 
 h1 {
@@ -202,7 +204,7 @@ html {
 
 .left-sticky {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     top: 80px;
@@ -210,10 +212,10 @@ html {
     height: auto;
     width: 200px;
     position: sticky;
-    display: flex;
-    background: rgba(0, 0, 0, 0.9);
+    /*display: flex;*/
+    background: rgba(0, 0, 0, 0.7);
     border: 2px solid white;
-    margin: 80px;
+    margin-left: 150px;
 }
 
 .left-sticky ul {
