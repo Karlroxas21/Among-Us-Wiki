@@ -259,7 +259,8 @@ body {
 
 #nav-content div {
     border: 1px solid #D2D2CF;
-    position:fixed;
+    position: sticky;
+    top: 80px;
     margin-top: 50px;
     padding-right: 10px;
     height: auto;
