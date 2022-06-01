@@ -4,18 +4,20 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #181A18;
+    background-image: url(/resources/game-history/among_us_bg_2.jpg);
     font-family: 'Roboto', sans-serif;
     color: #D2D2CF;
     display: flex;
-    
-    
 }
 /* PARENT */
+#parent{
+    background-color: rgba(0, 0, 0, .7);
+}
 #main-container {
     margin-left: 18%;
     margin-right: 18%;
@@ -119,6 +121,7 @@ h1 {
 }
 
 h2{
+    color: #DFB01A;
     font-family: 'Amatic SC', cursive;
 }
 
@@ -179,24 +182,34 @@ h2{
     grid-area: picture;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 #table-deets{
     grid-area: deets;
+    padding: 15px;
 }
 
 #table-developed{
     grid-area: developed;
+    padding: 10px;
 }
 
 #table-published{
     grid-area: published;
+    padding: 10px;
 }
 
 #table-platform{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     grid-area: platform;
+    padding: 10px;
+}
+#table-platform p {
+    padding-right: 20px;
 }
 
 #table-platform ul li{
@@ -207,10 +220,12 @@ h2{
     grid-area: download;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #table-download ul{
-    padding-left: 21px;
     list-style-type: none;
 }
 
@@ -227,7 +242,14 @@ h2{
 #table-release{
     grid-area: release;
     display: flex;
-    flex-direction: row1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#table-release p{
+    padding-right: 20px;
 }
 
 #table-release ul{
@@ -236,8 +258,11 @@ h2{
 
 #table-mode{
     grid-area: mode;
-    display:flex;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #table-mode ul{
@@ -258,6 +283,9 @@ h2{
     grid-area: age;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #table-age ul{
@@ -269,6 +297,7 @@ h2{
     grid-area: engine;
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 #table-engine p a{
