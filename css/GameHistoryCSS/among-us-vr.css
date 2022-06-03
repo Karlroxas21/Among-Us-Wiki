@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    color: #DFB01A;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.heading {
+    position: relative;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*AUDIO PART*/
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVE PART NOTE: HINDI PA MAAYOS TO NAHIRAPAN AKO. HEADER, TEXTBOX AT VIDEO PALANG ANG RESPONSIVE
+PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN KO NG CODE HIHE*/
+@media (max-width: 991px) {
+
+    section {
+        padding: 150px 20px;
+    }
+
+    header {
+        padding: 40px 100px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/resources/Home/Stars_BG.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header ul {
+        display: block;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+        border-right: none;
+    }
+
+    header ul li a {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    header ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: #fff url(/resources/Home/Menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 2px;
+    }
+
+    .toggle.active {
+        background: #fff url(/resources/Home/Close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* MAIN CONTENT */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #D2D2CF;
+    background-image: url(/resources/game-history/among_us_bg_2.jpg);
+}
+
+.paddingtop {
+    padding-top: 100px;
+}
+
+#parent {
+    background-color: rgba(0, 0, 0, .8);
+    padding-bottom: 400px;
+}
+
+#main-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "navcontent information tableinfo";
+}
+
+#main-container h2 {
+    color: #DFB01A;
+    font-family: 'Amatic SC', cursive;
+}
+
+#nav-content {
+    grid-area: navcontent;
+}
+
+#title-box h2 {
+    color: #DFB01A;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 3.5em;
+    font-family: 'Amatic SC', cursive;
+}
+
+#information {
+    /* background-color: aqua; */
+    grid-area: information;
+}
+
+#table-information {
+    grid-area: tableinfo;
+}
+
+#box-content {
+    margin: 10px;
+    height: auto;
+}
+
+#information p {
+    font-size: 20px;
+}
+
+hr {
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+}
+
+/* TABLE */
+#table-container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "title"
+        "picture"
+        "deets"
+        "developed"
+        "published"
+        "platform"
+        "download"
+        "release"
+        "mode";
+}
+
+#table-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#table-pic {
+    display: flex;
+    grid-area: picture;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#table-deets {
+    grid-area: deets;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#table-developed {
+    grid-area: developed;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+#table-published {
+    grid-area: published;
+    padding: 10px;
+}
+
+#table-platform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: platform;
+    padding: 10px;
+}
+
+#table-platform p {
+    padding-right: 20px;
+}
+
+#table-platform ul li {
+    list-style-type: none;
+}
+
+#table-download {
+    grid-area: download;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#table-download ul {
+    list-style-type: none;
+}
+
+#table-download ul li a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-download ul li a:hover {
+    color: aqua
+}
+
+#table-release {
+    grid-area: release;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#table-release p {
+    padding-right: 20px;
+}
+
+#table-release ul {
+    list-style-type: none;
+}
+
+#table-mode {
+    grid-area: mode;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+#table-mode ul {
+
+    list-style-type: none;
+}
+
+#table-mode ul li a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-mode ul li a:hover {
+    color: aqua
+}
+#table-deets {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#table-container div {
+    border: 1px solid #D2D2CF;
+
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color: #585858;
+}
+
+#footer-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto 20%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "gamehistory elements features aboutus contact"
+        "copyright copyright copyright copyright copyright";
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#game-history {
+    grid-area: gamehistory;
+}
+
+#game-history a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#game-history .hover:hover {
+    color: #DFB01A;
+}
+
+#elements {
+    grid-area: elements;
+}
+
+#elements a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#elements .hover:hover {
+    color: #DFB01A;
+}
+
+#features {
+    grid-area: features;
+}
+
+#features a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#features .hover:hover {
+    color: #DFB01A;
+}
+
+#about-us {
+    grid-area: aboutus;
+
+}
+
+#about-us a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#about-us .hover:hover {
+    color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "circle circle"
+        "phone phone"
+        "mail mail";
+}
+
+#phone-num {
+    grid-area: phone;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+#envelope-email {
+    grid-area: mail;
+    display: flex;
+    flex-direction: row;
+}
+
+#circle {
+    grid-area: circle;
+    width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+#phone {
+    width: 20px;
+}
+
+#envelope {
+    width: 20px;
+}
+
+#num {
+    margin-left: 20px;
+    color: #D2D2CF;
+}
+
+#email {
+    margin-left: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#email a:hover {
+    color: #DAE7E9;
+}
+
+#copyright {
+    color: #D2D2CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #585858;
+    grid-area: copyright;
+}

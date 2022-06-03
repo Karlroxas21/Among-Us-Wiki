@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Among Us VR</title>
+    <link rel="stylesheet" href="/css/GameHistoryCSS/among-us-vr.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="/index.html" class="logo" alt="Among Us Wiki Logo"
+          >AMONG US WIKI</a
+        >
+
+        <!--AUDIO PART-->
+        <div class="music">
+          <img
+            src="/resources/Home/Music_Off.png"
+            id="icon"
+            alt="Audio Off Icon"
+          />
+        </div>
+
+        <audio id="OST">
+          <source src="/resources/Home/Music.mp3" type="audio/mp3" />
+        </audio>
+
+        <div class="toggle"></div>
+        <!--NAVBAR PART-->
+        <ul class="nav">
+          <li><a href="#" class="active">Home</a></li>
+          <li>
+            <a href="#">Game History</a>
+            <ul>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="#">Innersloth</a></li>
+              <li><a href="#">Other Developers</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Elements</a>
+            <ul>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Roles</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Abilities</a></li>
+              <li><a href="#">Objects</a></li>
+              <li><a href="#">Game Mechanics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+            <ul>
+              <li><a href="#">Accounts</a></li>
+              <li><a href="#">Colors & Cosmetics</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Unofficial Mods</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">About Us</a>
+            <ul>
+              <li><a href="#">Meet the Team</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </section>
+    <div id="parent">
+        <div id="main-container" class="paddingtop">
+        
+        <div id="information">
+            <div id="title-box">
+            <h2>Among Us VR</h2>
+            </div>
+            <p id="short-desc">
+            Among Us VR is an upcoming first-person 3D spin-off of Among Us for virtual reality headsets. 
+            It will include most mechanics from the main game, but only includes The Skeld map. It is 
+            incompatible with the main game and can only be played with other Among Us VR players.
+            On April 20, 2022, it was announced that Among Us VR will be released during Holiday 2022.
+            </p>
+            <br>
+            <hr />
+            <br>
+            <h1 id="gallery">Gallery</h1>
+             <figure id="pic-2">
+              <a href="/resources/game-history/among-us-vr-gallery/VR_The_Skeld_map.webp" target="_blank">
+                  <img src="/resources/game-history/among-us-vr-gallery/VR_The_Skeld_map.webp" alt="The Skeld map" width="210px">
+              </a>
+              <figcaption>The Skeld map</figcaption>
+              </figure>
+        </div>
+        <div id="table-information">
+            <div id="table-container">
+            <div id="table-title">
+                <h2>Among Us VR</h2>
+            </div>
+            <div id="table-pic">
+              <a href="/resources/game-history/among-us-2.webp" target="_blank">
+                  <img
+                  src="/resources/game-history/among-us-2.webp"
+                  alt="Among Us 2"
+                  height="190px"
+                  />
+                </a>
+            </div>
+            <div id="table-deets">
+                <p>Game Details</p>
+            </div>
+            <div id="table-developed">
+                <p>Developed by:</p>
+                <ul>
+                    <li>Innersloth</li>
+                    <li>Robot Teddy</li>
+                    <li>Schell Games</li>
+                </ul>
+            </div>
+            <div id="table-published">
+                <p>Published by Innersloth</p>
+            </div>
+            <div id="table-platform">
+                <p>Platform</p>
+                <ul>
+                    <li>Oculus Rift</li>
+                    <li>Meta Quest 2</li>
+                    <li>PlayStation VR</li>
+                    <li>SteamVR</li>
+                </ul>
+            </div>
+            <div id="table-download">
+                <p>Download link</p>
+                <ul>
+                    <li>Rift Store</li>
+                    <li><a href="https://oculus.com/experiences/quest/4948428055244413">Quest Store</a></li>
+                    <li>PlayStation Store</li>
+                    <li><a href="https://store.steampowered.com/app/1849900">Steam</a></li>
+                </ul>
+            </div>
+            <div id="table-release">
+                <p>Release Holiday 2022</p>
+            </div>
+            <div id="table-mode">
+                <p>Mode Multiplayer</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--AUDIO JAVASCRIPT PART-->
+    <script>
+      var OST = document.getElementById("OST");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        if (OST.paused) {
+          OST.play();
+          icon.src = "/resources/Home/Music_On.png";
+        } else {
+          OST.pause();
+          icon.src = "/resources/Home/Music_Off.png";
+        }
+      };
+    </script>
+
+    <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const nav = document.querySelector(".nav");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+  <footer>
+    <div id="footer-container">
+      <div id="game-history">
+        <h2>Game History</h2>
+        <a href="#" class="hover">Games</a>
+        <br />
+        <a href="#" class="hover">Innersloth</a>
+        <br />
+        <a href="#" class="hover">Other Developers</a>
+      </div>
+      <div id="elements">
+        <h2>Elements</h2>
+        <a href="#" class="hover">Maps</a>
+        <br />
+        <a href="#" class="hover">Roles</a>
+        <br />
+        <a href="#" class="hover">Locations</a>
+        <br />
+        <a href="#" class="hover">Tasks</a>
+        <br />
+        <a href="#" class="hover">Abilities</a>
+        <br />
+        <a href="#" class="hover">Objects</a>
+        <br />
+        <a href="#" class="hover">Game Mechanics</a>
+      </div>
+      <div id="features">
+        <h2>Features</h2>
+        <a href="#" class="hover">Accounts</a>
+        <br />
+        <a href="#" class="hover">Colors & Cosmetics</a>
+        <br />
+        <a href="#" class="hover">News & Events</a>
+        <br />
+        <a href="#" class="hover">Unofficial Mods</a>
+      </div>
+      <div id="about-us">
+        <h2>About Us</h2>
+
+        <a href="#" class="hover">Meet the Team</a>
+      </div>
+      <div id="contact">
+        <img
+          src="/resources/game-history/circle-solid.svg"
+          alt="circle shape"
+          id="circle"
+        />
+        <div id="phone-num">
+          <img
+            src="/resources/game-history/phone-solid.svg"
+            alt="phone icon"
+            id="phone"
+          />
+          <p id="num">09218295285</p>
+        </div>
+        <div id="envelope-email">
+          <img
+            src="/resources/game-history/envelope-solid.svg"
+            alt="envelope icon"
+            id="envelope"
+          />
+          <p id="email">
+            <a href="mailto:roxaskv@students.national-u.edu.ph"
+              >@national-u.edu.ph</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Copyright &copy</p>
+      </div>
+    </div>
+  </footer>
+</html>
