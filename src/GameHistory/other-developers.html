@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Developers</title>
+    <link rel="stylesheet" href="/css/GameHistoryCSS/other-developers.css">
+</head>
+<body>
+    <section>
+      <header>
+        <a href="/index.html" class="logo" alt="Among Us Wiki Logo"
+          >AMONG US WIKI</a
+        >
+
+        <!--AUDIO PART-->
+        <div class="music">
+          <img
+            src="/resources/Home/Music_Off.png"
+            id="icon"
+            alt="Audio Off Icon"
+          />
+        </div>
+
+        <audio id="OST">
+          <source src="/resources/Home/Music.mp3" type="audio/mp3" />
+        </audio>
+
+        <div class="toggle"></div>
+        <!--NAVBAR PART-->
+        <ul class="nav">
+          <li><a href="#" class="active">Home</a></li>
+          <li>
+            <a href="#">Game History</a>
+            <ul>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="#">Innersloth</a></li>
+              <li><a href="#">Other Developers</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Elements</a>
+            <ul>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Roles</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Abilities</a></li>
+              <li><a href="#">Objects</a></li>
+              <li><a href="#">Game Mechanics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+            <ul>
+              <li><a href="#">Accounts</a></li>
+              <li><a href="#">Colors & Cosmetics</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Unofficial Mods</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">About Us</a>
+            <ul>
+              <li><a href="#">Meet the Team</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </section>
+    <!--AUDIO JAVASCRIPT PART-->
+    <script>
+      var OST = document.getElementById("OST");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        if (OST.paused) {
+          OST.play();
+          icon.src = "/resources/Home/Music_On.png";
+        } else {
+          OST.pause();
+          icon.src = "/resources/Home/Music_Off.png";
+        }
+      };
+    </script>
+
+    <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const nav = document.querySelector(".nav");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+    <div id="parent" class="padding-top">
+        <!-- ADRIEL WALLIC -->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Adriel_Wallick.webp" alt="Picture of Adriel Wallick" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Adriel Wallic</div>
+                        <div id="position">Lead Programmer at Innersloth</div>
+                        <div id="allas">MsMinotaur(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/MsMinotaur" target="_blank">Twitter</a></li>
+                                <li><a href="https://msminotaur.com/" target="_blank">Website</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Andriel Wallic</h1>
+                        <p>Adriel Wallick, also known as MsMinotaur online, is a programmer at Innersloth. 
+                            She was invited to the team to take pressure off of Forest Willard, who used to 
+                            be the only programmer for Among Us. She is a game designer and the organizer of 
+                            an annual game jam known as Train Jam. 
+                        </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+        <!-- AMY LIU -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Amy_Liu.webp" alt="Picture of Amy Liu" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Amy Liu</div>
+                        <div id="position">Lead Artist, Merch Manager at Innersloth</div>
+                        <div id="allas">Asmu(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://www.deviantart.com/aemuaemu" target="_blank">DevianArt</a></li>
+                                <li><a href="https://aemu.newgrounds.com/" target="_blank">Newgrounds</a></li>
+                                <li><a href="https://twitter.com/aemuuu" target="_blank">Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Amy Liu</h1>
+                        <p>Amy Liu, known online as Aemu, is an artist at Innersloth born on 
+                            June 11. She is a general task-doer for whatever else needs to 
+                            be done, and enjoys photography, drawing, taking naps, and spending 
+                            time with her friends. She previously worked on games like Among Us 
+                            and is currently developing merchandise and future Innersloth games.
+                            Her goal was to have the merchandise for sale and/or presale by 
+                            the end of January 2021. While Marcus Bromander will fully work 
+                            on The Henry Stickmin Collection, Aemu and Forest Willard hope to 
+                            launch a small game themselves.
+                        </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+            <!-- ANTONIO GUTLERREZ -->
+            <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Antonio_Guti rrez_profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Antonio Gutlerrez</div>
+                        <div id="position">Unity Programmer at Innersloth</div>
+                        <div id="allas">Tony</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/tonyel3" target="_blank">Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Antonio Gutierrez</h1>
+                        <p>Antonio Gutiérrez (also known as Tony online) is a Unity programmer 
+                            at Innersloth. He has previously work at Bromio and has worked 
+                            on games such as Pato Box and Remnants of the Rift.  
+                        </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CHRIS D. -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Chris_D._profile.webp" alt="Picture of Chris D." width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Chris D.</div>
+                        <div id="position">Community Manager at Innersloth</div>
+                        <div id="allas">No allas</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/Dorseus" target="_blank">Twitter</a></li>
+                                <li><a href="https://dorsarts.etsy.com/" target="_blank">Etsy</a></li>
+                                <li><a href="https://www.tiktok.com/@dorseus" target="_blank">TikTok</a></li>
+                                <li><a href="https://www.twitch.tv/dorseus/" target="_blank">Twitch</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Chris D.</h1>
+                        <p>Chris D. (also known as Dorseus or Dors online) is a Community Manager at Innersloth. 
+                        </p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>
+        <!-- FOREST WILLARD -->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Forest_Willard.webp" alt="Picture of Forest Willard" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Forest Willard</div>
+                        <div id="position"><p> Co-Founder, Progammer,</p>
+                            <p>Biz Dev at Innersloth</p></div>
+                        <div id="allas">ForteBass(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://fortebass.newgrounds.com/" target="_blank">Newgrounds</a></li>
+                                <li><a href="https://twitter.com/forte_bass" target="_blank">Twitter</a></li>
+                                <li><a href="https://github.com/willardf" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Forest Willard</h1>
+                        <p>Forest Willard, also known as ForteBass online, is a programmer at Innersloth. He handles the 
+                            business end of things at Innersloth. Other than programming, he enjoys bouldering. He does 
+                            not post very often online, but is open to answering questions about what Innersloth is doing 
+                            and how it has done.   
+                        </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+        <!-- GARRY PORTER -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Gary_Porter.webp" alt="Picture of Gary Porter." width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Gary Porter</div>
+                        <div id="position">Unity Programmer at Innersloth</div>
+                        <div id="allas">supergarrydeluxe(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/supergarydeluxe" target="_blank">Twitter</a></li>
+                                <li><a href="https://danandgarygames.com/" target="_blank">Website</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Gary Porter</h1>
+                        <p>Gary Porter is a Unity Programmer at Innersloth. He has been developing games 
+                            since 2012 and released his first commercial game, Super Daryl Deluxe, in 2017.</p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>
+        <!-- HANNAKO LAMBERT -->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Hannako_Lambert_profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Hannako Lambert</div>
+                        <div id="position"><p>Artist at Innersloth</p></div>
+                        <div id="allas">thisishannako</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/thisishannako" target="_blank">Twitter</a></li>
+                                <li><a href="http://www.thisishannako.com/" target="_blank">Website</a></li>                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Hannako Lambert</h1>
+                        <p>Hannako Lambert, also known as thisishannako online, is an artist at Innersloth.
+                            She made art and merchandise for Innersloth prior to being officially hired.    
+                        </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        <!-- JAKE CLARK -->
+        </div>
+          <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Jake_Clark_profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Jake Clark</div>
+                        <div id="position">Artist/Animator at Innersloth</div>
+                        <div id="allas">JakeClarkDude</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/JakeClarkDude" target="_blank">Twitter</a></li>
+                                <li><a href="https://jake-clark.tumblr.com/" target="_blank">Tumblr</a></li>
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Jake Clark</h1>
+                        <p>Jake Clark, also known as JakeClarkDude online, is an artist and animator at 
+                            Innersloth. He has previously worked on art and animations for Cuphead.</p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>
+        <!-- KRISTI ANDERSON -->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Kristi_Anderson_profile.webp" alt="Picture of Kristi Anderson" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Kristi Anderson</div>
+                        <div id="position"><p>Producer at Innersloth</p></div>
+                        <div id="allas">CinderSlays</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/CinderSlays" target="_blank">Twitter</a></li>                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Kristi Anderson</h1>
+                        <p>Kristi Anderson (also known as CinderSlays online) is a Producer at Innersloth.</p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+            </div>
+        <!-- KRYS LOH -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Krys_Loh_profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Krys Loh</div>
+                        <div id="position">Player Support at Innersloth</div>
+                        <div id="allas">pseudomachine</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/pseudomachine" target="_blank">Twitter</a></li>                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Krys Loh</h1>
+                        <p>Krys Loh (also known as pseudomachine online) is Player Support at Innersloth. 
+                            She is also a freelance localization editor for other games. </p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>  
+    <!-- MIK MINIER-->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Mik_Minier_profile.webp" alt="Picture of Mik Minier" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Mik Minier</div>
+                        <div id="position"><p>Senior Backend Progammer at Innersloth</p></div>
+                        <div id="allas">Dr.Robotmik</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/DrRobotmik" target="_blank">Twitter</a></li> 
+                                <li><a href="https://youtube.com/c/DrRobotmik" target="_blank">YouTube</a></li>
+                                <li><a href="https://www.instagram.com/dr.robotmik/" target="_blank">Instagram</a></li>
+                                <li><a href="https://twitch.tv/DrRobotmik" target="_blank">Twitch</a></li>  
+                            </ul>                     
+                            </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Mik Minier</h1>
+                        <p>Mik Minier (also known as Dr. Robotmik online) is a Senior Backend Programmer at Innersloth. </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+        <!-- NATHAN BLAU -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Nathan_Blau.webp" alt="Picture of Nathan Blau" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Nathan Blau</div>
+                        <div id="position">Former Game Strategist at Innersloth</div>
+                        <div id="allas">Blaustoise(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/blaustoise" target="_blank">Twitter</a></li>
+                                <li><a href="https://twitch.tv/blaustoise" target="_blank">Twitch</a></li>
+                                <li><a href="https://instagram.com/blaustoise" target="_blank">Instagram</a></li>
+                                <li><a href="https://youtube.com/c/blaustoise" target="_blank">YouTube</a></li> 
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Nathan Blau</h1>
+                        <p>Nathan Blau, known as Blaustoise online, is a former game strategist at Innersloth.
+                            He worked on content strategy and design, including the new features Innersloth 
+                            is making and how they will make those features. He previously worked at PlayStation 
+                            and Riot.</p>
+                        <p>He also streams, makes YouTube videos, and is a Twitch Partner. On January 17, 2022, 
+                            Blau announced that he had left Innersloth in order to focus on streaming full-time.</p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div> 
+         <!--SARAH W.-->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Sarah_W._profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Sarah W.</div>
+                        <div id="position"><p>Programmer at Innersloth</p></div>
+                        <div id="allas">BirbWrangler</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/BirbWrangler" target="_blank">Twitter</a></li> 
+                            </ul>                     
+                            </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Sarah W.</h1>
+                        <p>Sarah W. (also known as BirbWrangler online) is a programmer at Innersloth. 
+                            She previously worked on Just Shapes and Beats and Infernax at Berzerk Studio. </p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div> 
+         <!--SHAHRIN KHAN  -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Shahrin_Khan_profile.webp" alt="Profile" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Shahrin Khan</div>
+                        <div id="position">Unity Programmer at Innersloth</div>
+                        <div id="allas">Gooblegames</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/gooblegames" target="_blank">Twitter</a></li>
+                                <li><a href="https://gooblegames.com/" target="_blank">Website</a></li>
+                                <li><a href="https://github.com/kgooble" target="_blank">GitHub</a></li> 
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Shahrin Khan</h1>
+                        <p>Shahrin Khan, known as gooblegames online, is a Unity Programmer at Innersloth. 
+                            Before working for Innersloth, she has previously worked on a game called Arithmagic.</p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>
+        <!-- TONY COCULUZZI -->
+        <div class="color">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Tony_Coculuzzi_profile.webp" alt="Picture of Tony Coculuzzi" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Tony Coculuzzi</div>
+                        <div id="position"><p>Programmer at Innersloth</p></div>
+                        <div id="allas">No allas</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/tonycoculuzzi" target="_blank">Twitter</a></li> 
+                                <li><a href="https://wilder.games/" target="_blank">Website</a></li> 
+                            </ul>                     
+                            </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Tony Coculuzzi</h1>
+                        <p>Tony Coculuzzi is a programmer at Innersloth. He has previously worked 
+                            on games such as Cuphead and Florence.</p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+        <!-- TORIN FREIMILLER -->
+        <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Torin_Freimiller.webp" alt="Picture of Torin Freimiller" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Torin Freimiller</div>
+                        <div id="position">Jr. Backend Programmer at Innersloth</div>
+                        <div id="allas">Gooblegames</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/Nommiin" target="_blank">Twitter</a></li>
+                                <li><a href="https://nomm.dev/" target="_blank">Website</a></li>
+                                <li><a href="https://github.com/nommiin" target="_blank">GitHub</a></li> 
+                            </ul>
+                        </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Torin Freimiller</h1>
+                        <p>Torin Freimiller, known as Nommiin online, is a backend programmer at Innersloth.</p>
+                        <p>Nommiin's previous work includes being Lead Programmer on Forager with HopFrog, 
+                            Assistant Programmer on Wonder Wickets by Right Stick Studios, as well as a 
+                            contributor to a plethora of smaller projects on their website and GitHub.</p>
+                </div>
+                <div class="blank-div"></div>
+            </div>
+        </div>
+        <!-- VICTORIA TRAN -->
+        <div class="color padding-bottom">
+            <div class="invisible-margin">
+            <div class="dev">
+                    <div class="dev-pic">
+                        <img src="/resources/game-history/other-devs/Victoria_Tran.webp" alt="Picture of Victoria Tran" width="300px">
+                    </div>
+                    <div class="dev-deets">
+                        <div id="name">Victoria Tran</div>
+                        <div id="position"><p>Community Director at Innersloth</p></div>
+                        <div id="allas">TheVTran(online)</div>
+                        <div id="social-media">
+                            <p>Social media</p>
+                            <ul>    
+                                <li><a href="https://twitter.com/TheVTran" target="_blank">Twitter</a></li> 
+                                <li><a href="https://sites.google.com/view/thevtran" target="_blank">Website</a></li> 
+                            </ul>                     
+                            </div>
+                        <div id="games">
+                            <p>Games</p>
+                            <p>Among Us</p>
+                        </div>
+                    </div>
+                    <div class="div-text">
+                        <h1>Victoria Tran</h1>
+                        <p>Victoria Tran, also known as TheVTran online, is the community director at 
+                            Innersloth and resides in Canada. Her job is handling most of the community 
+                            communications, talking to everyone, and streamlining the flow of information 
+                            to Innersloth's developers. This clears up time for them to work on Among Us, 
+                            priorities, improvements, etc. She manages the official Among Us and Innersloth 
+                            Twitter accounts. She also probably runs the other Among Us social media 
+                            accounts, including TikTok and Instagram.</p>
+                    </div>
+                    <div class="blank-div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="footer-container">
+      <div id="game-history">
+        <h2>Game History</h2>
+        <a href="#" class="hover">Games</a>
+        <br />
+        <a href="#" class="hover">Innersloth</a>
+        <br />
+        <a href="#" class="hover">Other Developers</a>
+      </div>
+      <div id="elements">
+        <h2>Elements</h2>
+        <a href="#" class="hover">Maps</a>
+        <br />
+        <a href="#" class="hover">Roles</a>
+        <br />
+        <a href="#" class="hover">Locations</a>
+        <br />
+        <a href="#" class="hover">Tasks</a>
+        <br />
+        <a href="#" class="hover">Abilities</a>
+        <br />
+        <a href="#" class="hover">Objects</a>
+        <br />
+        <a href="#" class="hover">Game Mechanics</a>
+      </div>
+      <div id="features">
+        <h2>Features</h2>
+        <a href="#" class="hover">Accounts</a>
+        <br />
+        <a href="#" class="hover">Colors & Cosmetics</a>
+        <br />
+        <a href="#" class="hover">News & Events</a>
+        <br />
+        <a href="#" class="hover">Unofficial Mods</a>
+      </div>
+      <div id="about-us">
+        <h2>About Us</h2>
+
+        <a href="#" class="hover">Meet the Team</a>
+      </div>
+      <div id="contact">
+        <img
+          src="/resources/game-history/circle-solid.svg"
+          alt="circle shape"
+          id="circle"
+        />
+        <div id="phone-num">
+          <img
+            src="/resources/game-history/phone-solid.svg"
+            alt="phone icon"
+            id="phone"
+          />
+          <p id="num">09218295285</p>
+        </div>
+        <div id="envelope-email">
+          <img
+            src="/resources/game-history/envelope-solid.svg"
+            alt="envelope icon"
+            id="envelope"
+          />
+          <p id="email">
+            <a href="mailto:roxaskv@students.national-u.edu.ph"
+              >@national-u.edu.ph</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Copyright &copy</p>
+      </div>
+    </div>
+</footer>
+</html>
