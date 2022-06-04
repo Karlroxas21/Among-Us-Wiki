@@ -248,7 +248,10 @@ body{
     grid-template-areas: "navcontent information tableinfo";
 }
 
-
+#main-container h2 {
+    color: #DFB01A;
+    font-family: 'Amatic SC', cursive;
+}
 
 #nav-content{
     grid-area: navcontent;
@@ -369,7 +372,7 @@ h1{
 #table-title {
     background-color: rgba(0, 0, 0, 0.7);
     grid-area: title;
-    padding: 10px;
+
 }
 
 #table-pic {
