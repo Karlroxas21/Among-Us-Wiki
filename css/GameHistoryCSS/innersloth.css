@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
+html {
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
 /* NAVBAR */
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Amatic SC', sans-serif;
+}
+
 header {
     border: 0;
     margin: 0;
@@ -219,118 +233,268 @@ PATRY NG IBANG MAX-WIDTH, IYANG MAX-WIDTH: 991PX GINAYA KO LANG SA PINAGKOPYAHAN
     }
 }
 
-/* Main */
-.invisible-margin{
-    margin-left:20%;
-    margin-right:20%;
-    padding: 20px;
-    display: grid;
-    grid-template-areas: "picture text"
-        "picture button";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-}
-
-.invisible-margin-canceled{
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 20px;
-    display: grid;
-    grid-template-areas: "picture text"
-                         "picture button";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;     
-}
-
-.paddingtop{
-    padding-top: 100px;
-}
-
 body {
-    background-color: #181A18;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
+    padding: 0px;
     background-image: url(/resources/game-history/among_us_bg_2.jpg);
+    font-family: 'Roboto', sans-serif;
+    color: #D2D2CF;
 
- 
+
 }
 
-.game1 {
-    color: #FBFAF5;
-   
-}
-
-.game-w-color {
-    color: #FBFAF5;
+/* PARENT */
+#parent {
     background-color: rgba(0, 0, 0, .8);
+    padding-bottom: 100px;
 }
 
-.game-picture {
-    width: 200px;
-    height: 200px;
-    grid-area: picture;
+#main-container {
+    margin-left: 18%;
+    margin-right: 18%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "navcontent information tableinfo";
+    margin-top: 80px;
 }
 
-.game-desc-cancelled {
-    margin-left: 20px;
-    grid-area: text;
+/* CHILD. CONTENTS  */
+#nav-content {
+    grid-area: navcontent;
 }
 
-.game-desc-cancelled p{
+#nav-content div {
+    border: 1px solid #D2D2CF;
+    position: sticky;
+    top: 80px;
+    margin-top: 50px;
+    padding-right: 10px;
+    height: auto;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#table-information {
+    grid-area: tableinfo;
+}
+
+/* TABLE OF CONTENTS */
+#box-content {
+    margin: 10px;
+    height: auto;
+}
+
+#box-content p {
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #D2D2CF;
+}
+
+#box-content ul {
+    margin-left: 10px;
+}
+
+#box-content ul li a{
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 3px;
+}
+
+#box-content ul li ul li a {
+    font-size: 1.2em;
+
+}
+#box-content ul li {
+    list-style-type: none;
+}
+
+#box-content ul li a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#box-content ul li a:hover {
+    color: #DFB01A;
+}
+
+/* MIDDLE */
+#title-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#title-box h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 3.5em;
+    color: #D2D2CF;
+    font-family: 'Amatic SC', cursive;
+}
+
+#information {
+    /* background-color: aqua; */
+    grid-area: information;
+    padding: 20px;
+}
+
+#information p {
     font-size: 20px;
 }
 
-.game-desc {
-    grid-area: text;
-    margin-left: 20px;
+hr {
+    margin-right: 10px;
 }
 
-.game-desc p {
-    font-size: 20px;
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
 }
 
-.cancelled {
-    color: red;
+#main-container h2 {
+    color: #DFB01A;
+    font-family: 'Amatic SC', cursive;
 }
 
-.button {
-    margin-left: 20px;
-    grid-area: button;
-    font-size: 1.3em;
+#new-content {
+    display: flex;
 }
 
-.learn-more {
-    background-color: #E0CD67;
-    color: black;
-    text-align: center;
-    border-radius: 4px;
-    border: none;
-    padding: 9px;
-    font-size: 1em;
+#margin-left-ul {
+    margin-left: 50px;
     margin-top: 10px;
 }
 
-.learn-more:hover {
-    background-color: #DFB01A;
+#ul-li-ul {
+    margin-left: 20px;
 }
 
-.game1 h2 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 3em;
+#ul-li-ul ul li {
+    padding-top: 10px;
 }
 
-.game-w-color h2{
-    font-family: 'Amatic SC', cursive;
-    font-size: 3em;
+#ul-li-ul ul li ul {
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+#settings-ul {
+    margin-left: 20px;
+}
+
+/* TABLE */
+
+#table-container {
+    margin-top: 40px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "title"
+        "picture"
+        "deets"
+        "socmedia"
+        "games"
+        "location";
+}
+
+#table-container ul li a,
+#table-container p a {
+    text-decoration: none;
+    color: #DAEAF9;
+}
+
+#table-container ul li a:hover,
+#table-container p a:hover {
+    color: aqua
+}
+
+#table-container ul li {
+    list-style-type: none;
+}
+
+#table-container ul li a {
+    text-decoration: none;
+}
+
+#table-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    grid-area: title;
+}
+
+#table-pic {
+    display: flex;
+    grid-area: picture;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#table-deets {
+    grid-area: deets;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#table-social-media {
+    grid-area: socmedia;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#table-games {
+    grid-area: games;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+#table-location {
+    display: flex;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#table-title h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#table-deets {
+    display: flex;
+    justify-content: center;
+}
+
+#table-container div {
+    border: 1px solid #D2D2CF;
+}
+
+/* GALLERY */
+#pics {
+   display: flex;
+   gap: 50px;
+}
+
+figure figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* FOOTER */
+
 footer {
     display: flex;
-    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     background-color: #585858;
@@ -351,7 +515,6 @@ footer {
 
 #game-history {
     grid-area: gamehistory;
-
 }
 
 #game-history a {
@@ -443,7 +606,6 @@ footer div a {
     width: 100px;
     margin-left: 40px;
     padding-bottom: 30px;
-   
 }
 
 #phone {
