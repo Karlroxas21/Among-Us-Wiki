@@ -1,175 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>AMONG US WIKI</title>   
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Among Us WIki</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="/index.html" class="logo" alt="Among Us Wiki Logo"
+          >AMONG US WIKI</a
+        >
 
-<body>
-    <section>  
-        <div class="bg">
-            <img src="/resources/Home/Among_Us_BG.png" class="bg">
-        </div>
-        <header>
-            <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
-
-<!--AUDIO PART--> 
+        <!--AUDIO PART-->
         <div class="music">
-            <img src="resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+          <img
+            src="/resources/Home/Music_Off.png"
+            id="icon"
+            alt="Audio Off Icon"
+          />
         </div>
 
-    <audio id="OST">
-        <source src="resources/Home/Music.mp3" type="audio/mp3">
-    </audio>
+        <audio id="OST">
+          <source src="/resources/Home/Music.mp3" type="audio/mp3" />
+        </audio>
 
-        <div class="toggle"></div>       
-<!--NAVBAR PART-->
+        <div class="toggle"></div>
+        <!--NAVBAR PART-->
         <ul class="nav">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Game History</a>
-                <ul>
-                    <li><a href="/src/GameHistory/games.html">Games</a>
-                    <li><a href="#">Innersloth</a></li>
-                    <li><a href="#">Other Developers</a></li>
-                </ul>
-            </li>
+          <li><a href="#" class="active">Home</a></li>
+          <li>
+            <a href="#">Game History</a>
+            <ul>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="#">Innersloth</a></li>
+              <li><a href="#">Other Developers</a></li>
+            </ul>
+          </li>
 
-            <li><a href="#">Elements</a>
-                <ul>
-                    <li><a href="#">Maps</a></li>
-                    <li><a href="#">Roles</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Tasks</a></li>
-                    <li><a href="#">Abilities</a></li>
-                    <li><a href="#">Objects</a></li>
-                    <li><a href="#">Game Mechanics</a></li>
-                </ul>
-            </li>
+          <li>
+            <a href="#">Elements</a>
+            <ul>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Roles</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Abilities</a></li>
+              <li><a href="#">Objects</a></li>
+              <li><a href="#">Game Mechanics</a></li>
+            </ul>
+          </li>
 
-            <li><a href="#">Features</a>
-                <ul>
-                    <li><a href="#">Accounts</a></li>
-                    <li><a href="#">Colors & Cosmetics</a></li>
-                    <li><a href="#">News & Events</a></li>
-                    <li><a href="#">Unofficial Mods</a></li>
-                </ul>
-            </li>
+          <li>
+            <a href="#">Features</a>
+            <ul>
+              <li><a href="#">Accounts</a></li>
+              <li><a href="#">Colors & Cosmetics</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Unofficial Mods</a></li>
+            </ul>
+          </li>
 
-            <li><a href="#">About Us</a>
-                <ul>
-                    <li><a href="#">Meet the Team</a></li>
-                </ul>
-            </li>
+          <li>
+            <a href="#">About Us</a>
+            <ul>
+              <li><a href="#">Meet the Team</a></li>
+            </ul>
+          </li>
         </ul>
+      </header>
+    </section>
+    <!--VIDEO PART-->
+    <div class="trailer">
+      <video src="resources/Home/Trailer.mp4" controls="true"></video>
+      <img src="resources/Home/Close.png" class="close" onclick="toggle();" />
+    </div>
 
-</header>
-
-        <div class="heading">
-            <div class="textBox">
-                <h2>THERE IS AN</h2> 
-                <h2 style="color:red;">IMPOSTOR</h2>
-                <img src="resources/Home/Among_Us.png"  class="pic" alt="Among Us text"><br>
-                <a href="#" onclick="toggle();">Watch the Trailer</a>
-            </div>    
-        </div>   
-
-<!--VIDEO PART-->
-<div class="trailer">
-    <video src="resources/Home/Trailer.mp4" controls="true"></video>
-    <img src="resources/Home/Close.png" class="close" onclick="toggle();">
-</div> 
-
-<script type="text/javascript">
-    function toggle(){
-        var trailer = document.querySelector(".trailer")
-        var video = document.querySelector("video")
+    <script type="text/javascript">
+      function toggle() {
+        var trailer = document.querySelector(".trailer");
+        var video = document.querySelector("video");
         trailer.classList.toggle("active");
         video.pause();
         video.currentTime = 0;
-    }
-</script>
+      }
+    </script>
+    <!--AUDIO JAVASCRIPT PART-->
+    <script>
+      var OST = document.getElementById("OST");
+      var icon = document.getElementById("icon");
 
-</section>
-
-<!--SCROLLING PART: THE CONTENT, NOTE: PABAGO NITONG PART NA TO KAHIT BAGUHIN MISMO YUNG GAWA KO-->
-    <div class="div1">
-        <h2>KEME KEME</h2>
-        <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
-            faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada 
-            bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer 
-            vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies
-             tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in 
-             nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at 
-             tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl 
-             condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique 
-             senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa 
-             massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur 
-             adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
-             turpis egestas integer eget aliquet nibh praesent tristique magna sit.<br>
-
-             <br>amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis 
-            purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam mi
-            aecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas
-            pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis 
-            massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod 
-            nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi 
-            ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis 
-            mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor 
-            pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed 
-            nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque 
-            elit ullamcorper dignissim cras.
-    </div>
-
-    <div class="div2">
-        <h2>KEME KEME PART2</h2>
-        <div class="cards">
-            <div class="text-card">
-                <h4>Title</h4>
-                    <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
-                    faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
-        </div>
-
-        <div class="text-card">
-            <h4>Title</h4>
-                <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
-                faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
-    </div>
-
-    <div class="text-card">
-        <h4>Title</h4>
-            <p> felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus 
-            faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
-        </div>
-    </div>
-</div>
-
-<!--AUDIO JAVASCRIPT PART-->
-<script>
-    var OST = document.getElementById("OST");    
-    var icon = document.getElementById("icon"); 
-
-icon.onclick = function (){
-    if(OST.paused){
-        OST.play();  
-        icon.src = "/resources/Home/Music_On.png";
-    }else {
-        OST.pause();  
-        icon.src = "/resources/Home/Music_Off.png";
-    }
-}
-</script>
-
-<!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
-     <script>
-        const menuToggle = document.querySelector('.toggle');
-        const nav = document.querySelector('.nav');
-        menuToggle.onclick = function(){
-            menuToggle.classList.toggle('active')
-            nav.classList.toggle('active')
+      icon.onclick = function () {
+        if (OST.paused) {
+          OST.play();
+          icon.src = "/resources/Home/Music_On.png";
+        } else {
+          OST.pause();
+          icon.src = "/resources/Home/Music_Off.png";
         }
+      };
     </script>
 
-</body>
+    <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const nav = document.querySelector(".nav");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+
+    <!-- CONTENT STARTS HERE -->
+    <div id="main-container">
+      <div id="intro-container">
+        <div id="intro-pic">
+          <img src="/resources/Home/Among_Us_BG.png" alt="Among Us Picture" />
+        </div>
+        <div id="intro-text">
+          <h2>THERE IS AN</h2>
+          <h2 style="color: red">IMPOSTOR</h2>
+          <img
+            src="resources/Home/Among_Us.png"
+            class="pic"
+            alt="Among Us text"
+          />
+          <br />
+          <br />
+          <a href="#" onclick="toggle();">Watch the Trailer</a>
+        </div>
+      </div>
+      <div id="among-us-intro">
+          <p id="h1">Among Us is a part game of <br> teamwork and betrayal.</p>
+          <p>Crewmates work together to complete tasks before one or <br>more Impostors can kill everyone aboard.</p>
+      </div>
+      <div id="crew-container">
+          <div class="invisible-margin">
+            <div id="crew-pic">
+                <img src="/resources/Home/the crew.png" alt="The Crew">
+                <p>Objective: Fill the group task bar or select the Impostors</p>
+            </div>
+            <div id="crew-crews">
+                <div id="crew-1">
+                    <img src="/resources/Home/Crew1-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>Complete all the tasks on the ship or eject Impostors to win.</p>
+                </div>
+                <div id="crew-2">
+                    <img src="/resources/Home/Crew2-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>Call emergency meetings if you see any dead bodies or suspicious behavior.</p>
+                </div>
+                <div id="crew-3">
+                    <img src="/resources/Home/Crew6-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>Check the Admin map and Security cameras to keep tabs on other Crewmates.</p>
+                </div>
+                <div id="crew-4">
+                    <img src="/resources/Home/Crew8-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>React quickly to undo the Impostor's sabotages.</p>
+                </div>
+                <div id="crew-5">
+                    <img src="/resources/Home/Crew10-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>Make sure you have your alibi ready in case you're falsely accused.</p>
+                </div>
+                <div id="crew-6">
+                    <img src="/resources/Home/Crew12-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                    <p>Vote to eject suspected Impostors. Hope you guessed correctly!</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="impostor-container">
+          <div class="invisible-margin">
+            <div id="impostor-pic">
+                <p>Objective: Kill off the crew</p>
+                <img src="/resources/Home/the imposter.png" alt="The Impostor">
+            </div>
+            <div id="impostor-impostor">
+                <div id="imp-1">
+                        <img src="/resources/Home/impostor/Crew11-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Kill Crewmates and frame innocent bystanders.</p>
+                    </div>
+                    <div id="imp-2">
+                        <img src="/resources/Home/impostor/Crew3-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Pretend to do tasks to blend in with the Crewmates.</p>
+                    </div>
+                    <div id="imp-3">
+                        <img src="/resources/Home/impostor/Crew4-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Sneak through the vents to quickly move around.</p>
+                    </div>
+                    <div id="imp-4">
+                        <img src="/resources/Home/impostor/Crew5-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Sabotage tasks to cause chaos and confuse the crew.</p>
+                    </div>
+                    <div id="imp-5">
+                        <img src="/resources/Home/impostor/Crew7-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Close doors to trap victims and kill in private.</p>
+                    </div>
+                    <div id="imp-6">
+                        <img src="/resources/Home/impostor/Crew9-40x52.png" alt="Among Us Crew" width="40px" height="52px">
+                        <p>Do everything you can to convince the crew that you're one of them.</p>
+                    </div>
+            </div>
+        </div>
+      </div>
+      <div id="gallery-container">
+        <div class="invisible-margin">
+            <p>Gameplay pictures</p>
+            <div id="gallery">
+                    <div id="g1">
+                        <a href="/resources/Home/gallery/CardSlideTask-350x195.png" target="_blank"><img src="/resources/Home/gallery/CardSlideTask-350x195.png" alt="Card slide task"></a></div>
+                    <div id="g2">
+                        <a href="/resources/Home/gallery/Discussion-350x195.png" target="_blank"><img src="/resources/Home/gallery/Discussion-350x195.png" alt="Discussion"></div></a>
+                    <div id="g3">
+                        <a href="/resources/Home/gallery/Guardian-Angel-350x195.png" target="_blank"><img src="/resources/Home/gallery/Guardian-Angel-350x195.png" alt="Guardian Angel"></div></a>
+                    <div id="g4">
+                        <a href="/resources/Home/gallery/Impostor_Kill_1-350x195.png" target="_blank"><img src="/resources/Home/gallery/Impostor_Kill_1-350x195.png" alt="Impostor Kill"></div></a>
+                    <div id="g5">
+                        <a href="/resources/Home/gallery/Lobby-1-350x195.png" target="_blank"><img src="/resources/Home/gallery/Lobby-1-350x195.png" alt="Lobby"></div></a>
+                    <div id="g6">
+                        <a href="/resources/Home/gallery/RoleScreen-350x195.png" target="_blank"><img src="/resources/Home/gallery/RoleScreen-350x195.png" alt="Rolescreen"></div></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+  </body>
+  <footer>
+    <div id="footer-container">
+      <div id="game-history">
+        <h2>Game History</h2>
+        <a href="#" class="hover">Games</a>
+        <br />
+        <a href="#" class="hover">Innersloth</a>
+        <br />
+        <a href="#" class="hover">Other Developers</a>
+      </div>
+      <div id="elements">
+        <h2>Elements</h2>
+        <a href="#" class="hover">Maps</a>
+        <br />
+        <a href="#" class="hover">Roles</a>
+        <br />
+        <a href="#" class="hover">Locations</a>
+        <br />
+        <a href="#" class="hover">Tasks</a>
+        <br />
+        <a href="#" class="hover">Abilities</a>
+        <br />
+        <a href="#" class="hover">Objects</a>
+        <br />
+        <a href="#" class="hover">Game Mechanics</a>
+      </div>
+      <div id="features">
+        <h2>Features</h2>
+        <a href="#" class="hover">Accounts</a>
+        <br />
+        <a href="#" class="hover">Colors & Cosmetics</a>
+        <br />
+        <a href="#" class="hover">News & Events</a>
+        <br />
+        <a href="#" class="hover">Unofficial Mods</a>
+      </div>
+      <div id="about-us">
+        <h2>About Us</h2>
+
+        <a href="#" class="hover">Meet the Team</a>
+      </div>
+      <div id="contact">
+        <img
+          src="/resources/game-history/circle-solid.svg"
+          alt="circle shape"
+          id="circle"
+        />
+        <div id="phone-num">
+          <img
+            src="/resources/game-history/phone-solid.svg"
+            alt="phone icon"
+            id="phone"
+          />
+          <p id="num">09218295285</p>
+        </div>
+        <div id="envelope-email">
+          <img
+            src="/resources/game-history/envelope-solid.svg"
+            alt="envelope icon"
+            id="envelope"
+          />
+          <p id="email">
+            <a href="mailto:roxaskv@students.national-u.edu.ph"
+              >@national-u.edu.ph</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Copyright &copy</p>
+      </div>
+    </div>
+  </footer>
 </html>
