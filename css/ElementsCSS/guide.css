@@ -1,3 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none; 
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active, 
+header ul li a:hover {
+    
+    color: yellow;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+/*STICKY SIDEBAR*/
+
+html {
+    scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
+.main-left {
+    background: transparent;
+    height: 450vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
+                                HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO*/
+    width: 20%;
+    float: left;
+    /*background: pink;  PARA MAKITA MO SIZE KUNG HANGGANG SAAN LANG YUNG SCROLL NG SIBEBAR*/
+    position: absolute;
+}
+
+.left-sticky {
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+    height: auto;
+    width: 200px;
+    position: sticky;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    margin-left: 170px;
+}
+
+.left-sticky ul {
+    list-style: none;
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+.left-sticky ul li {
+    font-family: 'Amatic SC';
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.left-sticky ul li a {
+    font-family: 'Amatic SC';
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;  
+}
+
+.left-sticky ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: yellow;
+    border-radius: 10px;
+}
+
+/*SCROLL UP BUTTON*/
+.scrollUp {
+    position: fixed;
+    bottom: 800px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5) url('../../resources/elements-task/MapsScroll_Up.png');
+    border-radius: 50%;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollUp.active {
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    background-image: url("../../resources/elements-task/amongusbg.png");
+    background-size: cover;
+}
