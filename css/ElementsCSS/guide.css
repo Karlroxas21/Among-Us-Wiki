@@ -105,8 +105,6 @@ header ul li ul li {
     cursor: pointer;
 }
 
-/*STICKY SIDEBAR*/
-
 html {
     scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
 }
@@ -238,12 +236,8 @@ p {
     text-decoration: none;
 }
 
-.clean-vent, li {
+.cleanvent {
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin-left: 20px;
+    margin-left: 40px;
 }
-
-/*.div2, a:visited {
-    color: blue;
-}*/
