@@ -234,14 +234,21 @@ p {
     color: white;
 }
 
-.div2, #task-heading, #guide-heading, a {
-    font-weight: bold;
-    text-decoration: none;
+.div2, #task-heading, #guide-heading {
     font-family: 'Roboto', sans-serif;
     color: white;
     display: inline-flex;
     text-align: left; 
     font-size: larger;
+}
+
+.div2, a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.div2, a:visited {
+    color: blue;
 }
 
 hr {
