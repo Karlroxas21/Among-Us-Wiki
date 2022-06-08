@@ -214,6 +214,12 @@ h1 {
     color: white;
 }
 
+
+hr {
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -230,6 +236,12 @@ p {
 .div2, a {
     font-weight: bold;
     text-decoration: none;
+}
+
+.clean-vent, li {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 20px;
 }
 
 /*.div2, a:visited {
