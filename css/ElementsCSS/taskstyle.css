@@ -247,9 +247,9 @@ p {
     text-decoration: none;
 }
 
-.div2, a:visited {
+/*.div2, a:visited {
     color: blue;
-}
+}*/
 
 hr {
     border-top: 1px solid white;
