@@ -234,7 +234,9 @@ p {
     color: white;
 }
 
-.div2, #task-heading, #guide-heading {
+.div2, #task-heading, #guide-heading, a {
+    font-weight: bold;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: white;
     display: inline-flex;
