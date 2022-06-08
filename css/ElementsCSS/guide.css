@@ -236,8 +236,7 @@ p {
     text-decoration: none;
 }
 
-.cleanvent {
+.div3, li {
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin-left: 40px;
 }
