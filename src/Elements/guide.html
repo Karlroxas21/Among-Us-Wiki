@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/ElementsCSS/guide.css">
     <title>Guide</title>
 </head>
 <body>
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="../../resources/Home/Music_On.png" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "/resources/Home/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "/resources/Home/Music_Off.png";
+            }
+        }
+    </script>
+    <!--STICKY SIDE BAR ON SCROLL-->
+    <div class="main-left">
+        <div class="left-sticky">
+            <ul>
+                <li style="border-bottom: 1px solid #fff;">Contents</li>
+                <li><a href="#Task">1. Task</a></li> <!--a href="#Title-Ng-Info" - WILL GO TO ITS DESIGNATED INFO/CONTENT-->
+                <li><a href="#Overview">2. Overview</a></li>
+                <li style="text-indent: 20px;"><a href="#Taskbar">2.1 Task Bar</a></li>
+                <li style="text-indent: 20px;"><a href="#Faketask">2.2 Fake Tasks</a></li>
+                <li style="text-indent: 20px;"><a href="#Freeplay">2.3 Freeplay</a></li>
+                <li><a href="#List">3. List of Tasks</a></li>
+                <li><a href="#Audio">4. Audio</a></li>
+                <li><a href="#Trivia">5. Trivia</a></li>
+                <li><a href="#Gallery">6. Gallery</a></li>
+            </ul>
+        </div>
+    </div> 
+    <!--JS SCROLL UP TOGGLE-->
+    <div class="scrollUp" onclick="scrollUp();"></div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollUp');
+            scroll.classList.toggle("active" , window.scrollY > 500)
+        })
     
+        function scrollUp(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
 </body>
 </html>
