@@ -107,12 +107,11 @@ header ul li ul li {
 
 html {
     scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
-    height: 100%;
 }
 
 .main-left {
     background: transparent;
-    height: 450vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
+    height: 230vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
                                 HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO*/
     width: 20%;
     float: left;
@@ -180,14 +179,13 @@ html {
 }
 
 .scrollUp.active {
-    bottom: 20px;
+    bottom: 50px;
     visibility: visible;
     opacity: 1;
 }
 
 body {
     background-image: url("../../resources/elements-task/amongusbg.png");
-    background-size: cover;
 }
 
 .div1 {
@@ -196,12 +194,12 @@ body {
     position: relative;
     left: 430px;
     width: 60%;
-    height: auto;
     border: 2px solid white;
     padding: 20px;
     text-align: justify;
     margin-top: 80px;
     margin-right: 170px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -245,7 +243,7 @@ p {
 /* FOOTER */
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
     left: 0px;
     right: 0px;
