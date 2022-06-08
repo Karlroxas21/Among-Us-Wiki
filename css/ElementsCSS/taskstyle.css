@@ -197,7 +197,6 @@ header ul li ul li {
 
 body {
     background-image: url("../../resources/elements-task/amongusbg.png");
-    background-size: cover;
 }
 
 .introtask {
@@ -246,10 +245,6 @@ p {
     font-weight: bold;
     text-decoration: none;
 }
-
-/*.div2, a:visited {
-    color: blue;
-}*/
 
 hr {
     border-top: 1px solid white;
