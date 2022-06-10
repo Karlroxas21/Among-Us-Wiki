@@ -196,7 +196,7 @@ header ul li ul li {
 }
 
 body {
-    background-image: url("../../resources/elements-task/amongusbg.png");
+    background-image: url("../../resources/Elements/task/amongusbg.png");
 }
 
 .introtask {
@@ -308,7 +308,18 @@ figcaption {
     display: block;
     margin-left: 25px;
     margin-right: auto;
-    width: 50%;
+    height: 138px;
+    width: 60%;
+}
+
+#concept-art {
+    height: 150px;
+    width: 200px;
+}
+
+#how-to-play {
+    height: 150px;
+    width: 200px;
 }
 
 /* FOOTER */
