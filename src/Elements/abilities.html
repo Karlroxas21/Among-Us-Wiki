@@ -74,38 +74,269 @@
             }
         }
     </script>
-    <div class="div1">
-        <h2 id="abilities">Abilities</h2>
-        <br>
-        <p>Abilities are a game mechanic in Among Us that allow players to interact with the map and view information about other players. 
-            Some abilities are limited to certain roles, while others can be used by all players.</p>
-        <h1 id="overview">Overview</h1>
-        <hr>
-        <p>Abilities appear as large buttons in the bottom-right corner of players' screens, each with different purposes. 
-            By default, all players have access to the Use and Report buttons. Standing near security systems such as Admin 
-            replaces the Use ability with the security system's appropriate ability. Similar to assigned tasks which have yellow 
-            outlines, certain abilities such as Admin, Security, Doorlog, Vitals and Customize have white outlines to them, while Vent 
-            and Kill (which only appear when getting close to the interactive object or player) have red outlines.</p>
-        <br>
-        <p>Use is positioned to the bottom right of the screen, and it becomes available whenever the player stands near an 
-            object they can interact with. Report is positioned to the left of Use, and it becomes available near a dead body. 
-            Extra roles (Scientist, Engineer, Guardian Angel, and Shapeshifter) gain access to an extra ability that is unique to them, 
-            and it is positioned to the left of Report. Impostors gain access to three extra abilities (Kill, Sabotage, and Vent) 
-            which are positioned above Use, Report, and the extra role ability.</p>
-        <h1 id="list of abilities">List of Abilities</h1>
-        <hr>
-        <div class="div2">
-            <div style="padding:1px; display: flex; justify-content: center; align-items: center;">
-                <table border=1 width=200 cellpadding=10>
-                    <tr>
-                        <th style="width:30%">Ability</th>
-                        <th style="width:20%">Used by</th>
-                        <th style="width:20%">Maps</th>
-                        <th style="width:40%">Description</th>
-                    </tr>
-                </table>
+    <main>
+        <div class="div1">
+            <h2 id="abilities">Abilities</h2>
+            <br>
+            <p>Abilities are a game mechanic in Among Us that allow players to interact with the map and view information about other players. 
+                Some abilities are limited to certain roles, while others can be used by all players.</p>
+            <h1 id="overview">Overview</h1>
+            <hr>
+            <p>Abilities appear as large buttons in the bottom-right corner of players' screens, each with different purposes. 
+                By default, all players have access to the Use and Report buttons. Standing near security systems such as Admin 
+                replaces the Use ability with the security system's appropriate ability. Similar to assigned tasks which have yellow 
+                outlines, certain abilities such as Admin, Security, Doorlog, Vitals and Customize have white outlines to them, while Vent 
+                and Kill (which only appear when getting close to the interactive object or player) have red outlines.</p>
+            <br>
+            <p>Use is positioned to the bottom right of the screen, and it becomes available whenever the player stands near an 
+                object they can interact with. Report is positioned to the left of Use, and it becomes available near a dead body. 
+                Extra roles (Scientist, Engineer, Guardian Angel, and Shapeshifter) gain access to an extra ability that is unique to them, 
+                and it is positioned to the left of Report. Impostors gain access to three extra abilities (Kill, Sabotage, and Vent) 
+                which are positioned above Use, Report, and the extra role ability.</p>
+            <h1 id="list of abilities">List of Abilities</h1>
+            <hr>
+            <div class="div2">
+                <div style="padding:1px; display: flex; justify-content: center; align-items: center;">
+                    <table border=1 width=200 cellpadding=10>
+                        <tr>
+                            <th style="width:30%">Ability</th>
+                            <th style="width:20%">Used by</th>
+                            <th style="width:20%">Maps</th>
+                            <th style="width:40%">Description</th>
+                        </tr>
+                        <tr>
+                            <td><img id="admin" src="../../resources/Elements/abilities/The_Skeld_Admin_button.webp" alt="The Skeld Admin"></td>
+                            <td>All Players</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Opens up the Admin map which gives the user access to where everyone is.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="customize" src="../../resources/Elements/abilities/Customize.webp" alt="Customize"></td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Hosts (Lobby)</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">All Players (Freeplay)</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Lobby</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">All Maps (Freeplay)</li>
+                                </ul>
+                            </td>
+                            <td>Lobby: Lets hosts customize the game settings.
+                                Freeplay: Lets players change their task list as well as allowing them to change their role.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="doorlog" src="../../resources/Elements/abilities/Doorlog.webp" alt="Door Log"></td>
+                            <td>All Players</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                </ul>
+                            </td>
+                            <td>Lets players check which players went through which sensors.</td>                        </td>
+                        </tr>
+                        <tr>
+                            <td><img id="kill" src="../../resources/Elements/abilities/Kill.webp" alt="Kill"></td>
+                            <td>Impostors (alive)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets Impostors kill Crewmates. Only available when cooldown is not active.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="report" src="../../resources/Elements/abilities/Report.webp" alt="report"></td>
+                            <td>All Players (alive)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets players report dead bodies.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="sabotage" src="../../resources/Elements/abilities/Sabotage.webp" alt="Sabotage"></td>
+                            <td>Impostors</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets Impostors create fatal and non-fatal problems that the Crewmates can either fix or leave alone.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="protect" src="../../resources/Elements/abilities/Protect_icon.webp" alt="Protect Icon"><figcaption>Protect</figcaption></td>
+                            <td>Guardian Angels (dead)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets Guardian Angels temporarily protect players from being killed.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="shift" src="../../resources/Elements/abilities/Shift_icon.webp" alt="Shift Icon"><figcaption>Shift</figcaption></td>
+                            <td>Shapeshifter (alive)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets Shapeshifters temporarily transform into other players.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="security" src="../../resources/Elements/abilities/Security_button.webp" alt="Security"></td>
+                            <td>All Players</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets players watch through the Security cameras scattered around the map.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="start" src="../../resources/Elements/abilities/Start.webp" alt="Start"></td>
+                            <td>Hosts</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Lobby</li>
+                                </ul>
+                            </td>
+                            <td>Lets the host start the game.</td>
+                        </tr>
+                        <tr>
+                            <td><img id="use" src="../../resources/Elements/abilities/Use.webp" alt="Use"></td>
+                            <td>Crewmates Impostors (alive)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets players interact with tasks and other interactive objects.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="vent" src="../../resources/Elements/abilities/Vent.webp" alt="Vent"></td>
+                            <td>Impostors (alive) <br> Engineers</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Skeld</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">MIRA HQ</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                </ul>
+                            </td>
+                            <td>Lets Impostors and Engineers enter nearby vents.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="vitals" src="../../resources/Elements/abilities/Vitals.webp" alt="Vitals"></td>
+                            <td>All Players <br> Scientists (Portable Version)</td>
+                            <td>
+                                <ul>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">Polus</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">The Airship</li>
+                                    <li style="margin-left: 25px; font-family: 'Roboto', sans-serif;">All maps <br> (Scientists)</li>
+                                </ul>
+                            </td>
+                            <td>Lets players check who is dead and who is not. <br> Scientists can open vitals anytime as long as they have battery left.</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="game-history">
+                <h2>Game History</h2>         
+                <br>   
+                <a href="#" class="hover">Games</a>
+                <br>
+                <a href="#" class="hover">Innersloth</a>
+                <br>
+                <a href="#" class="hover">Other Developers</a>
+            </div>
+            <div id="elements">
+                <h2> Elements</h2>
+                <br>
+                <a href="#" class="hover">Maps</a>
+                <br>
+                <a href="#" class="hover">Roles</a>
+                <br>
+                <a href="#" class="hover">Locations</a>
+                <br>
+                <a href="#" class="hover">Tasks</a>
+                <br>
+                <a href="#" class="hover">Abilities</a>
+                <br>
+                <a href="#" class="hover">Objects</a>
+                <br>
+                <a href="#" class="hover">Game Mechanics</a>
+            </div>
+            <div id="features">
+                <h2>Features</h2>
+                <br>
+                <a href="#" class="hover">Accounts</a>
+                <br>
+                <a href="#" class="hover">Colors & Cosmetics</a>
+                <br>
+                <a href="#" class="hover">News & Events</a>
+                <br>
+                <a href="#" class="hover">Unofficial Mods</a>
+            </div>
+            <div id="about-us">
+                <h2>About Us</h2>
+                <br>
+                <a href="#" class="hover">Meet the Team</a>
+            </div>
+             <div id="contact">
+                <img src="/resources/game-history/circle-solid.svg" alt="circle shape" id="circle">
+                <div id="phone-num">
+                    <img src="/resources/game-history/phone-solid.svg" alt="phone icon" id="phone">
+                    <p id="num">09218295285</p>
+                </div>
+                <div id="envelope-email">
+                    <img src="/resources/game-history/envelope-solid.svg" alt="envelope icon" id="envelope">
+                    <p id="email"><a href="mailto:roxaskv@students.national-u.edu.ph">@national-u.edu.ph</a></p>
+                </div>
+            </div> 
+            <div id="copyright">
+                <p >Copyright &copy</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
