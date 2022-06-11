@@ -105,9 +105,9 @@ header ul li ul li {
     cursor: pointer;
 }
 
-html {
-    scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
-}
+/*html {
+    scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR/
+}*/
 
 body {
     background-image: url("../../resources/Elements/task/amongusbg.png");

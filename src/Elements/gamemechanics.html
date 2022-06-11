@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/ElementsCSS/gamemechanics.css">
     <title>Game Mechanics</title>
 </head>
 <body>
-    
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="../../resources/Home/Music_On.png" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "/resources/Home/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "/resources/Home/Music_Off.png";
+            }
+        }
+    </script>
+    <main>
+        <div class="div1">
+            <h2 id="gameplay">Game Mechanics</h2>
+            <br>
+            <p>These are the various different gameplay mechanics of <i>Among Us.</i></p>
+            <br>
+            <div class="div2">
+                <table border=1 width=200 cellpadding=10>
+                    <tr>
+                        <th>Mechanics </th>
+                    </tr>
+                    <tr>
+                        <td>Core gameplay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Abilities &bull; Locations &bull; Maps &bull; Personal map &bull; Player speed &bull; Task bar &bull; Task list &bull; Tasks &bull; Vision</td>
+                    </tr> 
+                    <tr>
+                        <td>Meetings and Chat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chat &bull; Discussion &bull; Ejection &bull; Emergency meeting &bull; Kick &bull; Quick Chat &bull; Report &bull; Voting</td>
+                    </tr>
+                    <tr>
+                        <td>Lobby &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ban &bull; Host &bull; Options &bull; Private &bull; Public &bull; Start</td>
+                    </tr>
+                    <tr>
+                        <td>Other features &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accounts &bull; Achievements &bull; Currency &bull; Friends List</td>
+                    </tr>
+                    <tr>
+                        <td>Other UX elements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Help &bull; Region</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <h3 id="trendingpages">Trending Pages</h3>
+            <div id="trending-pg-images">
+                <div class="row">
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Tasks</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Colors</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Maps</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Friends List</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Accounts</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Shop</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Freeplay</figcaption>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <figcaption>Achievements</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
