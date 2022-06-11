@@ -4,9 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/ElementsCSS/objects.css">
+    <title>Objects</title>
 </head>
 <body>
-    
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="../../resources/Home/Music_On.png" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "/resources/Home/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "/resources/Home/Music_Off.png";
+            }
+        }
+    </script>
+    <main>
+        <div class="div1">
+            <h2 id="objects">Objects</h2>
+            <br>
+            <p>The following category is for in-game objects that have certain purposes, such as methods of transportation.</p>
+            <br>
+            <div class="div2">
+                <table border=1 width=200 cellpadding=10>
+                    <tr>
+                        <th>Objects</th>
+                    </tr>
+                    <tr>
+                        <td>Methods of transportation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ladder &bull; Moving Platform &bull; Vent</td>
+                    </tr>
+                    <tr>
+                        <td>Other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Camera &bull; Dead body &bull; Doors &bull; Dummy &bull; Emergency button &bull; Nodes &bull; Seismic Stabilizers</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <h3 id="trendingpages">Trending Pages</h3>
+            <hr>
+            <div id="trending-pg-images">
+                <div class="row">
+                    <div class="column">
+                        <img id="vent" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="dead-body" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="emergency-button" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="camera" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="dummy" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="nodes" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="doors" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="column">
+                        <img id="ladder" src="" alt="">
+                        <figcaption></figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
