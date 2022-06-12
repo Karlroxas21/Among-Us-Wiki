@@ -15,10 +15,6 @@ html {
     /*font-family: 'Amatic SC', sans-serif;*/
 }
 
-a {
-    font-family: 'Amatic SC', sans-serif;
-}
-
 header {
     background: black;
     position: fixed;
@@ -124,13 +120,14 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: url("../../resources/Elements/task/amongusbg.png");
-    background-size: cover;
 }
 
 .parent {
     background-color: rgba(0, 0, 0, .8);
     padding-bottom: 100px;
-    font-size: 20px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: #D2D2CF;
 }
 
 .main-container {
@@ -148,83 +145,59 @@ body {
     border: 1px solid #D2D2CF;
     position: sticky;
     top: 80px;
-    margin-right: 60px;
     padding: 10px;
     height: auto;
     width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.3em;
 }
 
 .navbox-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 5px;
     border-bottom: 1px solid #fff;
-    ;
 }
 
-.navbox-content * {
+.navbox-content {
     font-family: 'Amatic SC', cursive;
-    color: #fff;
+    line-height: 1.5em;
 }
 
 .main-content {
     grid-area: main-content;
     padding: 5px;
+    line-height: 2em;
 }
 
 .news-section>div {
-    font-family: 'Roboto', sans-serif;
-    color: white;
     border-bottom: 1px solid #ccc;
     padding: 5px;
     margin-top: 10px;
     background-color: #232222;
 }
 
-h1 {
+.main-container h1 {
     font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    font-size: 44px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: white;
+}
+
+.main-container h2 {
+    font-family: 'Amatic SC', cursive;
+    color: #D2D2CF;
+}
+
+.main-container h3 {
+    font-family: 'Amatic SC', cursive;
     color: #DFB01A;
 }
 
-h2 {
+.main-container h3 a {
     font-family: 'Amatic SC', cursive;
-    color: white;
-    display: inline-block;
-    text-align: left;
     color: #DFB01A;
 }
 
-h3 {
-    font-family: 'Amatic SC', cursive;
+.main-container a:hover {
     color: white;
-    display: inline-block;
-    text-align: left;
-    color: #DFB01A;
-}
-
-h3 a {
-    font-family: 'Amatic SC', cursive;
-    color: white;
-    display: inline-block;
-    text-align: left;
-    color: #DFB01A;
-}
-
-h3 a:hover {
-    color: white;
-}
-
-p {
-    font-family: 'Roboto', cursive;
-    color: white;
-    line-height: 2;
 }
 
 hr {
@@ -234,17 +207,14 @@ hr {
 
 .main-ul {
     list-style-type: none;
-    line-height: 2;
-    font-family: 'Amatic SC', cursive;
-    color: white;
 }
 
 .main-ul li {
     text-decoration: none;
 }
 
-.main-ul li a {
-    color: white;
+.main-ul a {
+    color: #D2D2CF;
     text-decoration: none;
 }
 
@@ -255,18 +225,11 @@ hr {
 .main-ul ul li {
     list-style-type: none;
     margin-left: 30px;
-    line-height: 2;
 }
 
 .main-ul ul ul li {
     list-style-type: none;
     margin-left: 60px;
-}
-
-.main-ul ul li a {
-    text-decoration: none;
-    font-family: 'Amatic SC', cursive;
-    color: white;
 }
 
 .main-ul ul li a:hover {
@@ -279,14 +242,12 @@ hr {
 
 #trivia {
     margin-left: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
     list-style-type: disc;
 }
 
 #trivia li a {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #D2D2CF;
 }
 
 #trivia li a:hover {
@@ -294,15 +255,14 @@ hr {
 }
 
 #trivia ul li {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 table,
 th,
 td {
     border: 1px solid white;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #D2D2CF;
     text-align: center;
 }
 
@@ -347,7 +307,7 @@ figure.gallery {
 }
 
 figure.gallery:hover {
-    border: 1px solid #DFB01A;
+    border: 2px solid #DFB01A;
 }
 
 figure.gallery img {
@@ -355,14 +315,6 @@ figure.gallery img {
     width: auto;
     max-width: 190px;
     height: 100%;
-}
-
-figure.desc {
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    color: white;
 }
 
 /* body end */
@@ -374,6 +326,10 @@ footer {
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     background-color: #585858;
+}
+
+footer * h2 {
+    font-family: 'Roboto', sans-serif;
 }
 
 #footer-container {

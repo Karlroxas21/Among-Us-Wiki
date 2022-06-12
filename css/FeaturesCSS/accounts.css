@@ -1,29 +1,39 @@
 /*ANOTHER WAY TO IMPORT GOOGLE FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
 /*THE * MEANS "ALL ELEMENTS" (A UNIVERSAL SELECTOR), SO WE ARE SETTING ALL ELEMENTS TO HAVE ZERO 
 MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
 
-/*STICKY SIDEBAR*/
-
 html {
-    scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
 }
 
 * {
     border: 0;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
     /*font-family: 'Amatic SC', sans-serif;*/
 }
 
-a {
+/* NAVBAR */
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
     font-family: 'Amatic SC', sans-serif;
 }
 
 header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+
     background: black;
     position: fixed;
     top: 0;
@@ -38,7 +48,7 @@ header {
 
 header .logo {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 150px;
     color: white;
     display: inline-block;
@@ -59,7 +69,7 @@ header ul li {
     padding: 20px 0;
     transition: 0.5s;
     box-sizing: border-box;
-    border-right: 1px solid rgba(255,255,255,.2);
+    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 
 header ul li:hover {
@@ -67,7 +77,7 @@ header ul li:hover {
 }
 
 header ul li:last-child {
-    border-right: none; 
+    border-right: none;
 }
 
 header ul li a {
@@ -77,7 +87,7 @@ header ul li a {
     color: #fff;
 }
 
-header ul li a.active, 
+header ul li a.active,
 header ul li a:hover {
     color: #DFB01A;
     border-radius: 10px;
@@ -102,9 +112,48 @@ header ul li:hover ul {
 
 header ul li ul li {
     border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
+.heading {
+    position: relative;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*AUDIO PART*/
 .music {
     position: fixed;
     top: 0;
@@ -117,97 +166,79 @@ header ul li ul li {
     cursor: pointer;
 }
 
-.nav {
-    top: 0; /* Position the navbar at the top of the page */
-}
-
 body {
+    margin: 0px;
+    padding: 0px;
     background-image: url("../../resources/Elements/task/amongusbg.png");
 }
 
-#parent{
+.parent{
     background-color: rgba(0, 0, 0, .8);
     padding-bottom: 100px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: #D2D2CF;
 }
 
-#main_div {
+.main-container {
     margin-left: 18%;
     margin-right: 18%;
     display: grid;
     grid-template-columns: 20% 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "navcontent main_container";
+    grid-template-areas: "navcontent main-content";
     margin-top: 80px;
 }
 
-#navcontent {
+.navcontent {
     grid-area: navcontent;
 }
 
-#navcontent div {
+.boxcontent {
     border: 1px solid #D2D2CF;
     position: sticky;
     top: 80px;
-    margin-top: 50px;
-    margin-right: 50px;
-    padding-right: 10px;
+    font-size: 1.3em;
+    font-family: 'Amatic SC', cursive;
+    line-height: 1.5em;
     height: auto;
-    color: #fff;
 }
 
-#boxcontent {
-    height: auto;
-    border: 2px solid white;
+#boxcontent-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
-#boxcontent ul{
+.boxcontent ul{
     list-style: none;
-    height: auto;
+    margin-left: 30px;
 }
 
-#boxcontent ul li {
-    margin-left: 20px;
-    font-family: 'Amatic SC';
-    font-size: larger;
-    margin-bottom: 10px;
-}
-
-#boxcontent ul li a {
-    font-family: 'Amatic SC';
+.boxcontent a {
     text-decoration: none;
-    color: #fff;
-    padding: 5px 10px; 
+    color: #D2D2CF;
 }
 
-#boxcontent ul a:hover {
+.boxcontent ul a:hover {
     color: #DFB01A;
 }
 
-#main_container {
-    grid-area: main_container;
+.main-content {
+    grid-area: main-content;
     padding: 20px;
 }
 
-h1 {
-    font-family: 'Amatic SC', sans-serif;
-    font-weight: bold;
-    font-size: 44px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #DFB01A;
+.main-content h1 {
+    font-family: 'Amatic SC', cursive;
+    color: white;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    line-height: 2;
-}
-
-h2 {
-    font: 'Roboto';
-    color: white;
-    display: inline-block;
-    text-align: left;
+.main-content h2 {
+    font-family: 'Amatic SC', cursive;
+    color: #D2D2CF;
 }
 
 hr {
@@ -228,14 +259,11 @@ hr {
 }
 
 .body_lists {
-    font-family: 'Roboto', sans-serif;
-    color: white;
     margin-left: 40px;
     line-height: 2.1;
 }
-ul ul li {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.body_lists ul li {
+    list-style: disc;
     margin-left: 40px;
     line-height: 2.1;
 }
@@ -258,10 +286,8 @@ height: auto;
 
 div.desc {
 padding: 5px;
-font-family: 'Roboto', sans-serif;
 font-size: 12px;
 text-align: center;
-color: white;
 }
 
 /* FOOTER */
