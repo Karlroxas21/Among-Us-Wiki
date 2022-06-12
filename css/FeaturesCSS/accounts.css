@@ -122,8 +122,7 @@ header ul li ul li {
 }
 
 body {
-    background-image: url("../../resources/elements-task/amongusbg.png");
-    background-size: cover;
+    background-image: url("../../resources/Elements/task/amongusbg.png");
 }
 
 #parent{

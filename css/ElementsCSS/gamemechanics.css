@@ -177,11 +177,17 @@ td {
     display: table;
 }
 
-figcaption {
+figcaption, a {
     margin-top: 10px;
     color: white;
     font-family: 'Roboto';
     font-size: medium;
+    text-decoration: none;
+}
+
+figcaption:hover {
+    color: #427de2;
+    text-decoration: underline;
 }
 
 footer {
