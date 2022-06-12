@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+
+html {
+    scroll-padding-top: 4rem;
+    /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    /*font-family: 'Amatic SC', sans-serif;*/
+}
+
+/* NAVBAR */
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Amatic SC', sans-serif;
+}
+
+header {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    color: #DFB01A;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.heading {
+    position: relative;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*AUDIO PART*/
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../resources/game-history/among_us_bg_2.jpg");
+}
+
+.parent {
+    background-color: rgba(0, 0, 0, .8);
+    padding-bottom: 100px;
+    color: #D2D2CF;
+    font-size: 1.2em;
+}
+
+.main-container {
+    margin-left: 18%;
+    margin-right: 18%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas: "navbox main-content";
+    grid-template-rows: auto;
+    margin-top: 80px;
+}
+
+.navbox {
+    grid-area: navbox;
+}
+
+.navbox-content {
+    position: sticky;
+    top: 80px;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    border: 1px solid white;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.navbox-content p {
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.navbox-content ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navbox-content a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+.navbox-content a:hover {
+    color: #DFB01A;
+}
+
+.main-content {
+    grid-area: main-content;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+}
+
+table {
+    border: 1px solid white;
+}
+
+table th {
+    color: #DFB01A;
+}
+
+.player-colors>* th,
+tr,
+td {
+    border: 1px solid white;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+}
+
+.player-colors > * td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table-images {
+    width: auto;
+    height: auto;
+    max-width: 198px;
+    max-height: 150px;
+}
+
+.main-content-ul {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.main-content-ul ul {
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+.main-content h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.gallery-container>* {
+    flex: 1 1 33%;
+    margin-bottom: 50px;
+
+}
+
+.gallery-container a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+.gallery-images {
+    width: auto;
+    height: auto;
+    max-width: 230px;
+    max-height: 290px;
+    border: 1px solid #3e3b3b;
+    background-color: #302d2d;
+}
+
+.player-cosmetics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-cosmetics>* th,
+tr,
+td {
+    border: 1px solid white;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+}
+
+.player-cosmetics>* td {
+    padding: 15px;
+}
+
+figure {
+    margin: auto;
+    padding: 4px;
+    max-width: 250px;
+}
+
+figure img:hover {
+    border: 1px solid yellow;
+}
+
+figcaption {
+    font-size: 12px;
+    max-width: 250px;
+}
+
+hr {
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color: #585858;
+}
+
+footer * h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto 20%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "gamehistory elements features aboutus contact"
+        "copyright copyright copyright copyright copyright";
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#game-history {
+    grid-area: gamehistory;
+}
+
+#game-history a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#game-history .hover:hover {
+    color: #DFB01A;
+}
+
+#elements {
+    grid-area: elements;
+}
+
+#elements a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#elements .hover:hover {
+    color: #DFB01A;
+}
+
+#features {
+    grid-area: features;
+}
+
+#features a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#features .hover:hover {
+    color: #DFB01A;
+}
+
+#about-us {
+    grid-area: aboutus;
+
+}
+
+#about-us a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#about-us .hover:hover {
+    color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "circle circle"
+        "phone phone"
+        "mail mail";
+}
+
+#phone-num {
+    grid-area: phone;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+#envelope-email {
+    grid-area: mail;
+    display: flex;
+    flex-direction: row;
+}
+
+#circle {
+    grid-area: circle;
+    width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+#phone {
+    width: 20px;
+}
+
+#envelope {
+    width: 20px;
+}
+
+#num {
+    margin-left: 20px;
+    color: #D2D2CF;
+}
+
+#email {
+    margin-left: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#email a:hover {
+    color: #DAE7E9;
+}
+
+#copyright {
+    color: #D2D2CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #585858;
+    grid-area: copyright;
+}

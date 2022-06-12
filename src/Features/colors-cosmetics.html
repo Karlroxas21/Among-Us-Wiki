@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/FeaturesCSS/color-cosmetics.css">
+    <title>Colors & Cosmetics</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+            <!--AUDIO PART-->
+            <div class="music">
+                <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+            </div>
+
+            <audio id="OST">
+                <source src="../../resources/Home/Music.mp3" type="audio/mp3">
+            </audio>
+
+            <div class="toggle"></div>
+            <!--NAVBAR PART-->
+            <ul class="nav">
+                <li><a href="#">Home</a>
+                <li><a href="#">Game History</a>
+                    <ul>
+                        <li><a href="#">Games</a>
+                        <li><a href="#">Innersloth</a></li>
+                        <li><a href="#">Other Developers</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Elements</a>
+                    <ul>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">Roles</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Tasks</a></li>
+                        <li><a href="#">Abilities</a></li>
+                        <li><a href="#">Objects</a></li>
+                        <li><a href="#">Game Mechanics</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="active">Features</a>
+                    <ul>
+                        <li><a href="../Features/accounts.html">Accounts</a></li>
+                        <li><a href="../Features/colors-cosmetics.html" class="active">Colors & Cosmetics</a></li>
+                        <li><a href="../Features/news-events.html">News & Events</a></li>
+                        <li><a href="#">Unofficial Mods</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About Us</a>
+                    <ul>
+                        <li><a href="#">Meet the Team</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </section>
+    <div class="parent">
+        <div class="main-container">
+            <div class="navbox">
+                <div class="navbox-content">
+                    <p>Contents</p>
+                    <ul>
+                        <li><a href="#">1. Colors</a></li>
+                        <ul>
+                            <li><a href="#">1.1. Overview</a></li>
+                            <li><a href="#">1.2. List of Colors</a></li>
+                            <li><a href="#">1.3. Trivia</a></li>
+                            <li><a href="#">1.4. Gallery</a></li>
+                        </ul>
+                        <li><a href="#">2. Cosmetics</a></li>
+                        <ul>
+                            <li><a href="#">2.1. Hats</a></li>
+                            <li><a href="#">2.2. Skins</a></li>
+                            <li><a href="#">2.3. Pets</a></li>
+                            <li><a href="#">2.4. Visor Cosmetics</a></li>
+                            <li><a href="#">2.5. Nameplates</a></li>
+                            <li><a href="#">2.6. Trivia</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="colors-section">
+                    <h1>Colors</h1>
+                    <br>
+                    <p>Colors change the appearance of the characters in Among Us. Only one character can have each
+                        color in the same lobby.</p>
+                    <br>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Players are able to select between 18 different colors using the wardrobe: Red, Blue, Green,
+                        Pink, Orange, Yellow, Black, White, Purple, Brown, Cyan, Lime, Maroon, Rose, Banana, Gray, Tan
+                        and Coral. The player's selected color does not directly affect gameplay, and only directly
+                        affects the player's in-game appearance. The only exception was Fortegreen, who is not
+                        legitimately playable in-game and causes numerous bugs when played as. Each color also has a
+                        unique color ID; for example, Red's is 0, and Gray's is 15. Fortegreen was an exception to this
+                        rule, as it occupied all IDs of whole numbers above 11, examples being 12 and 100, though as of
+                        version 2021.2.21, Fortegreen's color ID was removed from the code, so it can no longer be
+                        accessed by ID. However, it can still be accessed when joining a lobby (appearing as Fortegreen
+                        briefly), selecting a color as someone with that color joins, or as a side effect of another
+                        bug.</p>
+                    <br>
+                    <h2>List of Colors</h2>
+                    <hr>
+                    <table class="player-colors">
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Color ID</th>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_red.png" id="table-images"></td>
+                            <td>Red</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_blue.png" id="table-images"></td>
+                            <td>Blue</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_green.png" id="table-images"></td>
+                            <td>Green</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_pink.webp" id="table-images"></td>
+                            <td>Pink</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_orange.webp" id="table-images"></td>
+                            <td>Orange</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_yellow.webp" id="table-images"></td>
+                            <td>Yellow</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_black.webp" id="table-images"></td>
+                            <td>Black</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_white.webp" id="table-images"></td>
+                            <td>White</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_purple.webp" id="table-images"></td>
+                            <td>Purple</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_brown.webp" id="table-images"></td>
+                            <td>Brown</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_cyan.webp" id="table-images"></td>
+                            <td>Cyan</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_lime.webp" id="table-images"></td>
+                            <td>Lime</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_maroon.webp" id="table-images"></td>
+                            <td>Maroon</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_rose.webp" id="table-images"></td>
+                            <td>Rose</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_banana.webp" id="table-images"></td>
+                            <td>Banana</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_gray.webp" id="table-images"></td>
+                            <td>Gray</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_tan.webp" id="table-images"></td>
+                            <td>Tan</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_coral.webp" id="table-images"></td>
+                            <td>Coral</td>
+                            <td>17</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h3>Unavailable or unused colors</h3>
+                    <table class="player-colors">
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Color ID</th>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_fortegreen.webp" id="table-images"></td>
+                            <td>Fortegreen</td>
+                            <td>18 or more (account settings only)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../resources/Features/p_olive.webp" id="table-images"></td>
+                            <td>Olive</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2>Trivia</h2>
+                    <hr>
+                    <ul class="main-content-ul">
+                        <li>There are eight colors that were added after Among Us's initial release.</li>
+                        <li>Six new colors were confirmed for a future Among Us update in the Innersloth Discord
+                            server. This update was implemented to the game on June 15, 2021.</li>
+                        <ul>
+                            <li>On Discord, a tiebreaker vote between Coral and Olive started on April 20, 2021, and
+                                ended roughly 28 hours later. After the vote ended, Coral was deemed the winner.</li>
+                            <li>
+                                On May 20, 2021, Innersloth confirmed another new color, Rose, on the Discord server and
+                                Twitter. They also announced more information to be announced during the Summer Game
+                                Fest on June 10.</li>
+                            <li>On May 26, 2021, Gray was confirmed to be added by Innersloth on the Discord server and
+                                Twitter.</li>
+                            <li>On June 3, 2021, Tan's readdition was confirmed by Innersloth on Twitter and Discord,
+                                with a trailer.</li>
+                            <li>On June 8, 2021, a couple days later, Maroon was confirmed as an upcoming color by
+                                Innersloth on their official Discord server and Twitter account.</li>
+                            <li>On June 10, 2021, during the Summer Game Fest, a color called Banana was confirmed.</li>
+                        </ul>
+                        <li>Fortegreen and Olive are the only colors that cannot be selected in the wardrobe.</li>
+                        <ul>
+                            <li>However, these color IDs result from Fortegreen being Among Us's failsafe color.</li>
+                        </ul>
+                        <li>Tan is the only color that was temporarily removed from Among Us. During the removal period,
+                            it was still officially recognized in the Innersloth Discord server as a custom emoji, and
+                            it has since been added back.</li>
+                        <ul>
+                            <li>Similarly, Cyan was used in a prototype for Among Us, but removed from its original
+                                release. It was later added back along with Lime.</li>
+                        </ul>
+                        <li>If the player's selected color ID is anything but a whole number, it will be set to a random
+                            value between 0 and 17.</li>
+                        <li>Some cosmetics change their appearance based on the player's selected color. These cosmetics
+                            include the Mini Crewmate hat, Mini Crewmate pet, and We All Float Here.</li>
+                        <ul>
+                            <li>Two more cosmetics, the Imp-ressive and Batty, have this ability as well, but only if
+                                their "Crewcolor" variants are selected. They do not have this ability by default.</li>
+                            <li>If the player is playing as Fortegreen, then these cosmetics will take the appearance of
+                                Red's.</li>
+                            <li>Contrary to popular belief, the player's color does not affect the chances of them being
+                                The Impostor.
+                            </li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <h2>Gallery</h2>
+                    <hr>
+                    <div class="gallery-container">
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_1.webp">
+                                <img src="../../resources/Features/colors_gallery_1.webp" class="gallery-images">
+                            </a>
+                            <figcaption>Official artwork of all the old and new
+                                colors.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_2.webp">
+                                <img src="../../resources/Features/colors_gallery_2.webp" class="gallery-images">
+                            </a>
+                            <figcaption>The color tab in the wardrobe.</figcaption>
+                        </figure>
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_3.webp">
+                                <img src="../../resources/Features/colors_gallery_3.webp" class="gallery-images">
+                            </a>
+                            <figcaption>The 18 selectable Crewmate colors.</figcaption>
+                        </figure>
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_4.webp">
+                                <img src="../../resources/Features/colors_gallery_4.webp" class="gallery-images">
+                            </a>
+                            <figcaption>The 18 mini Crewmate hat color.</figcaption>
+                        </figure>
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_5.webp">
+                                <img src="../../resources/Features/colors_gallery_5.webp" class="gallery-images">
+                            </a>
+                            <figcaption>The 18 mini Crewmate pet color.</figcaption>
+                        </figure>
+                        <figure>
+                            <a target="_blank" href="../../resources/Features/colors_gallery_6.webp">
+                                <img src="../../resources/Features/colors_gallery_6.webp" class="gallery-images">
+                            </a>
+                            <figcaption>The 12 We All Float colors.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <div class="cosmetics-section">
+                    <h1>Cosmetics</h1>
+                    <br>
+                    <p>Cosmetics are items in Among Us used to customize characters. There are five types of cosmetics:
+                        hats, skins, nameplates, visor cosmetics, and pets. Hats are worn on players' heads, skins are
+                        worn on their bodies, nameplates appear on the player's voting box in meetings, visors are worn
+                        on the face, and pets follow the player around until the player is killed by An Impostor or
+                        ejected.</p>
+                    <br>
+                    <p>Some cosmetics are free and automatically owned by the player, while a variety of other cosmetics
+                        can be unlocked by paying in-game currency. Cosmetics can be bought in the shop or inside
+                        Cosmicubes, and owned cosmetics can be equipped in the wardrobe.</p>
+                    <br>
+                    <p>Cosmetics grant little gameplay advantage and mostly serve the purpose of supporting the
+                        developers. However, if someone is An Impostor and is running away or using a vent, people
+                        can identify them by a hat or pet because they make the space of their character larger. On the
+                        other hand, if someone is a Crewmate, then cosmetics could be used to verify that a player was
+                        in a location. Some cosmetics slightly hide the color of the player, which can further confuse
+                        other players. Players with different cosmetics also assist colorblind players in telling
+                        characters apart.</p>
+                    <br>
+                    <h2>Hats</h2>
+                    <hr>
+                    <p>Hats accessorize or cover the top of a character's body.</p>
+                    <br>
+                    <div class="player-cosmetics">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                            </tr>
+                            <tr>
+                                <td>Abominal Head</td>
+                                <td><img src="../../resources/Features/hat_1.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Bein Cheese</td>
+                                <td><img src="../../resources/Features/hat_2.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Cap-Tain</td>
+                                <td><img src="../../resources/Features/hat_3.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate Scoop</td>
+                                <td><img src="../../resources/Features/hat_4.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Mini-Crewmate</td>
+                                <td><img src="../../resources/Features/hat_5.webp"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Skins</h2>
+                    <hr>
+                    <p>Skins cover the lower half of a character's body, with the exception of the Right Hand Man Reborn
+                        skin (which covers the left half instead).</p>
+                    <br>
+                    <div class="player-cosmetics">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                            </tr>
+                            <tr>
+                                <td>Abominal Snowmate</td>
+                                <td><img src="../../resources/Features/skin_1.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Airship Mechanic</td>
+                                <td><img src="../../resources/Features/skin_2.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Astronaught</td>
+                                <td><img src="../../resources/Features/skin_3.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Business Skirt</td>
+                                <td><img src="../../resources/Features/skin_4.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Caitlyn's Uniform</td>
+                                <td><img src="../../resources/Features/skin_5.webp"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Pets</h2>
+                    <hr>
+                    <p>Pets follow their owner around until they die or if the game ends.</p>
+                    <br>
+                    <div class="player-cosmetics">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                            </tr>
+                            <tr>
+                                <td>Heimerdinger's Poro</td>
+                                <td><img src="../../resources/Features/pet_1.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Hampton</td>
+                                <td><img src="../../resources/Features/pet_2.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>UFO</td>
+                                <td><img src="../../resources/Features/pet_3.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Glitch Pet</td>
+                                <td><img src="../../resources/Features/pet_4.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Mini-Crewmate</td>
+                                <td><img src="../../resources/Features/pet_5.webp"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Visor Cosmetics</h2>
+                    <hr>
+                    <p>Visor cosmetics accessorize a character's visor. Many of them were previously hats.</p>
+                    <br>
+                    <div class="player-cosmetics">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                            </tr>
+                            <tr>
+                                <td>My Name Geoff</td>
+                                <td><img src="../../resources/Features/visor_1.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Note 2 Self</td>
+                                <td><img src="../../resources/Features/visor_2.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Safe Not Sorry</td>
+                                <td><img src="../../resources/Features/visor_3.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Got My Eye On You</td>
+                                <td><img src="../../resources/Features/visor_4.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>A Beard</td>
+                                <td><img src="../../resources/Features/visor_5.webp"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Nameplates</h2>
+                    <hr>
+                    <p>Nameplates add a stylized background to the player's voting box.</p>
+                    <br>
+                    <div class="player-cosmetics">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                            </tr>
+                            <tr>
+                                <td>Trees</td>
+                                <td><img src="../../resources/Features/nameplate_1.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>The Vault Above</td>
+                                <td><img src="../../resources/Features/nameplate_2.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>The Greatest Nameplate</td>
+                                <td><img src="../../resources/Features/nameplate_3.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Snowmates of Polus</td>
+                                <td><img src="../../resources/Features/nameplate_4.webp"></td>
+                            </tr>
+                            <tr>
+                                <td>Emeralds!</td>
+                                <td><img src="../../resources/Features/nameplate_5.webp"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Trivia</h2>
+                    <hr>
+                    <ul class="main-content-ul">
+                        <li>There used to be sprites for unused hats in the game files, including a traffic cone, a
+                            drinking cap, a headcrab, and a pot. These hats were either removed or repurposed into
+                            officially released hats.</li>
+                        <li>Many skins and hats reference Marcus Bromander's Henry Stickmin series.</li>
+                        <li>As of version 2020.10.22, cosmetics are visible on the voting screen, and as of version
+                            2021.6.30, they are also visible in the chat screen.</li>
+                        <li>The Halloween hats can be unlocked before or after Halloween by setting the device's time to
+                            October.</li>
+                        <ul>
+                            <li>The same applies to the Christmas hats.</li>
+                        </ul>
+                        <li>Any player playing as Fortegreen is unable to select cosmetics, and will appear wearing the
+                            military suit.</li>
+                        <li>When the kill animation is displayed, a few hats have changes, such as the We All Float Here
+                            popping.</li>
+                        <li>The cosmetics worn on the players are mirrored if the player is facing the opposite
+                            direction. There are some exceptions to this, such as the Right Hand Man: Reborn.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--AUDIO JAVASCRIPT PART-->
+<script>
+    var OST = document.getElementById("OST");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function () {
+        if (OST.paused) {
+            OST.play();
+            icon.src = "../../resources/Home/Music_On.png";
+        } else {
+            OST.pause();
+            icon.src = "../../resources/Home/Music_Off.png";
+        }
+    }
+</script>
+<footer>
+    <div id="footer-container">
+        <div id="game-history">
+            <h2>Game History</h2>
+            <br>
+            <a href="#" class="hover">Games</a>
+            <br>
+            <a href="#" class="hover">Innersloth</a>
+            <br>
+            <a href="#" class="hover">Other Developers</a>
+        </div>
+        <div id="elements">
+            <h2>Elements</h2>
+            <br>
+            <a href="#" class="hover">Maps</a>
+            <br>
+            <a href="#" class="hover">Roles</a>
+            <br>
+            <a href="#" class="hover">Locations</a>
+            <br>
+            <a href="#" class="hover">Tasks</a>
+            <br>
+            <a href="#" class="hover">Abilities</a>
+            <br>
+            <a href="#" class="hover">Objects</a>
+            <br>
+            <a href="#" class="hover">Game Mechanics</a>
+        </div>
+        <div id="features">
+            <h2>Features</h2>
+            <br>
+            <a href="../Features/accounts.html" class="hover">Accounts</a>
+            <br>
+            <a href="../Features/colors-cosmetics.html" class="hover">Colors & Cosmetics</a>
+            <br>
+            <a href="../Features/news-events.html" class="hover">News & Events</a>
+            <br>
+            <a href="#" class="hover">Unofficial Mods</a>
+        </div>
+        <div id="about-us">
+            <h2>About Us</h2>
+            <br>
+            <a href="#" class="hover">Meet the Team</a>
+        </div>
+        <div id="contact">
+            <img src="/resources/game-history/circle-solid.svg" alt="circle shape" id="circle" />
+            <div id="phone-num">
+                <img src="/resources/game-history/phone-solid.svg" alt="phone icon" id="phone" />
+                <p id="num">066666660</p>
+            </div>
+            <div id="envelope-email">
+                <img src="/resources/game-history/envelope-solid.svg" alt="envelope icon" id="envelope" />
+                <p id="email">
+                    <a href="mailto:jardelezajd@students.national-u.edu.ph">@national-u.edu.ph</a>
+                </p>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy</p>
+        </div>
+    </div>
+</footer>
+
+
+</html>
