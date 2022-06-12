@@ -164,8 +164,19 @@ td {
     font-family: 'Roboto';
     padding-left: 5px;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     padding: 5px;
+}
+
+#table-info {
+    text-decoration: none; 
+    color: #427de2; 
+    font-family: 'Roboto';
+}
+
+#table-info:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 #trendingpages {
