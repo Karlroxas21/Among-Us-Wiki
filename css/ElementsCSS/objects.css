@@ -176,11 +176,27 @@ td {
     display: table;
 }
 
+#table-info {
+    text-decoration: none; 
+    color: #427de2; 
+    font-family: 'Roboto';
+}
+
+#table-info:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 figcaption {
     margin-top: 10px;
     color: white;
     font-family: 'Roboto';
     font-size: medium;
+}
+
+figcaption:hover {
+    color: #427de2;
+    text-decoration: underline;
 }
 
 footer {
