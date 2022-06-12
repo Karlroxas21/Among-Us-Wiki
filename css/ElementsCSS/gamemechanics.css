@@ -128,9 +128,19 @@ body {
     color: white;
 }
 
-p, i {
+p {
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+i {
+    font-family: 'Roboto', sans-serif;
+    color: #427de2;
+}
+
+i:hover {
+    color: whitesmoke;
+    text-decoration: underline;
 }
 
 table, td {
@@ -177,12 +187,11 @@ td {
     display: table;
 }
 
-figcaption, a {
+figcaption {
     margin-top: 10px;
     color: white;
     font-family: 'Roboto';
     font-size: medium;
-    text-decoration: none;
 }
 
 figcaption:hover {
