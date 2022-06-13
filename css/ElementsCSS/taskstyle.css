@@ -69,16 +69,16 @@ html {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.5) url('../../resources/Elements/task/MapsScroll_Up.png');
+    background: rgba(255, 255, 255, 0.5) url(../../resources/Elements/Maps/Scroll_Up.png);
     border-radius: 50%;
     background-size: 20px;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    z-index: 1;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    z-index: 1;
 }
 
 .scrollUp.active {
