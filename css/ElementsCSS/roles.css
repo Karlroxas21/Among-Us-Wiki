@@ -1,0 +1,850 @@
+/*ANOTHER WAY TO IMPORT GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+
+/*THE * MEANS "ALL ELEMENTS" (A UNIVERSAL SELECTOR), SO WE ARE SETTING ALL ELEMENTS TO HAVE ZERO 
+MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Amatic SC', sans-serif;*/
+}
+
+a {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header ul li:last-child {
+    border-right: none; 
+}
+
+header ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header ul li a.active, 
+header ul li a:hover {   
+    color: yellow;
+    border-radius: 10px;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 230px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 80px;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav {
+    top: 0; /* Position the navbar at the top of the page */
+}
+
+body {
+    height: 100vh;
+    background-image: url("../../resources/Maps/BG.jpg");
+    background-size: cover;
+}
+
+.div1 {
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative; /*eme sa footer*/
+    left: 430px; /*eme sa footer*/
+    width: 60%;
+    height: auto;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 80px;
+    margin-right: 170px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto';
+    color: white;
+}
+
+.div2 {
+    display: block;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Roboto';
+    color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+hr {
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+table, td {
+    border: 1px solid whitesmoke;
+    table-layout: fixed;
+    width: 100%;  
+}
+
+th {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+td {
+    font-family: 'Roboto';
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*CARD PROFILES OF ROLES*/
+.card {
+    font-family: Roboto;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-image img {
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-content p {
+    font-family: Amatic SC;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 20px 5px 20px;
+}
+
+/*CREWMATE POP UP*/
+.modal {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent {
+    position: relative;
+    background: url(Roles/stars_bg.jpg);
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+
+.modalclose {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*IMPOSTOR*/
+.modal2 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal2:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent2 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose2 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*GHOST*/
+.modal3 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal3:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent3 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose3 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*SHERIFF*/
+.modal4 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal4:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent4 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose4 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*SCIENTIST*/
+.modal5 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal5:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent5 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 4px;
+    background: url(Roles/stars_bg.jpg);
+}
+
+.modalclose5 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*ENGINEER*/
+.modal6 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal6:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent6 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose6 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*ANGEL*/
+.modal7 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal7:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent7 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose7 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+/*SHAPESHIFTER*/
+.modal8 {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);  
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal8:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent8 {
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    background: url(Roles/stars_bg.jpg);
+    border-radius: 4px;
+}
+
+.modalclose8 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+
+/*VIDEO*/
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+/*STICKY SIDEBAR*/
+
+html {
+    scroll-padding-top: 4rem; /*SO THAT THE NAVBAR AT TOP WONT COVER THE TITLE OF THE CLICKED LINK IN THE SIDE BAR*/
+  }
+
+.main-left {
+    background: transparent;
+    height: 950vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
+                                HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO*/
+    width: 20%;
+    float: left;
+    /*background: pink;  PARA MAKITA MO SIZE KUNG HANGGANG SAAN LANG YUNG SCROLL NG SIBEBAR*/
+    position: absolute;
+}
+
+.left-sticky {
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+    height: auto;
+    width: 200px;
+    position: sticky;
+    /*display: flex;*/
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    margin-left: 150px;
+}
+
+.left-sticky ul {
+    list-style: none;
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+.left-sticky ul li {
+    font-family: 'Amatic SC';
+    margin-bottom: 10px;
+}
+
+.left-sticky ul li a {
+    font-family: 'Amatic SC';
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;  
+}
+
+.left-sticky ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: yellow;
+    border-radius: 10px;
+}
+
+/*SCROLL UP BUTTON*/
+.scrollUp {
+    position: fixed;
+    bottom: 800px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5) url(Maps/Scroll_Up.png);
+    border-radius: 50%;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollUp.active {
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*FOOTER*/
+
+footer { /*eme sa footer*/
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #585858;
+}
+
+#footer-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto 20%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "gamehistory elements features aboutus contact"
+        "copyright copyright copyright copyright copyright";
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#game-history {
+    grid-area: gamehistory;
+
+}
+
+#game-history a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#game-history .hover:hover {
+    color: #DFB01A;
+}
+
+#elements {
+    grid-area: elements;
+}
+
+#elements a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#elements .hover:hover {
+    color: #DFB01A;
+}
+
+#features {
+    grid-area: features;
+}
+
+#features a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#features .hover:hover {
+    color: #DFB01A;
+}
+
+#about-us {
+    grid-area: aboutus;
+
+}
+
+#about-us a {
+    text-decoration: none;
+    display: inline-block;
+    color: #D2D2CF;
+}
+
+#about-us .hover:hover {
+    color: #DFB01A;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+footer div a {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "circle circle"
+        "phone phone"
+        "mail mail";
+}
+
+#phone-num {
+    grid-area: phone;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+#envelope-email {
+    grid-area: mail;
+    display: flex;
+    flex-direction: row;
+}
+
+#circle {
+    grid-area: circle;
+    width: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
+   
+}
+
+#phone {
+    width: 20px;
+}
+
+#envelope {
+    width: 20px;
+}
+
+#num {
+    margin-left: 20px;
+    color: #D2D2CF;
+}
+
+#email {
+    margin-left: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: #D2D2CF;
+}
+
+#email a:hover {
+    color: #DAE7E9;
+}
+
+#copyright {
+    color: #D2D2CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #585858;
+    grid-area: copyright;
+}

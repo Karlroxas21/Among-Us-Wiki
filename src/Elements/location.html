@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="location.css"><!--../../css/ElementsCSS/-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Locations</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="../../resources/Home/Music.mp3" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "../../resources/Home/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "../../resources/Home/Music_Off.png";
+            }
+        }
+    </script>
+
+<!--STICKY SIDE BAR ON SCROLL-->
+    <div class="main-left">
+        <div class="left-sticky">
+            <ul>
+                <li style="border-bottom: 1px solid #fff;">Contents</li>
+                <li><a href="#Locations">1. Locations</a></li>
+                <li><a href="#Overview">2. Overview</a></li>
+                <li><a href="#List">3. List of Locations</a></li>
+                <li style="text-indent: 20px;"><a href="#Skeld">3.1. The Skeld</a></li>
+                <li style="text-indent: 20px;"><a href="#MIRA">3.2. MIRA HQ</a></li>
+                <li style="text-indent: 20px;"><a href="#Polus">3.3. Polus</a></li>
+                <li style="text-indent: 20px;"><a href="#Airship">3.4. The Airship</a></li>
+                <li><a href="#Trivia">4. Trivia</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+<!--JS SCROLL UP TOGGLE-->
+    <div class="scrollUp" onclick="scrollUp();"></div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollUp');
+            scroll.classList.toggle("active" , window.scrollY > 500)
+        })
+
+        function scrollUp(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+    <div class="div1">
+        <h1 id="Locations">Locations</h1>
+        <hr>
+        <p> Locations in Among Us each have a specific usage. On The Skeld, Polus, and The Airship, entering most locations is only possible when 
+            the doors in the location are not Sabotaged. Living Impostors may use vents to quickly travel to many locations, such as Admin.</p>
+            
+        <h1 id="Overview">Overview</h1>
+        <hr>
+        <p>Locations are a very important mechanic in Among Us. Locations sometimes make a perfect environment to kill Crewmates, such as 
+            Electrical on The Skeld, largely known for the large amount of kills that take place in the latter. A vast majority of locations 
+            also contain tasks.</p><br><br> 
+        
+        <h1 id="List">List of Locations:</h1><br>    
+        
+<!--LIST OF KNOWN LOCATIONS-->
+<!--THE SKELD-->
+        <h1 id="Skeld">The Skeld</h1>
+        <hr>
+
+        <div class="main-carousel">
+            <div class="card">
+                <img src="Location/Skeld_Admin.png">
+                <div class="intro">
+                    <h1>Admin</h1>
+                    <p>On The Skeld, <span>Admin</span> is a small room located under and slightly to the right of Cafeteria with only one exit. There is a 
+                        security camera outside of it, along with a Fix Wiring panel. A table in the center of the room features both the Admin 
+                        panel on its left side and the Swipe Card task on its right side.<br><br>
+
+                        A vent is situated in the lower-left corner (connected to both Cafeteria and right corridor vents). 
+                        One of the two O2 keyboards is used to fix the Oxygen Depleted sabotage in the upper right corner. Finally, the upper 
+                        left corner features the Upload Data task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Cafe.png">
+                <div class="intro">
+                    <h1>Cafeteria</h1>
+                    <p>On The Skeld, <span>Cafeteria</span> is the spawn point for players at the start of the game and after an emergency meeting ends. It 
+                        is the largest location which contains five blue circular tables and has three doors: the left leads to a hallway connecting 
+                        Upper Engine and MedBay; the right door leads to Weapons; and the bottom door leads to a hallway connecting Storage and Admin. 
+                        A vent is located near the right door, and the emergency button is located on the middle table. The upper left corner features 
+                        the Fix Wiring panel, while the upper right features the Empty Garbage and Download Data tasks' panels.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Com.png">
+                <div class="intro">
+                    <h1>Communications</h1>
+                    <p><span>Communications</span> on The Skeld is a medium-sized room in the lower-right hand corner, located between Storage and Shields. 
+                        It features two tasks, Download Data and Accept Diverted Power, which are located on the left and right side of the door, 
+                        respectively, and a radio at the bottom used to fix Comms Sabotaged.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Elec.png">
+                <div class="intro">
+                    <h1>Electrical</h1>
+                    <p>On The Skeld, <span>Electrical</span> is a room that has wires running across the floor and walls and other electrical appliances, 
+                        such as a distributor and a generator. The entrance is located in the middle of the hallway between Storage and Lower 
+                        Engine. The middle of the room features a panel to fix the Fix Lights Sabotage. At the back, there are panels for all 
+                        of the tasks located here. There is a vent located under the Download Data panel, which is connected to those of Security 
+                        and MedBay.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/The_Skeld_Lower_Engine.png">
+                <div class="intro">
+                    <h1>Lower Engine</h1>
+                    <p><span>Lower Engine</span> is a small room on The Skeld, located at the bottom-left corner of the map. There is a vent in the bottom 
+                        right corner, which leads to Reactor. There is a big engine on the left side, with panels for a couple of the tasks, 
+                        and Accept Diverted Power is located above, right below the hall. This location is connected to two hallways; one 
+                        leading to Reactor, Security, and Upper Engine, and one leading to Electrical and Storage.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/The_Skeld_MedBay.png">
+                <div class="intro">
+                    <h1>Medbay</h1>
+                    <p>On The Skeld, <span>MedBay</span> is a medium-sized room that contains a vent, a scanner, and four hospital beds. It houses three 
+                        tasks, and its vent leads to the vents in Security and Electrical.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Navigation.png">
+                <div class="intro">
+                    <h1>Navigation</h1>
+                    <p><span>Navigation</span> is a small room located on the far right side of the map, which serves as the ship's control room with various 
+                        navigation equipment. It contains two vents, with the upper one connecting to Weapons and the lower one connecting to 
+                        Shields. It has five tasks, four in the main area, and a Fix Wiring panel in the hallway to the left. It is similar to 
+                        Reactor, with the two locations being at opposites of the map with two vents that lead to the northern and southern rooms.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_O2.png">
+                <div class="intro">
+                    <h1>O2</h1>
+                    <p>On The Skeld, <span>O2</span> is a small room located towards the map's top-right corner, below Weapons. It features three short tasks 
+                        and one of the number pads to resolve Oxygen Depleted. It appears that a plant is inside the box with the number pad, 
+                        possibly helping produce oxygen to the ship. To the right of O2 is a camera, which also captures the entrance to Navigation.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Reactor.png">
+                <div class="intro">
+                    <h1>Reactor</h1>
+                    <p>On The Skeld, <span>Reactor</span> is a room located in the corridor across from Security. It contains two vents, with the upper one 
+                        connecting to Upper Engine and the lower one connecting to Lower Engine. While the room's Reactor typically glows blue, 
+                        it will begin to glow red if Reactor Meltdown is happening, with paths to the handprint scanners lighting up. A fake 
+                        Divert Power panel is shown but cannot be used.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Security.png">
+                <div class="intro">
+                    <h1>Security</h1>
+                    <p>On The Skeld, <span>Security</span> is a small room across from Reactor with a vent in the lower right corner. Above that is a desk 
+                        and on the north side is a computer where players can access Security. When near Security, ambient sound is heard.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Shields.png">
+                <div class="intro">
+                    <h1>Shields</h1>
+                    <p><span>Shields</span> is a small room located at the far southeastern corner on The Skeld near Navigation and Communications, and 
+                        contains several lamps with lights at the edges. In addition, a vent is located near the Prime Shields panel, which 
+                        connects to the southern vent in Navigation. If the lights in the bottom right corner outside the ship are lit, it 
+                        means at least one Crewmate has completed the Prime Shields visual task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Storage.png">
+                <div class="intro">
+                    <h1>Storage</h1>
+                    <p>On The Skeld, <span>Storage</span> has large containers in the middle of the room, which only allow for movement around the room's 
+                        walls. On the bottom left of the pile of containers, there is a red gas canister, which is used to refill the fuel can 
+                        during the Fuel Engines task. It has three doors: up, which leads to Cafeteria, passing Admin; left, which leads to 
+                        Lower Engine, passing Electrical; and right, which leads to Shields, passing Communications. In the bottom right corner 
+                        of the room, there is a lever and a hatch where the garbage is flushed away for the second stage of the Empty Garbage 
+                        task, which is a visual task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Upper_Engine.png">
+                <div class="intro">
+                    <h1>Upper Engine</h1>
+                    <p><span>Upper Engine</span> is a small room on The Skeld that contains three tasks and a single vent. This location is connected to the 
+                        hallway leading to Reactor and Security, as well as the hallway leading to MedBay and Cafeteria.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Skeld_Weapons.png">
+                <div class="intro">
+                    <h1>Weapons</h1>
+                    <p>On The Skeld, <span>Weapons</span> is a medium-sized room located to the right of Cafeteria and above O2. There are two exits: one 
+                        that leads to Cafeteria and one that leads to a hallway connecting it, O2, Navigation, and Shields. In the center of 
+                        the room is a chair sitting on a platform with a holographic screen, used for Clear Asteroids. There are also panels 
+                        for Download Data and Accept Diverted Power, located at the top and to the right, respectively. A vent lies just below 
+                        the Download Data panel. A turret fires a laser on the outside of the ship every time a player fires a shot in the Clear 
+                        Asteroids task.</p>
+                </div>
+            </div>
+        </div>
+
+<!--MIRA HQ-->
+        <h1 id="MIRA">MIRA HQ</h1>
+        <hr>
+
+        <div class="main-carousel">
+            <div class="card">
+                <img src="Location/MIRA_Admin.png">
+                <div class="intro">
+                    <h1>Admin</h1>
+                    <p>On MIRA HQ, <span>Admin</span> is located under Greenhouse and across from Office. There is a table in the center featuring the Enter 
+                        Id Code and Prime Shields tasks, as well as the Admin ability. The top wall features two panels for the Accept Diverted 
+                        Power and Chart Course tasks. A vent is located in the bottom right corner.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Balcony.png">
+                <div class="intro">
+                    <h1>Balcony</h1>
+                    <p><span>Balcony</span> is located at the bottom of MIRA HQ, under Cafeteria, with the Clear Asteroids task on the left, the Measure 
+                        Weather task on the right, and a vent in the middle between the two sliding doors. The sliding doors automatically open 
+                        for players but do not have collision.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Cafe.png">
+                <div class="intro">
+                    <h1>Cafeteria</h1>
+                    <p>On MIRA HQ, <span>Cafeteria</span> is the main spawn point for players after an emergency meeting ends. However, it is not where 
+                        players begin the game. It is located in the right corridor and is smaller than its predecessor. It is also near Storage 
+                        (located in the right of Cafeteria) and Balcony (under Cafeteria), and the tables are cubic and light orange instead of 
+                        circular and blue. The emergency button is located on the lower-left table. The upper left wall features a Divert Power 
+                        panel, while the upper right wall features the Empty Garbage and Buy Beverage tasks. Above Cafeteria, there is an exit 
+                        leading to Hallway and a vent.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Com.png">
+                <div class="intro">
+                    <h1>Communications</h1>
+                    <p><span>Communications</span> on MIRA HQ is a medium-sized room at the bottom of the map, above MedBay. Accept Diverted 
+                        Power, located in the top-left corner, is the only task present. Next to that is a panel used to fix Comms Sabotaged, 
+                        and besides that, the Doorlog ability, which marks all players that pass through Hallway.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Decom.png">
+                <div class="intro">
+                    <h1>Decontamination</h1>
+                    <p>On MIRA HQ, <span>Decontamination</span> is a long hallway that runs from Locker Room to a hallway that separates Reactor and 
+                        Laboratory. To enter, players must use a button of the doors to open. After some time, the room fills with vapor. When 
+                        it is clear again, the opposite door opens before closing after a few seconds, and both doors' buttons becoming usable 
+                        again. There are floor lights of eight segments, which will suggest when the doors will open. First, when the button is 
+                        pressed, the eight segments' lights will turn off, and the door closes. Then, after the vapor, the eight segments will 
+                        turn on again, and the next door opens.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Greenhouse.png">
+                <div class="intro">
+                    <h1>Greenhouse</h1>
+                    <p><span>Greenhouse</span> is a tall room with pots full of shrubs, flowers, plants, and a large oxygen filter with a tree inside. The roof 
+                        contains several dry plants that sway slowly, and a vent is located behind the filter. The floor is entirely made of some 
+                        transparent material (possibly glass). There are panels on the left and right of Greenhouse for the Accept Diverted Power 
+                        and the second stage of the Water Plants tasks, respectively. There are also two panels on the oxygen filter used for the 
+                        Oxygen Depleted Sabotage, as well as the Clean O2 Filter task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Hallway.png">
+                <div class="intro">
+                    <h1>Hallway</h1>
+                    <p><span>Hallway</span> is an upside-down Y-shaped hallway containing Doorlog sensors at each of its exits. The north, bottom-left and 
+                        bottom-right exits leads to Greenhouse, Locker Room / Communications and Cafeteria respectively. It has one task at its 
+                        bottom-left, which is Fix Wiring. At its bottom-right near Cafeteria, there is a vent that directly connects to vents 
+                        in Admin and Balcony. Hallway is one of the busiest locations on MIRA HQ, so it is risky for An Impostor to kill there. 
+                        However, by using the vent at the bottom-right near Cafeteria correctly, it is possible to escape after a kill.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Laboratory.png">
+                <div class="intro">
+                    <h1>Laboratory</h1>
+                    <p>On MIRA HQ, <span>Laboratory</span> is located across from Reactor, and past Decontamination. It features a one-way window that can 
+                        only be looked through on the hallway side. Along the top wall are panels for Fix Wiring, Accept Diverted Power, and 
+                        Assemble Artifact. There is also a vent in the top right corner, directly connected to the vents in Reactor and 
+                        Decontamination. At the bottom, there is a table used for Sort Samples.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Launchpad.png">
+                <div class="intro">
+                    <h1>Launchpad</h1>
+                    <p><span>Launchpad</span> is the spawn point for players at the start of a game on MIRA HQ. The outside of Dropship is located here, 
+                        along with several boxes, a diagnostic computer, another device that serves to fuel the engines, and a panel for Accept 
+                        Diverted Power in the lower-left corner. In addition, it has a vent in the upper left corner connected to the rest of 
+                        the vents on the map.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Locker_Room.png">
+                <div class="intro">
+                    <h1>Locker Room</h1>
+                    <p>There are two parts to <span>Locker Room</span>:<br><br>
+
+                        The hallway side of the room, which contains three sets of four lockers, a bench, and a rug, as well as an additional 
+                        bench just to the left of Locker Room's entrance from Hallway. <br><br>
+
+                        The decontamination side of the room, which contains the entrance to Decontamination and the button to open the door 
+                        with. A Fix Wiring panel is located to the left of the door into Decontamination.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_MedBay.png">
+                <div class="intro">
+                    <h1>Medbay</h1>
+                    <p>On MIRA HQ, <span>MedBay</span> is a medium-sized room that contains a scanner and seven futuristic hospital beds. It houses three 
+                        tasks and a vent that directly leads to Locker Room and Balcony.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Office.png">
+                <div class="intro">
+                    <h1>Office</h1>
+                    <p>The <span>Office</span> is a medium-sized room located at the end of the northernmost hallway, across from Admin. It has a vent in 
+                        the upper left corner. Two tasks are found here. Fix Lights and part of Comms Sabotaged are resolved here.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Reactor.png">
+                <div class="intro">
+                    <h1>Reactor</h1>
+                    <p>On MIRA HQ, <span>Reactor</span> is connected to Laboratory. It contains a massive reactor with a claw that emits a laser, several 
+                        computers, and two fingerprint scanners that are used to resolve Reactor Meltdown, similar to The Skeld. The room's 
+                        Reactor also glows red during Reactor Meltdown. To reach Reactor, Crewmates must first go through Decontamination. A 
+                        vent is located on the left below, allowing Impostors to enter without going through Decontamination. Several one-way 
+                        windows can also be seen through from the hallway side of Reactor.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/MIRA_Storage.png">
+                <div class="intro">
+                    <h1>Storage</h1>
+                    <p>On this map, <span>Storage</span> is located near Cafeteria. Inside the room is a bookcase which contains old materials, including 
+                        the watering can, which is used for the Water Plants task. A Fix Wiring panel is located at the exit of the room.</p>
+                </div>
+            </div>
+        </div>
+
+<!--POLUS-->
+        <h1 id="Polus">Polus</h1>
+        <hr>
+
+        <div class="main-carousel">
+            <div class="card">
+                <img src="Location/Polus_Admin.png">
+                <div class="intro">
+                    <h1>Admin</h1>
+                    <p>On Polus, <span>Admin</span> is located south of Office. Unlike the other two Admin rooms, the Admin room on Polus is much larger and 
+                        features no tasks. Instead, it features lots of bookshelves and a vent in the bottom-left corner. The right portion of 
+                        Admin features a table with the Admin ability and a door leading to Decontamination.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Boiler.png">
+                <div class="intro">
+                    <h1>Boiler Room</h1>
+                    <p><span>Boiler Room</span> is a small room on Polus. It is located on the bottom left-hand side of the map, south of O2. There are two 
+                        pipes on the left and right, which are used for two out of three steps of the Open Waterways task, as well as a water 
+                        jug in the top-left corner for the first stage of Replace Water Jug. In addition, there is a camera outside the south 
+                        exit of O2 that can be accessed by using Security, which shows the right side of Boiler Room.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Com.png">
+                <div class="intro">
+                    <h1>Communications</h1>
+                    <p><span>Communications</span> on Polus is a medium-sized room that is not directly connected to any other room but is located above 
+                        Weapons. At the top-left corner there is a panel for Reboot Wifi, and a computer for Upload Data. To the left of 
+                        Communications is a panel used to resolve Comms Sabotaged.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Decon.png">
+                <div class="intro">
+                    <h1>Decontamination</h1>
+                    <p>On Polus, there are two <span>Decontamination</span> locations, each on either side of two hallways that extend out from Specimen Room, 
+                        one that goes up to Laboratory, and one that goes left and down to Admin. They are small, square-shaped rooms, and the one 
+                        accessible from Laboratory has a panel for the Fix Wiring task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Dropship.png">
+                <div class="intro">
+                    <h1>Dropship</h1>
+                    <p>On Polus, <span>Dropship</span> acts as the spawn location. It is a dead-end located at the top of the map, slightly left from the 
+                        middle, and leads directly outside. There is a door in the back with task panels on the left and right, which are used 
+                        for Chart Course and Insert Keys, respectively.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Elec.png">
+                <div class="intro">
+                    <h1>Electrical</h1>
+                    <p>On Polus, <span>Electrical</span> is a room connected to Security and O2, having an exposed area that contains electricity generators 
+                        and a transparent wire fence. The panel to fix the Fix Lights Sabotage is located in the outside area. There are panels 
+                        for Download Data and Fix Wiring inside. A vent is located at the end of the corridor, near the Security entrance, and 
+                        connects to a vent outside Electrical and O2. There is also a security camera outside the right exit of Electrical.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Lab.png">
+                <div class="intro">
+                    <h1>Laboratory</h1>
+                    <p><span>Laboratory</span> on Polus is a large room encompassing several smaller rooms. At the left entrance is a long hallway that connects 
+                        two sections. The left-most section is an exposed area with a drill used in Repair Drill. The right-most section is the 
+                        weather station that features a television with the weather forecast on it. In addition, there are two panels along the top 
+                        wall used for the Record Temperature and the second stage of the Fix Weather Node tasks.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_O2.png">
+                <div class="intro">
+                    <h1>O2</h1>
+                    <p>On Polus, <span>O2</span> consists of three rooms, two medium-sized and one small - and is located above Boiler Room. The top-left 
+                        room contains the first stage of the Upload Data task, the Monitor Tree task, and a vent. The main room contains the 
+                        Empty Garbage and Fix Wiring tasks, and the small room contains the Fill Canisters task.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Office.png">
+                <div class="intro">
+                    <h1>Office</h1>
+                    <p>The <span>Office</span> takes up the space of two long rooms: one labeled as "Office", which features the emergency button and the 
+                        second stage of Replace Water Jug, and another housing Vitals and all the other tasks in Office. During emergency 
+                        meetings, players spawn in the left part of Office, huddled around a wide, oval-shaped table with the button placed in 
+                        the middle. The two rooms are connected by a hallway, which also connects to Admin and a door in the bottom left 
+                        leading Outside.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Outside.png">
+                <div class="intro">
+                    <h1>Outside</h1>
+                    <p><span>Outside</span> is the planetary base's outer area, being located practically from the right exit of the Office, with a lava pit, 
+                        several pilasters of climatic modules, among other things. A metal plank leads out to the lava used when a player is 
+                        ejected. However, while playing, players cannot fall into the lava. This area can also be seen through the security 
+                        cameras.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Security.png">
+                <div class="intro">
+                    <h1>Security</h1>
+                    <p>On Polus, <span>Security</span> is a tiny room linked with Electrical on the upper-left side of the map. It has a computer screen that 
+                        allows access to Security. Although there are no vents in Security, a vent is at the exit of the room.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Specimen.png">
+                <div class="intro">
+                    <h1>Specimen Room</h1>
+                    <p><span>Specimen Room</span> is a medium-sized, hexagonal room located near the bottom right of the map. To access it, players must pass 
+                        through one of the small Decontamination rooms from either Admin or Laboratory, then walk through a long, empty hallway. 
+                        The room features windows that let players see Outside from within.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Storage.png">
+                <div class="intro">
+                    <h1>Storage</h1>
+                    <p><span>Storage</span> is a small, isolated room with only a few boxes and a red gas canister, which is once again used to refill the 
+                        fuel can during the Fuel Engines task. There is also a hole there, which is connected to the holes in Office and the 
+                        one near Communications. A window allows players to see both into and out of Storage depending on where they stand, 
+                        located at the south of the room.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Polus_Weapons.png">
+                <div class="intro">
+                    <h1>Weapons</h1>
+                    <p>On Polus, <span>Weapons</span> is a medium-sized room with two tasks: Clear Asteroids and Download Data. The room is inside a pod, 
+                        located at the bottom of the Polus base, with an entrance at the top leading to Outside (the part near Communications). 
+                        The Download Data panel is on a short wall perpendicular to the pod's entrance (on the upper right side). Clear 
+                        Asteroids is in the top-right corner and is accessed via a PC on a desk, which fires a laser outside the pod into outer 
+                        space. There is a vent right outside the exit of the room. Impostors can close the doors of Weapons on Polus, unlike 
+                        The Skeld.</p>
+                </div>
+            </div>
+        </div>
+
+<!--THE AIRSHIP-->
+        <h1 id="Airship">The Airship</h1>
+        <hr>
+
+        <div class="main-carousel">
+            <div class="card">
+                <img src="Location/Airship_Armory.png">
+                <div class="intro">
+                    <h1>Armory</h1>
+                    <p><span>Armory</span> is a large room shaped like a backward "C". The floor is made out of wood in the upper section, with weapons 
+                        displayed on the wall. There is also an exit that leads to a hallway. This hallway connects to Cockpit, Communications, 
+                        and Engine Room. The lower section has a purple carpet with yellow outlines as the floor, with more weapons displayed 
+                        on the wall, and an exit leading to Kitchen.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Brig.png">
+                <div class="intro">
+                    <h1>Brig</h1>
+                    <p><span>Brig</span> is a small, rectangular room with three cell doors that cannot be opened. To the left is Vault,
+                         to the right is Gap Room, and at the bottom is a hallway which leads to Engine Room. The lower 
+                         hallway also contains an Upload Data panel, the only task in Brig.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/The_Airship_Cargo_Bay.png">
+                <div class="intro">
+                    <h1>Cargo Bay</h1>
+                    <p><span>Cargo Bay</span> is a large room located on the far-right side of the map. There are three exits: the top 
+                        exit leading to Lounge, the bottom leading to Medical, and the left leading to the right side of 
+                        Ventilation. Near the right exit is a vent and a security camera, and near the top exit are panels 
+                        for Upload Data and Fix Wiring as well as another panel for Fix Lights. Near the top-right is a 
+                        fuel tank for Fuel Engines, and near the bottom-right is the safe used for Unlock Safe.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Cockpit.png">
+                <div class="intro">
+                    <h1>Cockpit</h1>
+                    <p><span>Cockpit</span> consists of several computers, a Divert Power panel, and an Upload Data panel in the front. 
+                        There is also a table with a chair, a vent in the center, which connects to the ones in Viewing 
+                        Deck and Vault, and on the top-left side, there is an Admin map.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Elec.png">
+                <div class="intro">
+                    <h1>Electrical</h1>
+                    <p>On The Airship, <span>Electrical</span> is made up of many small rooms, each connected with randomly-opened doors 
+                        making it like a maze. The doors will always be opened in a pattern that allows the player to reach 
+                        any exit from any other exit or at the very least allow all rooms to be accessible. There are three 
+                        exits to Electrical. The left exit, which has a hallway leading to Security; the top exit, with a 
+                        ladder leading to Main Hall; and the right exit, which leads to Medical.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Engine.png">
+                <div class="intro">
+                    <h1>Engine Room</h1>
+                    <p><span>Engine Room</span> is a large, long room with exits to the left, above, and right. A crane is positioned 
+                        in the top-right corner and two engines to the left side of the room. Sets of stairs are 
+                        positioned at the top and right entrances and near the bottom of the room. At the bottom 
+                        staircase lies a vent and a panel for Fuel Engines. The rightmost exit leads to Main Hall, and 
+                        the leftmost exit leads to a short hallway connecting Armory, Communications, and Cockpit.
+                        The hallway above linking to Brig is also a part of Engine Room. However, even though the 
+                        Download Data panel is located there, the task shows that the panel is in Brig.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Gap.png">
+                <div class="intro">
+                    <h1>Gap Room</h1>
+                    <p>On the left side of <span>Gap Room</span>, there is a ladder which goes up to Meeting Room, and a door which 
+                        leads to Brig. Next to the ladder is a keypad, and further down on the same side is a vent, which 
+                        leads to the lower part of the right side in the Gap Room and the upper vent in Main Hall. On the 
+                        right side, there is a Download Data panel and a door that leads to Records. There is also a ladder 
+                        going down, leading to a keypad, a panel to Accept Diverted Power, and a vent that leads to the left side 
+                        of the Gap Room and the upper vent in Main Hall. There is a moving platform that can be used to cross.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Hall.png">
+                <div class="intro">
+                    <h1>Hall of Portraits</h1>
+                    <p><span>Hall of Portraits</span> is a hallway with several portraits and a red carpet that connects Kitchen and 
+                        Security. It has various pictures of people in the Crewmate style.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Kitchen.png">
+                <div class="intro">
+                    <h1>Kitchen</h1>
+                    <p><span>Kitchen</span> has a blue and white floor pattern and consists of a few tables with dishes and knives, 
+                        another cuisine, and a sink. There is also a vent, a fridge, and three doors. The top-left exit 
+                        leads to Armory, the bottom-left exit leads to Viewing Deck, and the right exit leads to Hall of 
+                        Portraits, which connects to Security.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Lounge.png">
+                <div class="intro">
+                    <h1>Lounge</h1>
+                    <p><span>Lounge</span> is comprised of two connected rooms: one with pool tables and another with bathroom stalls. 
+                        The room containing pool tables has purple carpet and two pool tables in the center. Hung on the 
+                        back wall are cue sticks, dartboards, and a Fix Wiring panel. The back-left exit connects to Records, 
+                        while the front-right exit connects to the stalls. <br><br>
+                    
+                        The room with stalls has a tiled floor, four bathroom stalls with toilets and plungers, and an 
+                        Empty Garbage bin near the exit to the pool tables. Each stall is closed with a green door, which 
+                        can be opened by using it.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Main.png">
+                <div class="intro">
+                    <h1>Main Hall</h1>
+                    <p><span>Main Hall</span> consists of six rooms and a corridor connecting them. Three of these rooms appear to be 
+                        bedrooms, one of which contains a ladder leading to Electrical and another which contains a vent. This vent 
+                        leads to the vents in Engine Room and Kitchen. There is also a room full of cleaning supplies, which contains 
+                        a vent that leads to either side of Gap Room, a room which contains the pipe used to Decontaminate, and a 
+                        darkroom for completing Develop Photos. The left exit of this room leads to Engine Room, while the right leads 
+                        to Showers.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Med.png">
+                <div class="intro">
+                    <h1>Medical</h1>
+                    <p><span>Medical</span> is divided into two sections. The right section (which is presumably a waiting room) has 
+                        several chairs; a couple of tables - one with two water dispensers, a stack of paper cups, and 
+                        scattered magazines on and around it - and the other table with a magazine on top of it as well; 
+                        and the Empty Garbage task. The left section is C-shaped and is larger than the right section. 
+                        It contains a panel for Download Data, a weighing scale, and two beds - with the Vitals monitor 
+                        located in between them.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Meeting_Room.png">
+                <div class="intro">
+                    <h1>Meeting Room</h1>
+                    <p><span>Meeting Room</span> is a large, vaguely rectangular room divided into three sections. The left section 
+                        has a security camera on the left wall, a panel for Empty Garbage, and a ladder leading down to 
+                        Gap Room. There is a large table with the emergency button, surrounded by several blue chairs in 
+                        the middle section. A panel for Accept Diverted Power and Fix Wiring can also be seen. The right 
+                        section has some chairs and a panel for Enter Id Code.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Outside.png">
+                <div class="intro">
+                    <h1>Outside</h1>
+                    <p>On The Airship, there are two <span>Outside</span> locations: <br><br> one accessed from Viewing Deck, and another from 
+                        Security. From Viewing Deck, Outside is a small, square balcony with a wooden plank extending 
+                        from the balcony. From Security, Outside is a larger balcony with stairs leading down to the 
+                        right. At both locations, there is a panel for Upload Data, and The Airship's engine can be heard 
+                        as clouds move by.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Records.png">
+                <div class="intro">
+                    <h1>Records</h1>
+                    <p><span>Records</span> is a large, circular room consisting of four bookshelves, a table with a file and some paper, 
+                        and two brown chairs surrounding the table. It has three exits. The left exit leads to Gap Room, the 
+                        right exit leads to Lounge, and the bottom exit leads to Showers. <br><br>
+
+                        Security cameras can also be seen by the left and right exits.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Security.png">
+                <div class="intro">
+                    <h1>Security</h1>
+                    <p>On The Airship, <span>Security</span> is a small room with two entrances. It consists of a monitor to use 
+                        Security and a few computers; the rightmost one being a panel used for Rewind Tapes. At the 
+                        bottom, there is an exit to a balcony, similar to Viewing Deck.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Showers.png">
+                <div class="intro">
+                    <h1>Showers</h1>
+                    <p><span>Showers</span> is a medium-sized room with benches and 15 towels lying around, with some showers by the 
+                        upper-right area. In the right area with benches is a vent leading to Records and Cargo Bay. 
+                        Showers has three exits: one to the left connected to Main Hall, a second at the top connecting 
+                        to Records, and a third to the right that is connected to the left side of Ventilation.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/The_Airship_Vault.png">
+                <div class="intro">
+                    <h1>Vault</h1>
+                    <p><span>Vault</span> is a large, circular room divided into four sections. It is located near the top left of the 
+                        map. Two of these sections have two mannequins each, while the other two have gold and artifacts 
+                        in them, being a golden gun and a red halo energy sword, respectively. In the middle of all the 
+                        sections, the Romanian Ruby from The Henry Stickmin Collection is on display, used for completing 
+                        the Polish Ruby task. There is a vent on the left, which leads directly to the one in Cockpit and 
+                        a camera attached to the door on the right, which leads to Brig.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Venti.png">
+                <div class="intro">
+                    <h1>Ventilation</h1>
+                    <p><span>Ventilation</span> is a small room with two different platforms separated by a huge gap, which cannot be 
+                        crossed. The two platforms are at different heights. The left side of Ventilation is accessed 
+                        from Showers, and the right side is accessed from Cargo Bay.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Location/Airship_Viewing_Deck.png">
+                <div class="intro">
+                    <h1>Viewing Deck</h1>
+                    <p><span>Viewing Deck</span> is a small room with four windows looking outside and a platform going outside. 
+                        Inside is a vent, which leads directly to the one in Cockpit, Download Data and Fix Wiring panels, 
+                        and a Fix Lights panel. The right exit connects to Kitchen, while the front exit connects to Outside.</p>
+                </div>
+            </div>
+        </div>   
+
+        <h1 id="Trivia">Trivia</h1>
+        <hr>  
+        <ul>
+            <li style="margin-left: 30px; color: #fff; font-family: Roboto; padding: 10px;">Security, Admin, and Lower Decontamination on Polus and Hall of Portraits on The Airship have no Tasks.</li>
+            <li style="margin-left: 30px; color: #fff; font-family: Roboto; padding: 10px;">On The Skeld, every location has at least two tasks.</li>
+            <li style="margin-left: 30px; color: #fff; font-family: Roboto; padding: 10px;">The Airship has the most locations of any Among Us map to date, with twenty total.</li>
+        </ul>
+</div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                wrapAround: true,
+                freeScroll: true,
+            });
+        </script>
+
+  <!--FOOTER-->
+    <footer>
+        <div id="footer-container">
+          <div id="game-history">
+            <h2>Game History</h2>
+            <br>
+            <a href="#" class="hover">Games</a>
+            <br>
+            <a href="#" class="hover">Innersloth</a>
+            <br>
+            <a href="#" class="hover">Other Developers</a>
+          </div>
+          <div id="elements">
+            <h2>Elements</h2>
+            <br>
+            <a href="#" class="hover">Maps</a>
+            <br>
+            <a href="#" class="hover">Roles</a>
+            <br>
+            <a href="#" class="hover">Locations</a>
+            <br>
+            <a href="#" class="hover">Tasks</a>
+            <br>
+            <a href="#" class="hover">Abilities</a>
+            <br>
+            <a href="#" class="hover">Objects</a>
+            <br>
+            <a href="#" class="hover">Game Mechanics</a>
+          </div>
+          <div id="features">
+            <h2>Features</h2>
+            <br>
+            <a href="#" class="hover">Accounts</a>
+            <br>
+            <a href="#" class="hover">Colors & Cosmetics</a>
+            <br>
+            <a href="#" class="hover">News & Events</a>
+            <br>
+            <a href="#" class="hover">Unofficial Mods</a>
+          </div>
+          <div id="about-us">
+            <h2>About Us</h2>
+            <br>
+            <a href="#" class="hover">Meet the Team</a>
+          </div>
+          <div id="contact">
+            <img
+              src="../../resources/game-history/circle-solid.svg"
+              alt="circle shape"
+              id="circle"
+            />
+            <div id="phone-num">
+              <img
+                src="../../resources/game-history/phone-solid.svg"
+                alt="phone icon"
+                id="phone"
+              />
+              <p id="num">09218295285</p>
+            </div>
+            <div id="envelope-email">
+              <img
+                src="../../resources/game-history/envelope-solid.svg"
+                alt="envelope icon"
+                id="envelope"
+              />
+              <p id="email">
+                <a href="mailto:roxaskv@students.national-u.edu.ph"
+                  >@national-u.edu.ph</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="copyright">
+            <p>Copyright &copy</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
