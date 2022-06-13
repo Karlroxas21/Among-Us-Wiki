@@ -119,7 +119,6 @@ header ul li ul li {
 body {
     height: 100vh;
     background-image: url("../../resources/Elements/Maps/BG.jpg");
-    background-size: cover;
 }
 
 .div1 {
@@ -615,7 +614,7 @@ html {
 
 .main-left {
     background: transparent;
-    height: 950vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
+    height: 816.5vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
                                 HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO*/
     width: 20%;
     float: left;
