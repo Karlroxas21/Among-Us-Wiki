@@ -118,7 +118,7 @@ header ul li ul li {
 
 body {
     height: 100vh;
-    background-image: url("../../resources/Maps/BG.jpg");
+    background-image: url("../../resources/Elements/Maps/BG.jpg");
     background-size: cover;
 }
 
@@ -321,7 +321,7 @@ html {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.5) url(Maps/Scroll_Up.png);
+    background: rgba(255, 255, 255, 0.5) url(../../resources/Elements/Maps/Scroll_Up.png);
     border-radius: 50%;
     background-size: 20px;
     background-position: center;
