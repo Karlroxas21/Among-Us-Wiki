@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/ElementsCSS/roles.css">
+    <link rel="icon" type="image/png" href="/resources/game-history/among-us-2.webp">
+
+    <title>Roles</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+
+<!--AUDIO PART--> 
+        <div class="music">
+            <img src="../../resources/Home/Music_Off.png" id="icon" alt="Audio Off Icon">
+        </div>
+
+    <audio id="OST">
+        <source src="../../resources/Home/Music.mp3" type="audio/mp3">
+    </audio>
+
+        <div class="toggle"></div>       
+<!--NAVBAR PART-->
+        <ul class="nav">
+            <li><a href="#">Home</a>
+            <li><a href="#">Game History</a>
+                <ul>
+                    <li><a href="../../src/GameHistory/games.html">Games</a>
+                    <li><a href="../../src/GameHistory/innersloth.html">Innersloth</a></li>
+                    <li><a href="../../src/GameHistory/other-developers.html">Other Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="active">Elements</a>
+                <ul>
+                    <li><a href="../../src/Elements/maps.html">Maps</a></li>
+                    <li><a href="../../src/Elements/roles.html">Roles</a></li>
+                    <li><a href="../../src/Elements/location.html">Locations</a></li>
+                    <li><a href="../../src/Elements/tasks.html">Tasks</a></li>
+                    <li><a href="../../src/Elements/abilities.html">Abilities</a></li>
+                    <li><a href="../../src/Elements/objects.html">Objects</a></li>
+                    <li><a href="../../src/Elements/gamemechanics.html">Game Mechanics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<!--AUDIO JAVASCRIPT PART-->
+    <script>
+        var OST = document.getElementById("OST");    
+        var icon = document.getElementById("icon"); 
+
+        icon.onclick = function (){
+            if(OST.paused){
+                OST.play();  
+                icon.src = "../../resources/Home/Music_On.png";
+            }else {
+                OST.pause();  
+                icon.src = "../../resources/Home/Music_Off.png";
+            }
+        }
+    </script>
+
+<!--STICKY SIDE BAR ON SCROLL-->
+    <div class="main-left">
+        <div class="left-sticky">
+            <ul>
+                <li style="border-bottom: 1px solid #fff;">Contents</li>
+                <li><a href="#Roles">1. Roles</a></li>
+                <li><a href="#Overview">2. Overview</a></li>
+                <li><a href="#List">3. List of Roles</a></li>
+                <li style="text-indent: 20px;"><a href="#Crewmate">3.1. Crewmate</a></li>
+                <li style="text-indent: 20px;"><a href="#Impostor">3.2. Impostor</a></li>
+                <li style="text-indent: 20px;"><a href="#Ghost">3.3. Ghost</a></li>
+                <li style="text-indent: 20px;"><a href="#Sheriff">3.4. Sheriff</a></li>
+                <li style="text-indent: 20px;"><a href="#Scientist">3.5. Scientist</a></li>
+                <li style="text-indent: 20px;"><a href="#Engineer">3.6. Engineer</a></li>
+                <li style="text-indent: 20px;"><a href="#Angel">3.7. Guardian Angel</a></li>
+                <li style="text-indent: 20px;"><a href="#Shapeshifter">3.8. Shapeshifter</a></li>
+                <li><a href="#Video">4. Video</a></li>
+                <li><a href="#Audio">5. Audio</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+<!--JS SCROLL UP TOGGLE-->
+    <div class="scrollUp" onclick="scrollUp();"></div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollUp');
+            scroll.classList.toggle("active" , window.scrollY > 500)
+        })
+
+        function scrollUp(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+    <div class="div1">
+        <h1 id="Roles">Roles</h1>
+        <hr>
+        <p> Roles are a game mechanic in Among Us that are either randomly selected or given under certain circumstances. 
+            Each role has different goals and abilities.</p>
+            
+        <h1 id="Overview">Overview</h1>
+        <hr>
+        <p> Both the Impostor and Crewmate roles are shown when a game of Among Us begins. However, the ghost role can only be obtained through 
+            being killed by An Impostor or by being ejected. There are currently seven roles in Among Us: Crewmate, Impostor, Scientist, 
+            Shapeshifter, Engineer, Guardian Angel, and ghost. Each role has different abilities and mechanics. For example, Impostors have 
+            access to Kill, Sabotage, and Vent.</p>
+        
+        <h1 id="List">List of Roles</h1>
+        <hr>
+        <p>By default, all players have access to: Admin, Customize, Doorlog, Report, Security, Use, and Vitals. The list of mechanics available
+            by default for each living player is:</p><br>
+
+        <ul>
+            <li style="margin-left: 40px; color: #fff; font-family: Roboto;">Can send messages to all players.</li>
+            <li style="margin-left: 40px; color: #fff; font-family: Roboto;">Can use the emergency button and other interactive objects.</li>
+            <li style="margin-left: 40px; color: #fff; font-family: Roboto;">Can vote to eject or kick players.</li>
+            <li style="margin-left: 40px; color: #fff; font-family: Roboto;">Can resolve Sabotages.</li>
+            <li style="margin-left: 40px; color: #fff; font-family: Roboto;">Cannot see or chat with ghosts.</li>
+        </ul><br>
+
+        <div style="padding:5px; display: flex; justify-content: center;
+        align-items: center;">
+            <thead>
+                <table border=1 width=200 cellpadding=10>
+                    <tr>
+                      <th style="width:15%">Name</th>
+                      <th style="width:20%">Ability Notes</th>
+                      <th style="width:20%">Obtaining</th>
+                      <th style="width:40%">Exclusive Mechanics</th>
+                    </tr>
+                    <tr>
+                      <td>Crewmate</td>
+                      <td>The Use button is used more often in this role, as Crewmates use it to do tasks.</td>
+                      <td>At the start of the game by random</td>
+                      <td>Can be killed by Impostors if alive.</td>
+                    </tr>
+
+                    <tr>
+                      <td>Impostor</td>
+                      <td><b>Exclusive Abilities:</b>
+                        <ul>
+                            <li style="margin-left: 30px;">Kill</li>
+                            <li style="margin-left: 30px;">Sabotage</li>
+                            <li style="margin-left: 30px;">Vent</li>
+                        </ul></td>
+                      <td>At the start of the game by random</td>
+                      <td>Have red names, seen only by themselves and other Impostors.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ghost</td>
+                        <td><b>Revoked Abilities</b>
+                            <hr>
+                            <b>Crewmate:</b>
+                            <ul>
+                                <li style="margin-left: 30px;">Report</li>
+                                <li style="margin-left: 30px;">Fix Sabotages</li>
+                            </ul>
+                            <br>
+                            <b>Impostor:</b>
+                            <ul>
+                                <li style="margin-left: 30px;">Kill</li>
+                                <li style="margin-left: 30px;">Report</li>
+                                <li style="margin-left: 30px;">Use (except when using monitoring abilities on The Airship.)</li>
+                                <li style="margin-left: 30px;">Vent</li>
+                            </ul>
+                        </td>
+                        <td>Being killed by An Impostor (Crewmates only)
+                            <br><br>
+                            — OR —
+                            <br><br>
+                            Being ejected</td>
+                        <td>
+                            <ul>
+                                <li style="margin-left: 20px; margin-right: 10px;">Always have access to the chat.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Can move through collisions.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Can only send messages to other ghosts.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Can see other ghosts.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Cannot be ejected.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Cannot resolve Sabotages.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Cannot use the emergency button, ladders and the moving platform. Crewmate ghosts can still use task panels.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Cannot vote to eject or kick other players during emergency meetings.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Cannot call emergency meetings by either using the emergency button or reporting a dead body.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Have increased player speed.</li>
+                                <li style="margin-left: 20px; margin-right: 10px;">Have unlimited and unobstructed vision.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Shapeshifter</td>
+                        <td>Impostor-based role, has all of the abilities that Impostors normally have.</td>
+                        <td>Randomly at the start of the game. Must be enabled in the lobby options.</td>
+                        <td>Shift: transform into another player for a limited time.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineer</td>
+                        <td>Crewmate-based role, has all the abilities that Crewmates normally have.</td>
+                        <td>Randomly at the start of the game. Must be enabled in the lobby options.</td>
+                        <td>Vent: can travel through vents like Impostors, but for a limited time and with a cooldown.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Guardian Angel</td>
+                        <td>Crewmate-based role, has all the abilities that Crewmates normally have.</td>
+                        <td>Being killed by An Impostor
+                            <br><br>
+                            — OR —
+                            <br><br>
+                            Being ejected.
+                            <br><br>
+                            Must be enabled in the lobby options.</td>
+                        <td>Protect: cast a protective shield around a living player that prevents them from being killed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Scientist</td>
+                        <td>Crewmate-based role, has all the abilities that Crewmates normally have.</td>
+                        <td>Randomly at the start of the game. Must be enabled in the lobby options.</td>
+                        <td>Vitals: a portable Vitals monitor that can be accessed from anywhere on the map.</td>
+                    </tr>
+                </table>
+            </thead>
+        </div>
+
+<!--ROLES PROFILE-->
+    <h1 id="Crewmate">Crewmate</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/crewmate_bg.jpg" alt="crewmate background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox"><img src="../../resources/Elements/Roles/crewmate.png" alt="crewmate image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Crewmate</h3>
+            <p style="color: black;">"I think Cyan is sus"</p>
+        </div>    
+    </div>
+
+        <div id="modalbox" class="modal">
+            <div class="modalcontent">
+                <div class="profile-image">
+                    <img src="../../resources/Elements/Roles/crewmate.png" alt="crewmate image logo" style="border: 5px solid rgba(88, 29, 29, 0.767); transform: none;">
+                </div> 
+                <h1 style="color: yellow;"><center>Goals</center></h1>
+                <p>The primary goal of a Crewmate is to complete all tasks without being killed by An Impostor, with the secondary goal of 
+                    finding all Impostors and ejecting them off the map. Crewmates who have been killed by An Impostor or ejected become ghosts.</p>
+                <a href="#Crewmate" class="modalclose" style="font-size:60px; font-weight:600;">&times;</a>
+            </div>
+        </div>
+
+<!--IMPOSTOR-->
+    <h1 id="Impostor">Impostor</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/impostor_bg.jpg" alt="impostor background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox2"><img src="../../resources/Elements/Roles/impostor.jpg" alt="impostor image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Impostor</h3>
+            <p style="color: black;">"It's not me, I swear"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox2" class="modal2">
+        <div class="modalcontent2">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/impostor.jpg" alt="impostor image logo" style="border: 5px solid rgba(29, 88, 83, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>The primary goal of The Impostor(s) is to kill enough Crewmates to have an equal amount of Impostors and 
+                Crewmates before all tasks are completed.<br><br>
+                All Impostors cannot complete any tasks; however, they are given a fake task list as general guidance on 
+                feigning a Crewmate's behavior and blending in with them. Additionally, Impostors have the ability to Sabotage to force 
+                Crewmates to resolve issues, with some killing all Crewmates if not resolved in time. This ability can be used in many 
+                different ways, such as luring Crewmates away from a dead body or concealing a kill.</p>
+            <a href="#Impostor" class="modalclose2" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+<!--GHOST-->
+    <h1 id="Ghost">Ghost</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/ghost_bg.jpg" alt="ghost background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox3"><img src="../../resources/Elements/Roles/ghost.jpg" alt="ghost image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Ghost</h3>
+            <p style="color: black;">"I'm ded hehe"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox3" class="modal3">
+        <div class="modalcontent3">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/ghost.jpg" alt="ghost image logo" style=" transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goal</center></h1>
+            <p>
+                <b>Crewmate:</b><br><br>
+                Ghost Crewmates must complete their given tasks, similar to their living counterparts, to fill the task bar. Once all Crewmates, 
+                including ghosts, finish their tasks, the game ends with a Crewmate victory.<br><br>
+                
+                <b>Impostor:</b><br><br>
+                Ghost Impostors must aid their fellow Impostors by Sabotaging to help achieve a victory for The Impostors.</p>
+            <a href="#Ghost" class="modalclose3" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+<!--SHERIFF-->
+    <h1 id="Sheriff">Sheriff</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/sheriff_bg.jpg" alt="sheriff background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox4"><img src="../../resources/Elements/Roles/sheriff.png" alt="sheriff image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Sheriff</h3>
+            <p style="color: black;">"There's a snake in my boots"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox4" class="modal4">
+        <div class="modalcontent4">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/sheriff.png" alt="sheriff image logo" style="border: 5px solid rgba(100, 71, 33, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>The primary goal of a Sheriff is to complete all tasks while not being killed by the Impostor(s), with 
+                the secondary goal being to find The Impostor and ejecting them off the ship. Sheriffs who have been killed by An Impostor or 
+                ejected become Ghosts.</p>
+            <a href="#Sheriff" class="modalclose4" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+ 
+<!--SCIENTIST-->
+    <h1 id="Scientist">Scientist</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/scientist_bg.jpg" alt="scientist background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox5"><img src="../../resources/Elements/Roles/scientist.png" alt="scientist image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Scientist</h3>
+            <p style="color: black;">"Love ain't a science, Don't need no license"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox5" class="modal5">
+        <div class="modalcontent5">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/scientist.png" alt="scientist image logo" style="border: 5px solid rgba(33, 43, 100, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>Scientists have a portable Vitals monitor that allows them to view the Vitals interface from anywhere on 
+                the map, including maps that otherwise do not have a stationary Vitals monitor, such as The Skeld and MIRA HQ. The portable 
+                Vitals monitor has a battery that drains upon use but recharges as the Scientist completes tasks or automatically recharges if 
+                they have completed all of their tasks.</p>
+            <a href="#Scientist" class="modalclose5" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+<!--ENGINEER-->
+    <h1 id="Engineer">Engineer</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/engineer_bg.jpg" alt="engineer background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox6"><img src="../../resources/Elements/Roles/engineer.png" alt="engineer image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Engineer</h3>
+            <p style="color: black;">"Fix it Felix"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox6" class="modal6">
+        <div class="modalcontent6">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/engineer.png" alt="engineer image logo" style="border: 5px solid rgba(100, 99, 33, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>While usually an ability that is exclusive to Impostors, Engineers are also able to travel through vents. 
+                However, Engineers can only stay in a vent for a limited time and must wait for a period of time before they can use another vent. 
+                Engineers cannot travel through vents while Comms Sabotaged is active. Due to being a Crewmate-based role, they also cannot enter 
+                a vent if the vent is to be used for Clean Vent (however, this does not prevent the Engineer from using the vent system said vent is connected to.)</p>
+            <a href="#Engineer" class="modalclose6" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+<!--ANGEL-->
+    <h1 id="Angel">Guardian Angel</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/angel_bg.jpg" alt="guardian angel background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox7"><img src="../../resources/Elements/Roles/angel.png" alt="guardian angel image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Guardian Angel</h3>
+            <p style="color: black;">"I am your saviour"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox7" class="modal7">
+        <div class="modalcontent7">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/angel.png" alt="guardian angel image logo" style="border: 5px solid rgba(100, 33, 80, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>The primary goal of the Guardian Angel is the same as a standard Crewmate. However, as a ghost, they must 
+                Protect their fellow Crewmates from being killed by An Impostor. If An Impostor tries to kill a protected Crewmate, a shield will 
+                appear and crack, preventing the Crewmate from being killed.<br><br>
+
+                <b>Becoming a Guardian Angel:</b><br><br>
+                Depending on the probability, the first Crewmate who becomes a ghost (either by being killed by An Impostor or being ejected) 
+                becomes a Guardian Angel.</p>
+            <a href="#Angel" class="modalclose7" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+<!--SHAPESHIFT-->
+    <h1 id="Shapeshifter">Shapeshifter</h1>
+    <hr>
+    <div class="card">
+        <div class="card-image">
+            <img src="../../resources/Elements/Roles/shapeshifter_bg.jpg" alt="shapeshifter background image">
+        </div>
+
+        <div class="profile-image">
+            <a href="#modalbox8"><img src="../../resources/Elements/Roles/shapeshift.png" alt="shapeshifter image logo"></a>
+        </div> 
+
+        <div class="card-content">
+            <h3>Shapeshifter</h3>
+            <p style="color: black;">"I am you but stronger"</p>
+        </div>    
+    </div>
+
+    <div id="modalbox8" class="modal8">
+        <div class="modalcontent8">
+            <div class="profile-image">
+                <img src="../../resources/Elements/Roles/shapeshift.png" alt="shapeshifter image logo" style="border: 5px solid rgba(100, 33, 39, 0.767); transform: none;">
+            </div> 
+            <h1 style="color: yellow;"><center>Goals</center></h1>
+            <p>The Shapeshifter has access to the Shift ability, which allows them to transform into any living player, 
+                or any players that were alive at the end of the last emergency meeting. The disguise lasts for a limited time and leaves 
+                evidence behind if set in the game's options. The Shapeshifter can pull up a menu of all other living players in the game and 
+                select one to copy their appearance (name, color, and cosmetics). An animation is visible to other players during the 
+                shapeshifting. During discussion time, the Shapeshifter will appear as their original self.</p>
+            <a href="#Shapeshifter" class="modalclose8" style="font-size:60px; font-weight:600;">&times;</a>
+        </div>
+    </div>
+
+    <h1 id="Video">Video</h1>
+    <hr>
+    <table>
+        <tr>
+            <th>Video</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="#Video" onclick="toggle();"><img src="../../resources/Elements/Roles/Roles_img.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></a>
+                <div class="trailer">
+                    <video src="../../resources/Elements/Roles/New_Roles_Reveal.mp4" controls="true"></video>
+                    <img src="../../resources/Elements/Roles/Close.png" class="close" onclick="toggle();" />
+                  </div>
+            </td>
+            <td><b>Roles trailer:</b><br><br>               
+                Roles trailer showcasing Scientist, Shapeshifter, Engineer, and Guardian Angel</td>
+        </tr>
+    </table>
+ 
+
+    <h1 id="Audio">Audio</h1>
+    <hr>
+    <table>
+        <tr>
+            <th>Audio</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Role_Reveal.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Crewmate role is revealed.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Crewmate_Win.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Crewmates win.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Impostor_role.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Impostor role is revealed.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Impostor_kill.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when Impostor kills.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Crewmate_kill.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>Played when the Crewmate gets killed by The Impostor (victim view).</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Scientist_role.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Scientist role is revealed.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Engineer_role.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Engineer role is revealed.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Shapeshifter_role.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Shapeshifter role is revealed.</td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="../../resources/Elements/Roles/Shift_transform.ogg" type="audio/ogg">
+                </audio>
+            </td>
+            <td>The sound played when the Shapeshifter is transforming.</td>
+        </tr>
+    </table>
+</div>
+
+ <script type="text/javascript">
+                    function toggle() {
+                      var trailer = document.querySelector(".trailer");
+                      var video = document.querySelector("video");
+                      trailer.classList.toggle("active");
+                      video.pause();
+                      video.currentTime = 0;
+                    }
+                </script>
+
+  <!--FOOTER-->
+    <footer>
+        <div id="footer-container">
+          <div id="game-history">
+            <h2>Game History</h2>
+            <br>
+            <a href="#" class="hover">Games</a>
+            <br>
+            <a href="#" class="hover">Innersloth</a>
+            <br>
+            <a href="#" class="hover">Other Developers</a>
+          </div>
+          <div id="elements">
+            <h2>Elements</h2>
+            <br>
+            <a href="#" class="hover">Maps</a>
+            <br>
+            <a href="#" class="hover">Roles</a>
+            <br>
+            <a href="#" class="hover">Locations</a>
+            <br>
+            <a href="#" class="hover">Tasks</a>
+            <br>
+            <a href="#" class="hover">Abilities</a>
+            <br>
+            <a href="#" class="hover">Objects</a>
+            <br>
+            <a href="#" class="hover">Game Mechanics</a>
+          </div>
+          <div id="features">
+            <h2>Features</h2>
+            <br>
+            <a href="#" class="hover">Accounts</a>
+            <br>
+            <a href="#" class="hover">Colors & Cosmetics</a>
+            <br>
+            <a href="#" class="hover">News & Events</a>
+            <br>
+            <a href="#" class="hover">Unofficial Mods</a>
+          </div>
+          <div id="about-us">
+            <h2>About Us</h2>
+            <br>
+            <a href="#" class="hover">Meet the Team</a>
+          </div>
+          <div id="contact">
+            <img
+              src="../../resources/game-history/circle-solid.svg"
+              alt="circle shape"
+              id="circle"
+            />
+            <div id="phone-num">
+              <img
+                src="../../resources/game-history/phone-solid.svg"
+                alt="phone icon"
+                id="phone"
+              />
+              <p id="num">09218295285</p>
+            </div>
+            <div id="envelope-email">
+              <img
+                src="../../resources/game-history/envelope-solid.svg"
+                alt="envelope icon"
+                id="envelope"
+              />
+              <p id="email">
+                <a href="mailto:roxaskv@students.national-u.edu.ph"
+                  >@national-u.edu.ph</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="copyright">
+            <p>Copyright &copy</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
