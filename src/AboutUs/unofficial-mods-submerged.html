@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="../../css/AboutUsCSS/unofficial-mods-submerged.css" />
+          <link rel="icon" type="image/png" href="/resources/game-history/among-us-2.webp">
+          <title>Features-Unofficial Mods</title>
+        </head>
+      
+        <body>
+          <section>
+            <header>
+              <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+              <!--AUDIO PART-->
+              <div class="music">
+                <img
+                  src="/resources/Home/Music_Off.png"
+                  id="icon"
+                  alt="Audio Off Icon"
+                />
+              </div>
+      
+              <audio id="OST">
+                <source src="/resources/Home/Music.mp3" type="audio/mp3" />
+              </audio>
+      
+              <div class="toggle"></div>
+              <!--NAVBAR PART-->
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li>
+                  <a href="#">Game History</a>
+                  <ul>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Innersloth</a></li>
+                    <li><a href="#">Other Developers</a></li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a href="#">Elements</a>
+                  <ul>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Abilities</a></li>
+                    <li><a href="#">Objects</a></li>
+                    <li><a href="#">Game Mechanics</a></li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a href="#" class="active">Features</a>
+                  <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Colors & Cosmetics</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Unofficial Mods</a></li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a href="#">About Us</a>
+                  <ul>
+                    <li><a href="#">Meet the Team</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </header>
+          </section>
+      
+          <!--AUDIO JAVASCRIPT PART-->
+          <script>
+            var OST = document.getElementById("OST");
+            var icon = document.getElementById("icon");
+      
+            icon.onclick = function () {
+              if (OST.paused) {
+                OST.play();
+                icon.src = "/resources/Home/Music_On.png";
+              } else {
+                OST.pause();
+                icon.src = "/resources/Home/Music_Off.png";
+              }
+            };
+          </script>
+      
+          <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+          <script>
+            const menuToggle = document.querySelector(".toggle");
+            const nav = document.querySelector(".nav");
+            menuToggle.onclick = function () {
+              menuToggle.classList.toggle("active");
+              nav.classList.toggle("active");
+            };
+          </script>
+
+           <!--SUB NAVBAR-->
+          <div class="subnavbar">
+            <ul class="sublist">
+              <li><a href="#" class="active">SubMerged</a></li>
+              <li><a href="#">The Other roles</a></li>
+            </ul>
+          </div>
+
+            <!--CONTENT-->
+          <section class="submerged-heading">
+            <div class="desc"> 
+                <p>Submerged is a mod in Among Us that adds an underwater themed map. It was previously included with Polus.gg but now is available on GitHub.</p>
+            </div>
+            <div class="frame">
+              dfsd
+            </div>
+          </section>
+
+          <section>
+
+          </section>
+
+
+
+
+          </body>
+          <footer>
+            <div id="footer-container">
+              <div id="game-history">
+                <h2>Game History</h2>
+                <a href="/src/GameHistory/games.html" class="hover">Games</a>
+                <br />
+                <a href="/src/GameHistory/innersloth.html" class="hover">Innersloth</a>
+                <br />
+                <a href="/src/GameHistory/other-developers.html" class="hover">Other Developers</a>
+              </div>
+              <div id="elements">
+                <h2>Elements</h2>
+                <a href="#" class="hover">Maps</a>
+                <br />
+                <a href="#" class="hover">Roles</a>
+                <br />
+                <a href="#" class="hover">Locations</a>
+                <br />
+                <a href="#" class="hover">Tasks</a>
+                <br />
+                <a href="#" class="hover">Abilities</a>
+                <br />
+                <a href="#" class="hover">Objects</a>
+                <br />
+                <a href="#" class="hover">Game Mechanics</a>
+              </div>
+              <div id="features">
+                <h2>Features</h2>
+                <a href="#" class="hover">Accounts</a>
+                <br />
+                <a href="#" class="hover">Colors & Cosmetics</a>
+                <br />
+                <a href="#" class="hover">News & Events</a>
+                <br />
+                <a href="#" class="hover">Unofficial Mods</a>
+              </div>
+              <div id="about-us">
+                <h2>About Us</h2>
+        
+                <a href="#" class="hover">Meet the Team</a>
+              </div>
+              <div id="contact">
+                <img
+                  src="/resources/game-history/circle-solid.svg"
+                  alt="circle shape"
+                  id="circle"
+                />
+                <div id="phone-num">
+                  <img
+                    src="/resources/game-history/phone-solid.svg"
+                    alt="phone icon"
+                    id="phone"
+                  />
+                  <p id="num">09218295285</p>
+                </div>
+                <div id="envelope-email">
+                  <img
+                    src="/resources/game-history/envelope-solid.svg"
+                    alt="envelope icon"
+                    id="envelope"
+                  />
+                  <p id="email">
+                    <a href="mailto:roxaskv@students.national-u.edu.ph"
+                      >@national-u.edu.ph</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div id="copyright">
+                <p>Copyright &copy</p>
+              </div>
+            </div>
+          </footer>
+
+          
+</html>
