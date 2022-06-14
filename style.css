@@ -227,8 +227,8 @@ body{
 
     #intro-text{
         position:absolute;
-        padding-top: 250px;
-        padding-left: 250px;
+        padding-top: 190px;
+        padding-left: 150px;
     }
     #intro-text h2{
         color: #fff;
@@ -282,7 +282,7 @@ body{
         background-color: #075288 ;
     }
     #intro-text img{
-        width: 70%;
+        width: 85%;
         animation: fadeIn 3s forwards;
         animation-delay: 1.5s;
         opacity: 0;
