@@ -318,7 +318,11 @@ figcaption {
 /* FOOTER */
 footer { /*eme sa footer*/
     position: relative;
-    bottom: 0;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #585858;
 }
@@ -336,12 +340,14 @@ footer { /*eme sa footer*/
     padding-left: 20px;
 }
 
-#game-history {
+#game-history, h2 {
+    font-family: 'Roboto', sans-serif;
     grid-area: gamehistory;
-
 }
 
 #game-history a {
+    font-family: 'Roboto';
+    font-weight: lighter;
     text-decoration: none;
     display: inline-block;
     color: #D2D2CF;
@@ -356,6 +362,8 @@ footer { /*eme sa footer*/
 }
 
 #elements a {
+    font-family: 'Roboto';
+    font-weight: lighter;
     text-decoration: none;
     display: inline-block;
     color: #D2D2CF;
@@ -370,6 +378,8 @@ footer { /*eme sa footer*/
 }
 
 #features a {
+    font-family: 'Roboto';
+    font-weight: lighter;
     text-decoration: none;
     display: inline-block;
     color: #D2D2CF;
@@ -385,6 +395,8 @@ footer { /*eme sa footer*/
 }
 
 #about-us a {
+    font-family: 'Roboto';
+    font-weight: lighter;
     text-decoration: none;
     display: inline-block;
     color: #D2D2CF;
@@ -442,6 +454,7 @@ footer div a {
 }
 
 #num {
+    font-family: 'Roboto';
     margin-left: 20px;
     color: #D2D2CF;
 }
@@ -451,6 +464,8 @@ footer div a {
 }
 
 #email a {
+    font-family: 'Roboto';
+    font-weight: lighter;
     text-decoration: none;
     color: #D2D2CF;
 }
