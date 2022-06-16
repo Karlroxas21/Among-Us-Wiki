@@ -303,6 +303,7 @@ footer { /*eme sa footer*/
 
 #game-history a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: #D2D2CF;
 }
@@ -317,6 +318,7 @@ footer { /*eme sa footer*/
 
 #elements a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: #D2D2CF;
 }
@@ -331,6 +333,7 @@ footer { /*eme sa footer*/
 
 #features a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: #D2D2CF;
 }
@@ -346,6 +349,7 @@ footer { /*eme sa footer*/
 
 #about-us a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: #D2D2CF;
 }
@@ -356,10 +360,7 @@ footer { /*eme sa footer*/
 
 footer div a {
     margin-bottom: 10px;
-}
-
-footer div a {
-    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contact {
