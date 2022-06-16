@@ -614,8 +614,8 @@ html {
 
 .main-left {
     background: transparent;
-    height: 816.5vh; /*ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
-                                HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO*/
+    height: 600vh; /* ADJUST MO NALANG KUNG GAANO KAHABA CONTENT/INFO MO SA RIGHT PARA TUMPAK SA SIDEBAR
+                                HEHE PAAYOS NA RIN KUNG ALAM MO, MANO MANO KO LANG TO */
     width: 20%;
     float: left;
     /*background: pink;  PARA MAKITA MO SIZE KUNG HANGGANG SAAN LANG YUNG SCROLL NG SIBEBAR*/
