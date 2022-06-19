@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
 /*THE * MEANS "ALL ELEMENTS" (A UNIVERSAL SELECTOR), SO WE ARE SETTING ALL ELEMENTS TO HAVE ZERO 
 MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
 
@@ -135,50 +135,179 @@ body {
     width: 50px;
     cursor: pointer;
 }
-/*SUB NAVBAR*/
-.subnavbar {
+
+/*CONTENT*/
+.black-container {
+    padding: 3%;
     margin: 3% auto;
     width: 80%;
-    background-color: black;
-    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 1fr 4fr;
 }
 
-.sublist{
+
+ 
+
+.subnavbar ul li a.active, 
+ .subnavbar ul li a:hover {
+     color: yellow;
+     
+ }
+.sidenavbar {
+    position: sticky;
+    top: 10%;
+    margin: 0 auto;
+    margin-top: 10%;
+    height: fit-content;
+    font-size: 1.25rem;
+    position: sticky;
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #D2D2CF;
+
+}
+.sidenavbar ul li a:hover {
+    color: yellow;
+}
+.sidenavbar h2 {
+    text-align: center;
+    border-bottom: solid #fff 1px;
+}
+
+.sidenavbar li {
+    margin-top: 3%;
+}
+.tab1 {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+}
+
+.tab2 li{
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.sidenavbar ul {
     list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.sidenavbar a {
+    text-decoration: none;
+}
+.subnavbar {
+    background-color: rgba(0, 0, 0, 1);
+    
+}
+.subnavbar a {
     font-size: 3rem;
+    text-decoration: none;
+}
+
+.subnavbar ul {
+    list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-.sublist a {
-    text-decoration: none;
+.submerge-content {
+    margin-top: 3%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'submerge-desc display-container'
+                         'loc display-container'
+                         'task-container display-container'
+                         'tasks display-container'
+                         'task-table display-container';
+    
+    
 }
 
-/*CONTENT*/
-.submerged-heading {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 2%;
+.loc {
+    width: 95%;
+    height: fit-content;
+    border-bottom: solid #fff 1px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.display-container {
+    grid-area: display-container;
+    width: 100%;
+    height: fit-content;
+}
+.submerge-desc {
+    font-size: 1.25rem;
+    width: 95%;
+    font-family: 'Roboto', sans-serif;
+    grid-area: submerge-desc;
+}
+
+.task-table {
+    grid-area: task-table;
+    width: 95%;
+    border: solid white 1px;
+    word-wrap: break-word;
+    
+}
+.task-table tr, td, th {
+    padding: 3%;
+    border: solid #fff 1px;
+}
+.task-table table {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
-.submerged-heading p {
-    font-family: sans-serif;
-    font-size: 1.5rem;
+.task-table li, tr, td, th {
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
-.sublist .active {
-    color: yellow;
+
+
+
+.task-container {
+    grid-area: task-container;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
-.frame {
-    background-color: rgba(155, 5, 5, 1);
-    width: 30%;
-    height: 300px;
-    margin-left: 10%;
+.tasks {
+    grid-area: tasks;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 95%;
+    height: fit-content;
+    border-bottom: solid #fff 1px;
+    color: white;
+    font-size: 2.5rem;
 }
-.desc {
-    background-color: rgb(5, 155, 27);
-    width: 60%;
-    height: 100%;
+
+.task-container div {
+    margin: 3%;
+    width: 95%;
 }
+
+.task-container h2 {
+    margin-top: 10%;
+}
+
+.task-container h3{
+    padding-left: 5%;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.task-container li{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 10%;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 
 

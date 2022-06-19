@@ -1,202 +1,743 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="stylesheet" href="../../css/AboutUsCSS/unofficial-mods-submerged.css" />
-          <link rel="icon" type="image/png" href="/resources/game-history/among-us-2.webp">
-          <title>Features-Unofficial Mods</title>
-        </head>
-      
-        <body>
-          <section>
-            <header>
-              <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
-              <!--AUDIO PART-->
-              <div class="music">
-                <img
-                  src="/resources/Home/Music_Off.png"
-                  id="icon"
-                  alt="Audio Off Icon"
-                />
-              </div>
-      
-              <audio id="OST">
-                <source src="/resources/Home/Music.mp3" type="audio/mp3" />
-              </audio>
-      
-              <div class="toggle"></div>
-              <!--NAVBAR PART-->
-              <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li>
-                  <a href="#">Game History</a>
-                  <ul>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Innersloth</a></li>
-                    <li><a href="#">Other Developers</a></li>
-                  </ul>
-                </li>
-      
-                <li>
-                  <a href="#">Elements</a>
-                  <ul>
-                    <li><a href="#">Maps</a></li>
-                    <li><a href="#">Roles</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Tasks</a></li>
-                    <li><a href="#">Abilities</a></li>
-                    <li><a href="#">Objects</a></li>
-                    <li><a href="#">Game Mechanics</a></li>
-                  </ul>
-                </li>
-      
-                <li>
-                  <a href="#" class="active">Features</a>
-                  <ul>
-                    <li><a href="#">Accounts</a></li>
-                    <li><a href="#">Colors & Cosmetics</a></li>
-                    <li><a href="#">News & Events</a></li>
-                    <li><a href="#">Unofficial Mods</a></li>
-                  </ul>
-                </li>
-      
-                <li>
-                  <a href="#">About Us</a>
-                  <ul>
-                    <li><a href="#">Meet the Team</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </header>
-          </section>
-      
-          <!--AUDIO JAVASCRIPT PART-->
-          <script>
-            var OST = document.getElementById("OST");
-            var icon = document.getElementById("icon");
-      
-            icon.onclick = function () {
-              if (OST.paused) {
-                OST.play();
-                icon.src = "/resources/Home/Music_On.png";
-              } else {
-                OST.pause();
-                icon.src = "/resources/Home/Music_Off.png";
-              }
-            };
-          </script>
-      
-          <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
-          <script>
-            const menuToggle = document.querySelector(".toggle");
-            const nav = document.querySelector(".nav");
-            menuToggle.onclick = function () {
-              menuToggle.classList.toggle("active");
-              nav.classList.toggle("active");
-            };
-          </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../css/AboutUsCSS/unofficial-mods-submerged.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/resources/game-history/among-us-2.webp"
+    />
+    <title>Features-Unofficial Mods</title>
+  </head>
 
-           <!--SUB NAVBAR-->
-          <div class="subnavbar">
-            <ul class="sublist">
-              <li><a href="#" class="active">SubMerged</a></li>
-              <li><a href="#">The Other roles</a></li>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo" alt="Among Us Wiki Logo">AMONG US WIKI</a>
+        <!--AUDIO PART-->
+        <div class="music">
+          <img
+            src="/resources/Home/Music_Off.png"
+            id="icon"
+            alt="Audio Off Icon"
+          />
+        </div>
+
+        <audio id="OST">
+          <source src="/resources/Home/Music.mp3" type="audio/mp3" />
+        </audio>
+
+        <div class="toggle"></div>
+        <!--NAVBAR PART-->
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Game History</a>
+            <ul>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Innersloth</a></li>
+              <li><a href="#">Other Developers</a></li>
             </ul>
+          </li>
+
+          <li>
+            <a href="#">Elements</a>
+            <ul>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Roles</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Abilities</a></li>
+              <li><a href="#">Objects</a></li>
+              <li><a href="#">Game Mechanics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="active">Features</a>
+            <ul>
+              <li><a href="#">Accounts</a></li>
+              <li><a href="#">Colors & Cosmetics</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Unofficial Mods</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">About Us</a>
+            <ul>
+              <li><a href="#">Meet the Team</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </section>
+
+    <!--AUDIO JAVASCRIPT PART-->
+    <script>
+      var OST = document.getElementById("OST");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        if (OST.paused) {
+          OST.play();
+          icon.src = "/resources/Home/Music_On.png";
+        } else {
+          OST.pause();
+          icon.src = "/resources/Home/Music_Off.png";
+        }
+      };
+    </script>
+
+    <!--RESPONSIVE JS PART FOR THE TOGGLE BUTTON-->
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const nav = document.querySelector(".nav");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+
+    <!--CONTENT-->
+    <div class="black-container">
+      <div class="sidenavbar">
+        <nav>
+          <h2>Contents</h2>
+          <ul>
+            <li><a href="#locations">1. Locations</a></li>
+            <ul>
+              <li class="tab1"><a href="#upperdeck"> 1.1 Upper Deck</a></li>
+              <li class="tab1"><a href="#lowerdeck">1.2 Lower Deck</a> </li>
+            </ul>
+            <li><a href="#tasks">2. Tasks</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="subnavbar">
+          <ul>
+            <li><a href="unofficial-mods-submerged.html" class="active">Submerged</a></li>
+            <li><a href="unofficial-mods-otherroles.html">The Other Roles</a></li>
+          </ul>
+        </div>
+        <div class="submerge-content">
+          <p class="submerge-desc">
+            Submerged is a mod in Among Us that adds an underwater-themed map.
+            It was previously included with Polus.gg, but now is available on
+            GitHub.
+          </p>
+
+          <h1 class="loc" id="locations">
+            <br />
+            Locations
+          </h1>
+
+          <div class="task-container">
+            <div>
+              <h1 id="upperdeck">UPPER DECK</h1>
+
+              <h2 id="cafeteria">Cafeteria</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Microwave Lunch</li>
+                <li>Purchase Breakfast</li>
+              </ul>
+
+              <h2 id="observatory">Observatory</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Spot Whale Shark</li>
+                <li>Align Telescope</li>
+                <li>Locate Volcanic Activity</li>
+              </ul>
+
+              <h2 id="admin">Admin</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Upload Data</li>
+              </ul>
+              <h3>Abilities</h3>
+              <ul>
+                <li>Admin</li>
+              </ul>
+
+              <h2 id="lounge">Lounge</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Reshelve Books</li>
+              </ul>
+
+              <h2 id="meetingroom">Meeting Room</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Feed Pet Fish</li>
+                <li>Track Manta Ray</li>
+              </ul>
+
+              <h2 id="uppercentral">Upper Central</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Spot Whale Shark</li>
+              </ul>
+              <h3>Sabotages:</h3>
+              <ul>
+                <li>Comms Sabotaged</li>
+              </ul>
+
+              <h2 id="medical">Medical</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Submit Scan</li>
+                <li>Upload Data</li>
+                <li>Steady Heartbeat</li>
+              </ul>
+              <h3>Abilities:</h3>
+              <ul>
+                <li>Vitals</li>
+              </ul>
+
+              <h2 id="research">Research</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Record Nav Beacon Data</li>
+                <li>Identify Specimen</li>
+              </ul>
+
+              <h2 id="hallway">Hallway</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Plug Leaks</li>
+                <li>Mop Puddles</li>
+                <li>Diagnose Elevators</li>
+              </ul>
+            </div>
+
+            <div>
+              <h1 id="lowerdeck">LOWER DECK</h1>
+
+              <h2 id="engineroom">Engine Room</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Upload Data</li>
+                <li>Unlock Manifolds</li>
+                <li>Clear Urchins</li>
+                <li>Cycle Reactor</li>
+              </ul>
+
+              <h2 id="security">Security</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Upload Data</li>
+                <li>Shoot Depth Charges</li>
+              </ul>
+              <h3>Abilities:</h3>
+              <ul>
+                <li>Security</li>
+              </ul>
+
+              <h2 id="ballast">Ballast</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Start Submersible</li>
+              </ul>
+              <h3>Sabotages:</h3>
+              <ul>
+                <li>Stabilize Water Levels</li>
+              </ul>
+
+              <h2 id="storage">Storage</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Upload Data</li>
+                <li>Sort Scuba Gear</li>
+              </ul>
+
+              <h2 id="lowercentral">Lower Central</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Oxygenate Sea Plants</li>
+              </ul>
+              <h3>Sabotages:</h3>
+              <ul>
+                <li>Retriev Oxygen Mask</li>
+              </ul>
+
+              <h2 id="filtration">Filtration</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Reconnect Piping</li>
+                <li>Dispense Water</li>
+              </ul>
+
+              <h2 id="electrical">Electrical</h2>
+              <h3>Tasks:</h3>
+              <ul>
+                <li>Upload Data</li>
+                <li>Fix Wiring</li>
+                <li>Reset Breakers</li>
+              </ul>
+              <h3>Sabotages:</h3>
+              <ul>
+                <li>Fix Lights</li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="tasks" id="tasks">TASKS</h1>
+
+          <div class="task-table">
+            <table>
+              <tr>
+                <th>Task</th>
+                <th>Type</th>
+                <th>Visual</th>
+                <th>List of Steps</th>
+              </tr>
+
+              <tr>
+                <td>Align Telescope</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Observatory</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Clean Glass</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Upper Central</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Clear Urchins</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Engines</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Cycle Reactor</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Engines</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Fix Wiring</td>
+                <td>Common</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Electrical</li>
+                    <li>Hallway</li>
+                    <li>Lower Lobby</li>
+                    <li>Ballast</li>
+                    <li>Upper Central</li>
+                    <li>Cafeteria</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Plug Leaks</td>
+                <td>Common</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Engine Room</li>
+                    <li>Ballast</li>
+                    <li>Hallway</li>
+                    <li>Electrical</li>
+                    <li>Upper Lobby</li>
+                    <li>Research</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Spot Whale Shark</td>
+                <td>Common</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Observatory</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Upload Data</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Stage 1</li>
+                    <ul>
+                      <li>Admin</li>
+                      <li>Electrical</li>
+                      <li>Engine Room</li>
+                      <li>Medical</li>
+                      <li>Security</li>
+                      <li>Storage</li>
+                    </ul>
+                    <li>Stage 2</li>
+                    <ul>
+                      <li>Communications</li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Shoot Depth Charges</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Security</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Microwave Lunch</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Cafeteria</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Reshelve Books</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Stage 1</li>
+                    <ul>
+                      <li>Lounge</li>
+                    </ul>
+                    <li>Stage 2</li>
+                    <ul>
+                      <li>Medical</li>
+                    </ul>
+                    <li>Stage 3</li>
+                    <ul>
+                      <li>Upper Lobby</li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Record Nav Beacon Data</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Stage 1</li>
+                    <ul>
+                      <li>Research</li>
+                    </ul>
+                    <li>Stage 2</li>
+                    <ul>
+                      <li>Meeting Room</li>
+                    </ul>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Submit Scan</td>
+                <td>Long</td>
+                <td>Yes</td>
+                <td>
+                  <ul>
+                    <li>Medical</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Mop Puddles</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Hallway</li>
+                    <li>Storage</li>
+                    <li>Filtration</li>
+                    <li>Admin</li>
+                    <li>Communications</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Oxygenate Sea Plants</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Lower Central</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Diagnose Elevators</td>
+                <td>Long</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Hallway</li>
+                    <li>Upper Lobby</li>
+                    <li>Lower Lobby</li>
+                    <li>Filtration</li>
+                    <li>Communications</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Dispense Water</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Filtration</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Feed Pet Fish</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Meeting Room</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Identify Specimen</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Research</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Locate Volcanic Activity</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Observatory</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Purchase Breakfast</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Cafeteria</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Reconnect Piping</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Filtration</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Reset Breakers</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Electrical</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Start Submersible</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Electrical</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Steady Heartbeat</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Medical</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Track Manta Ray</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Meeting Room</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Unlock Manifolds</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Engine Room</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Sort Scuba Gear</td>
+                <td>Short</td>
+                <td>No</td>
+                <td>
+                  <ul>
+                    <li>Storage</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
           </div>
 
-            <!--CONTENT-->
-          <section class="submerged-heading">
-            <div class="desc"> 
-                <p>Submerged is a mod in Among Us that adds an underwater themed map. It was previously included with Polus.gg but now is available on GitHub.</p>
-            </div>
-            <div class="frame">
-              dfsd
-            </div>
-          </section>
+          <div class="display-container">
+            <img src="/resources/AboutUs/submerged.png" alt="submerged info summary">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div id="footer-container">
+      <div id="game-history">
+        <h2>Game History</h2>
+        <a href="/src/GameHistory/games.html" class="hover">Games</a>
+        <br />
+        <a href="/src/GameHistory/innersloth.html" class="hover">Innersloth</a>
+        <br />
+        <a href="/src/GameHistory/other-developers.html" class="hover"
+          >Other Developers</a
+        >
+      </div>
+      <div id="elements">
+        <h2>Elements</h2>
+        <a href="#" class="hover">Maps</a>
+        <br />
+        <a href="#" class="hover">Roles</a>
+        <br />
+        <a href="#" class="hover">Locations</a>
+        <br />
+        <a href="#" class="hover">Tasks</a>
+        <br />
+        <a href="#" class="hover">Abilities</a>
+        <br />
+        <a href="#" class="hover">Objects</a>
+        <br />
+        <a href="#" class="hover">Game Mechanics</a>
+      </div>
+      <div id="features">
+        <h2>Features</h2>
+        <a href="#" class="hover">Accounts</a>
+        <br />
+        <a href="#" class="hover">Colors & Cosmetics</a>
+        <br />
+        <a href="#" class="hover">News & Events</a>
+        <br />
+        <a href="#" class="hover">Unofficial Mods</a>
+      </div>
+      <div id="about-us">
+        <h2>About Us</h2>
 
-          <section>
-
-          </section>
-
-
-
-
-          </body>
-          <footer>
-            <div id="footer-container">
-              <div id="game-history">
-                <h2>Game History</h2>
-                <a href="/src/GameHistory/games.html" class="hover">Games</a>
-                <br />
-                <a href="/src/GameHistory/innersloth.html" class="hover">Innersloth</a>
-                <br />
-                <a href="/src/GameHistory/other-developers.html" class="hover">Other Developers</a>
-              </div>
-              <div id="elements">
-                <h2>Elements</h2>
-                <a href="#" class="hover">Maps</a>
-                <br />
-                <a href="#" class="hover">Roles</a>
-                <br />
-                <a href="#" class="hover">Locations</a>
-                <br />
-                <a href="#" class="hover">Tasks</a>
-                <br />
-                <a href="#" class="hover">Abilities</a>
-                <br />
-                <a href="#" class="hover">Objects</a>
-                <br />
-                <a href="#" class="hover">Game Mechanics</a>
-              </div>
-              <div id="features">
-                <h2>Features</h2>
-                <a href="#" class="hover">Accounts</a>
-                <br />
-                <a href="#" class="hover">Colors & Cosmetics</a>
-                <br />
-                <a href="#" class="hover">News & Events</a>
-                <br />
-                <a href="#" class="hover">Unofficial Mods</a>
-              </div>
-              <div id="about-us">
-                <h2>About Us</h2>
-        
-                <a href="#" class="hover">Meet the Team</a>
-              </div>
-              <div id="contact">
-                <img
-                  src="/resources/game-history/circle-solid.svg"
-                  alt="circle shape"
-                  id="circle"
-                />
-                <div id="phone-num">
-                  <img
-                    src="/resources/game-history/phone-solid.svg"
-                    alt="phone icon"
-                    id="phone"
-                  />
-                  <p id="num">09218295285</p>
-                </div>
-                <div id="envelope-email">
-                  <img
-                    src="/resources/game-history/envelope-solid.svg"
-                    alt="envelope icon"
-                    id="envelope"
-                  />
-                  <p id="email">
-                    <a href="mailto:roxaskv@students.national-u.edu.ph"
-                      >@national-u.edu.ph</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div id="copyright">
-                <p>Copyright &copy</p>
-              </div>
-            </div>
-          </footer>
-
-          
+        <a href="#" class="hover">Meet the Team</a>
+      </div>
+      <div id="contact">
+        <img
+          src="/resources/game-history/circle-solid.svg"
+          alt="circle shape"
+          id="circle"
+        />
+        <div id="phone-num">
+          <img
+            src="/resources/game-history/phone-solid.svg"
+            alt="phone icon"
+            id="phone"
+          />
+          <p id="num">09218295285</p>
+        </div>
+        <div id="envelope-email">
+          <img
+            src="/resources/game-history/envelope-solid.svg"
+            alt="envelope icon"
+            id="envelope"
+          />
+          <p id="email">
+            <a href="mailto:roxaskv@students.national-u.edu.ph"
+              >@national-u.edu.ph</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Copyright &copy</p>
+      </div>
+    </div>
+  </footer>
 </html>
