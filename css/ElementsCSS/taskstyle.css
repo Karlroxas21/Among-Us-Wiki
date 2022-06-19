@@ -245,6 +245,7 @@ p {
 
 #task-heading:hover, #guide-heading:hover {
     color: #427de2;
+    text-decoration: underline;
 }
 
 .div2, a {
