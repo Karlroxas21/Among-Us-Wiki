@@ -97,7 +97,7 @@ header ul li a {
 
 header ul li a.active,
 header ul li a:hover {
-  color: yellow;
+  color: #DFB01A;
   border-radius: 10px;
 }
 
