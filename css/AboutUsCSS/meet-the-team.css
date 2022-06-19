@@ -27,7 +27,7 @@ MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
  }
  
 body {
-    background-image: url("/resources/game-history/among_us_bg_2.jpg");
+    background-image: url("../../resources/Elements/Maps/BG.jpg");
     background-size: contain;
 }
  
