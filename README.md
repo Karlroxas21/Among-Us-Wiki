@@ -1,5 +1,5 @@
 #  **Among Us Wiki**
-# *THIS WEBSITE IS NOT RESPONSIVE AND IS BEST TO USE IN 1920x1080 resolution*
+### *This website is not responsive and is best to use in 1920x1080 resolution*
 ## Final project in Web systems a.y. 2021-2022
 
 ## People who made this possible:
