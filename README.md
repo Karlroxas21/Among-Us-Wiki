@@ -13,7 +13,7 @@
 - https://www.innersloth.com/games/among-us/
 - https://among-us.fandom.com/wiki/Among_Us_Wiki
 ---
-## **Project Goal: **
+## **Project Goal:**
 ### To give information about the game by providing facts, text, graphics, sound, and video about the game.
 ## **Target Audience:**
 - Pre-teens
