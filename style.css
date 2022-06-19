@@ -587,6 +587,11 @@ footer div a {
         "mail mail";
 }
 
+#contact img{
+   
+    border-radius: 10px;
+}
+
 #phone-num {
     grid-area: phone;
     display: flex;
