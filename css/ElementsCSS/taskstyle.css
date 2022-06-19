@@ -243,6 +243,10 @@ p {
     font-size: larger;
 }
 
+#task-heading:hover, #guide-heading:hover {
+    color: #427de2;
+}
+
 .div2, a {
     font-weight: bold;
     text-decoration: none;
