@@ -1,5 +1,4 @@
 #  **Among Us Wiki**
-# for pages only
 ### *This website is not responsive and is best to use in 1920x1080 resolution*
 ## Final project in Web systems a.y. 2021-2022
 
