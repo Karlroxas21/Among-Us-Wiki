@@ -13,8 +13,11 @@ MARGINS, AND ZERO PADDING, THUS MAKING THEM LOOK THE SAME IN ALL BROWSERS.*/
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'Amatic SC', sans-serif;
      
+ }
+
+ body{
+    font-family: 'Amatic SC', sans-serif;
  }
  
  section {
