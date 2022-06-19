@@ -207,6 +207,18 @@ footer {
     background-color: #585858;
 }
 
+footer h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+footer a {
+    font-family: "Roboto", sans-serif;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+}
+
 #footer-container {
     margin-left: 20%;
     margin-right: 20%;
