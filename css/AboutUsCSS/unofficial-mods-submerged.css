@@ -152,7 +152,7 @@ body {
 
 .subnavbar ul li a.active, 
  .subnavbar ul li a:hover {
-     color: yellow;
+    color: #DFB01A;
      
  }
 .sidenavbar {
@@ -169,7 +169,7 @@ body {
 
 }
 .sidenavbar ul li a:hover {
-    color: yellow;
+    color: #DFB01A;
 }
 .sidenavbar h2 {
     text-align: center;

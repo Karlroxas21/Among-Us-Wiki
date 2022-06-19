@@ -161,7 +161,7 @@ header ul li ul li {
 }
 .subnavbar ul li a.active,
 .subnavbar ul li a:hover {
-  color: yellow;
+  color: #DFB01A;
 }
 .otherroles-content {
   width: 90%;
@@ -218,7 +218,7 @@ li {
 
 }
 .sidenavbar ul li a:hover {
-    color: yellow;
+    color: #DFB01A;
 }
 .sidenavbar h2 {
     text-align: center;
